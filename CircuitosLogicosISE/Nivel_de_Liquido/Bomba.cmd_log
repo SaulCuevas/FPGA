@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Nivel_de_Liquido/Bomba.xst" -ofn "/home/ise/Documents/Nivel_de_Liquido/Bomba.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nivel_de_Liquido.ucf -p xc6slx9-csg225-2 Bomba.ngc Bomba.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bomba_map.ncd Bomba.ngd Bomba.pcf 
+par -w -intstyle ise -ol high -mt off Bomba_map.ncd Bomba.ncd Bomba.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bomba.twx Bomba.ncd -o Bomba.twr Bomba.pcf -ucf Nivel_de_Liquido.ucf 
+bitgen -intstyle ise -f Bomba.ut Bomba.ncd 

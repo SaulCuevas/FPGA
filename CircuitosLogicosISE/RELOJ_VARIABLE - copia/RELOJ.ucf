@@ -1,0 +1,26 @@
+//.UCF OPERACIONES MULTIPLICAR Y DIVIDIR POR MEDIO DE DIV_SHIFT
+	 
+NET "CLK" 	 		LOC = E7; 		// Oscilador 50MHz
+
+NET "BOTON_ASC" 		LOC = J4;	// Boton para aumentar la frecuencia
+NET "BOTON_DES" 		LOC = H4;	// Boton para disminuir la frecuencia
+
+NET "LED"				LOC = E4;	// LED testigo de la senal variable
+NET "SALIDA"			LOC = C4;	// Salida de la senal variable
+
+NET "DISPLAY(15)" 	LOC = K13; 	// A
+NET "DISPLAY(14)" 	LOC = L15; 	// B
+NET "DISPLAY(13)" 	LOC = M15; 	// C
+NET "DISPLAY(12)" 	LOC = P15; 	// D
+NET "DISPLAY(11)" 	LOC = P14; 	// E
+NET "DISPLAY(10)" 	LOC = K15; 	// F
+NET "DISPLAY(9)" 		LOC = L14; 	// G
+NET "DISPLAY(8)" 		LOC = N15; 	// P
+NET "DISPLAY(7)" 		LOC = G12;	// ANODO 1
+NET "DISPLAY(6)" 		LOC = F13;	// A2
+NET "DISPLAY(5)" 		LOC = H12;	// A3
+NET "DISPLAY(4)" 		LOC = G13;	// A4
+NET "DISPLAY(3)" 		LOC = H13;	// A5
+NET "DISPLAY(2)" 		LOC = K11;	// A6
+NET "DISPLAY(1)" 		LOC = J13;	// A7
+NET "DISPLAY(0)" 		LOC = K12;	// A8

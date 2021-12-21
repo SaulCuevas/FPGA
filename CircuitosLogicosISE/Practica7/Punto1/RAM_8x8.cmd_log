@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf 
+bitgen -intstyle ise -f RAM_8x8.ut RAM_8x8.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Conections.ucf -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Conections.ucf -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf -ucf Conections.ucf 
+bitgen -intstyle ise -f RAM_8x8.ut RAM_8x8.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/Documents/PRACTICAS/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Conections.ucf -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf -ucf Conections.ucf 
+bitgen -intstyle ise -f RAM_8x8.ut RAM_8x8.ncd 
+xst -intstyle ise -ifn "/home/ise/CircuitosLogicosISE/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/CircuitosLogicosISE/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Conections.ucf -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf -ucf Conections.ucf 
+bitgen -intstyle ise -f RAM_8x8.ut RAM_8x8.ncd 
+xst -intstyle ise -ifn "/home/ise/CircuitosLogicosISE/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/CircuitosLogicosISE/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Conections.ucf -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf -ucf Conections.ucf 
+bitgen -intstyle ise -f RAM_8x8.ut RAM_8x8.ncd 
+xst -intstyle ise -ifn "/home/ise/CircuitosLogicosISE/Practica7/Punto1/RAM_8x8.xst" -ofn "/home/ise/CircuitosLogicosISE/Practica7/Punto1/RAM_8x8.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Conections.ucf -p xc6slx9-csg225-2 RAM_8x8.ngc RAM_8x8.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RAM_8x8_map.ncd RAM_8x8.ngd RAM_8x8.pcf 
+par -w -intstyle ise -ol high -mt off RAM_8x8_map.ncd RAM_8x8.ncd RAM_8x8.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RAM_8x8.twx RAM_8x8.ncd -o RAM_8x8.twr RAM_8x8.pcf -ucf Conections.ucf 
+bitgen -intstyle ise -f RAM_8x8.ut RAM_8x8.ncd 

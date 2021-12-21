@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/DispLogicosISE/P1/P1_1/funciones_isim_beh.exe" -prj "/home/ise/DispLogicosISE/P1/P1_1/funciones_beh.prj" "work.funciones" 

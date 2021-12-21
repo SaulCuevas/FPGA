@@ -1,0 +1,1150 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicNumber.v" into library work
+Parsing module <dynamicNumber>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\digit.v" into library work
+Parsing module <digit>.
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\digit.v" Line 36. parameter declaration becomes local in digit with formal parameter declaration list
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\digit.v" Line 37. parameter declaration becomes local in digit with formal parameter declaration list
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\number.v" into library work
+Parsing module <number>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\player.v" into library work
+Parsing module <player>.
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\player.v" Line 41. parameter declaration becomes local in player with formal parameter declaration list
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\player.v" Line 42. parameter declaration becomes local in player with formal parameter declaration list
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\player.v" Line 47. parameter declaration becomes local in player with formal parameter declaration list
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v" into library work
+Parsing module <counter>.
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v" Line 32. parameter declaration becomes local in counter with formal parameter declaration list
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v" Line 33. parameter declaration becomes local in counter with formal parameter declaration list
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\zipVGAStr.v" into library work
+Parsing module <zipVGAStr>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\verticalPlayers.v" into library work
+Parsing module <verticalPlayers>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" into library work
+Parsing module <syncVGAGen>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\soundCard.v" into library work
+Parsing module <soundCard>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\scoreboard.v" into library work
+Parsing module <scoreboard>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\endframeVGA.v" into library work
+Parsing module <endframeVGA>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicGame.v" into library work
+Parsing module <dynamicGame>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\court.v" into library work
+Parsing module <court>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ball.v" into library work
+Parsing module <ball>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\unzipRGB.v" into library work
+Parsing module <unzipRGB>.
+WARNING:HDLCompiler:572 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\unzipRGB.v" Line 29: Macro <B> is redefined.
+WARNING:HDLCompiler:572 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\unzipRGB.v" Line 31: Macro <R> is redefined.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\strVGAGen.v" into library work
+Parsing module <strVGAGen>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\pongGame.v" into library work
+Parsing module <pongGame>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" into library work
+Parsing module <ctlButtons>.
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 28. parameter declaration becomes local in ctlButtons with formal parameter declaration list
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 29. parameter declaration becomes local in ctlButtons with formal parameter declaration list
+INFO:HDLCompiler:693 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 30. parameter declaration becomes local in ctlButtons with formal parameter declaration list
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\top.v" into library work
+Parsing module <top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top>.
+
+Elaborating module <strVGAGen>.
+
+Elaborating module <syncVGAGen>.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 61: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 70: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 77: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 78: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 79: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 87: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v" Line 88: Result of 32-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <zipVGAStr>.
+
+Elaborating module <endframeVGA>.
+
+Elaborating module <ctlButtons>.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 41: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 42: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 43: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v" Line 44: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:1016 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\pongGame.v" Line 55: Port reset is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\pongGame.v" Line 99: Port reset_goals is not connected to this instance
+
+Elaborating module <pongGame>.
+
+Elaborating module <court>.
+
+Elaborating module <scoreboard>.
+WARNING:HDLCompiler:1016 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v" Line 64: Port carry is not connected to this instance
+
+Elaborating module <counter(color=3'b110)>.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v" Line 38: Result of 12-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <number(color=3'b110)>.
+
+Elaborating module <digit(color=3'b110)>.
+
+Elaborating module <dynamicNumber>.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicNumber.v" Line 52: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicNumber.v" Line 66: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\scoreboard.v" Line 53: Size mismatch in connection of port <pos_x>. Formal port size is 10-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\scoreboard.v" Line 54: Size mismatch in connection of port <pos_y>. Formal port size is 10-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\scoreboard.v" Line 69: Size mismatch in connection of port <pos_x>. Formal port size is 10-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\scoreboard.v" Line 70: Size mismatch in connection of port <pos_y>. Formal port size is 10-bit while actual signal size is 32-bit.
+
+Elaborating module <verticalPlayers>.
+
+Elaborating module <player(type_ply=1'b0,pos_offset=20)>.
+
+Elaborating module <player(type_ply=1'b0,pos_offset=770)>.
+
+Elaborating module <ball>.
+
+Elaborating module <soundCard>.
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\soundCard.v" Line 50: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <dynamicGame>.
+WARNING:HDLCompiler:872 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicGame.v" Line 59: Using initial value of speed_x since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicGame.v" Line 60: Using initial value of speed_y since it is never assigned
+WARNING:HDLCompiler:413 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicGame.v" Line 95: Result of 32-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicGame.v" Line 66: Net <reset_goals_reg> does not have a driver.
+WARNING:HDLCompiler:552 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\pongGame.v" Line 55: Input port reset is not connected on this instance
+
+Elaborating module <unzipRGB>.
+WARNING:HDLCompiler:634 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\top.v" Line 60: Net <reset> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\top.v" Line 61: Net <play> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\top.v".
+WARNING:Xst:653 - Signal <reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <play> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <CLK>.
+    Found 2-bit register for signal <cont_16MHz>.
+    Found 2-bit adder for signal <cont_16MHz[1]_GND_1_o_add_2_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 D-type flip-flop(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <strVGAGen>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\strVGAGen.v".
+    Summary:
+	no macro.
+Unit <strVGAGen> synthesized.
+
+Synthesizing Unit <syncVGAGen>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\syncVGAGen.v".
+        activeHvideo = 800
+        activeVvideo = 600
+        hfp = 56
+        hpulse = 120
+        hbp = 64
+        vfp = 37
+        vpulse = 6
+        vbp = 23
+        blackH = 240
+        blackV = 66
+        hpixels = 1040
+        vlines = 666
+    Found 11-bit register for signal <vc>.
+    Found 10-bit register for signal <x_px>.
+    Found 10-bit register for signal <y_px>.
+    Found 11-bit register for signal <hc>.
+    Found 11-bit adder for signal <hc[10]_GND_3_o_add_2_OUT> created at line 61.
+    Found 11-bit adder for signal <vc[10]_GND_3_o_add_4_OUT> created at line 70.
+    Found 10-bit subtractor for signal <GND_3_o_GND_3_o_sub_21_OUT<9:0>> created at line 87.
+    Found 10-bit subtractor for signal <GND_3_o_GND_3_o_sub_22_OUT<9:0>> created at line 88.
+    Found 11-bit comparator greater for signal <hc[10]_PWR_3_o_LessThan_2_o> created at line 60
+    Found 11-bit comparator lessequal for signal <vc[10]_GND_3_o_LessThan_4_o> created at line 69
+    Found 11-bit comparator lessequal for signal <n0009> created at line 77
+    Found 11-bit comparator greater for signal <hc[10]_GND_3_o_LessThan_12_o> created at line 77
+    Found 11-bit comparator lessequal for signal <n0014> created at line 78
+    Found 11-bit comparator greater for signal <vc[10]_GND_3_o_LessThan_15_o> created at line 78
+    Found 11-bit comparator lessequal for signal <n0019> created at line 79
+    Found 11-bit comparator lessequal for signal <n0021> created at line 79
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+Unit <syncVGAGen> synthesized.
+
+Synthesizing Unit <zipVGAStr>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\zipVGAStr.v".
+    Summary:
+	no macro.
+Unit <zipVGAStr> synthesized.
+
+Synthesizing Unit <endframeVGA>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\endframeVGA.v".
+WARNING:Xst:647 - Input <strVGA<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <endframeVGA> synthesized.
+
+Synthesizing Unit <ctlButtons>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ctlButtons.v".
+        speed = 1
+    Found 10-bit register for signal <reg2>.
+    Found 10-bit register for signal <reg1>.
+    Found 10-bit adder for signal <reg1[9]_GND_6_o_add_5_OUT> created at line 42.
+    Found 10-bit adder for signal <reg2[9]_GND_6_o_add_9_OUT> created at line 44.
+    Found 10-bit subtractor for signal <GND_6_o_GND_6_o_sub_4_OUT<9:0>> created at line 41.
+    Found 10-bit subtractor for signal <GND_6_o_GND_6_o_sub_8_OUT<9:0>> created at line 43.
+    Found 10-bit comparator greater for signal <reg1[9]_GND_6_o_LessThan_12_o> created at line 45
+    Found 10-bit comparator greater for signal <reg2[9]_GND_6_o_LessThan_14_o> created at line 46
+    Found 10-bit comparator greater for signal <PWR_7_o_reg1[9]_LessThan_16_o> created at line 47
+    Found 10-bit comparator greater for signal <PWR_7_o_reg2[9]_LessThan_18_o> created at line 48
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <ctlButtons> synthesized.
+
+Synthesizing Unit <pongGame>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\pongGame.v".
+WARNING:Xst:2898 - Port 'reset', unconnected in block instance 'scoreboard_0', is tied to GND.
+INFO:Xst:3210 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\pongGame.v" line 99: Output port <reset_goals> of the instance <dynamicGame_0> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <pongGame> synthesized.
+
+Synthesizing Unit <court>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\court.v".
+    Found 26-bit register for signal <strRGB_reg>.
+    Found 10-bit comparator greater for signal <GND_8_o_strVGA[22]_LessThan_3_o> created at line 58
+    Found 10-bit comparator greater for signal <strVGA[22]_GND_8_o_LessThan_4_o> created at line 58
+    Found 10-bit comparator greater for signal <GND_8_o_strVGA[12]_LessThan_5_o> created at line 60
+    Found 10-bit comparator greater for signal <strVGA[12]_GND_8_o_LessThan_6_o> created at line 60
+    Found 10-bit comparator greater for signal <PWR_10_o_strVGA[12]_LessThan_7_o> created at line 62
+    Found 10-bit comparator greater for signal <strVGA[12]_PWR_10_o_LessThan_8_o> created at line 62
+    Summary:
+	inferred  26 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <court> synthesized.
+
+Synthesizing Unit <scoreboard>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\scoreboard.v".
+        width_screen = 800
+        width_digit = 30
+        separator = 5
+        width_counter = 65
+        offset = 20
+    Summary:
+	no macro.
+Unit <scoreboard> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v".
+        color = 3'b110
+INFO:Xst:3210 - "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\counter.v" line 67: Output port <carry> of the instance <number_tens> is unconnected or connected to loadless signal.
+    Found 11-bit adder for signal <n0007> created at line 38.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <number>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\number.v".
+        color = 3'b110
+    Summary:
+	no macro.
+Unit <number> synthesized.
+
+Synthesizing Unit <digit>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\digit.v".
+        color = 3'b110
+    Found 26-bit register for signal <strRGB_reg>.
+    Found 7-bit register for signal <segments>.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_16_OUT> created at line 86.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_21_OUT> created at line 90.
+    Found 12-bit subtractor for signal <GND_12_o_GND_12_o_sub_24_OUT> created at line 90.
+    Found 11-bit adder for signal <n0078> created at line 80.
+    Found 11-bit adder for signal <n0080> created at line 81.
+    Found 11-bit adder for signal <n0082> created at line 85.
+    Found 11-bit adder for signal <n0103[10:0]> created at line 90.
+    Found 11-bit adder for signal <n0092> created at line 95.
+    Found 11-bit adder for signal <n0095> created at line 101.
+    Found 16x7-bit Read Only RAM for signal <number[3]_PWR_14_o_wide_mux_2_OUT>
+    Found 10-bit comparator greater for signal <pos_y[9]_strRGB_i[12]_LessThan_6_o> created at line 80
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0001_LessThan_8_o> created at line 80
+    Found 10-bit comparator greater for signal <pos_x[9]_strRGB_i[22]_LessThan_9_o> created at line 81
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0002_LessThan_11_o> created at line 81
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0003_LessThan_14_o> created at line 85
+    Found 32-bit comparator greater for signal <GND_12_o_GND_12_o_LessThan_17_o> created at line 86
+    Found 32-bit comparator greater for signal <GND_12_o_GND_12_o_LessThan_22_o> created at line 90
+    Found 32-bit comparator greater for signal <GND_12_o_GND_12_o_LessThan_25_o> created at line 90
+    Found 11-bit comparator greater for signal <BUS_0010_GND_12_o_LessThan_32_o> created at line 95
+    Found 11-bit comparator greater for signal <GND_12_o_BUS_0015_LessThan_47_o> created at line 101
+    Summary:
+	inferred   1 RAM(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <digit> synthesized.
+
+Synthesizing Unit <dynamicNumber>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicNumber.v".
+    Found 1-bit register for signal <stop_dec>.
+    Found 4-bit register for signal <counter>.
+    Found 1-bit register for signal <carry_out>.
+    Found 1-bit register for signal <stop_inc>.
+    Found 4-bit adder for signal <counter[3]_GND_13_o_add_3_OUT> created at line 52.
+    Found 4-bit subtractor for signal <GND_13_o_GND_13_o_sub_7_OUT<3:0>> created at line 66.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <dynamicNumber> synthesized.
+
+Synthesizing Unit <verticalPlayers>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\verticalPlayers.v".
+    Summary:
+	no macro.
+Unit <verticalPlayers> synthesized.
+
+Synthesizing Unit <player_1>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\player.v".
+        type_ply = 1'b0
+        pos_offset = 20
+    Found 26-bit register for signal <strRGB_reg>.
+    Found 11-bit adder for signal <n0018> created at line 67.
+    Found 10-bit comparator greater for signal <pos[9]_strRGB_i[12]_LessThan_3_o> created at line 67
+    Found 11-bit comparator greater for signal <GND_15_o_BUS_0001_LessThan_5_o> created at line 67
+    Found 10-bit comparator greater for signal <GND_15_o_strRGB_i[22]_LessThan_6_o> created at line 68
+    Found 10-bit comparator greater for signal <strRGB_i[22]_GND_15_o_LessThan_7_o> created at line 68
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <player_1> synthesized.
+
+Synthesizing Unit <player_2>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\player.v".
+        type_ply = 1'b0
+        pos_offset = 770
+    Found 26-bit register for signal <strRGB_reg>.
+    Found 11-bit adder for signal <n0018> created at line 67.
+    Found 10-bit comparator greater for signal <pos[9]_strRGB_i[12]_LessThan_3_o> created at line 67
+    Found 11-bit comparator greater for signal <GND_16_o_BUS_0001_LessThan_5_o> created at line 67
+    Found 10-bit comparator greater for signal <PWR_19_o_strRGB_i[22]_LessThan_6_o> created at line 68
+    Found 10-bit comparator greater for signal <strRGB_i[22]_PWR_19_o_LessThan_7_o> created at line 68
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <player_2> synthesized.
+
+Synthesizing Unit <ball>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\ball.v".
+        white = 3'b111
+        size_ball = 10
+    Found 26-bit register for signal <strRGB_reg>.
+    Found 11-bit adder for signal <n0021> created at line 49.
+    Found 11-bit adder for signal <n0023> created at line 50.
+    Found 10-bit comparator greater for signal <pos_y[9]_strRGB_i[12]_LessThan_3_o> created at line 49
+    Found 11-bit comparator greater for signal <GND_17_o_BUS_0001_LessThan_5_o> created at line 49
+    Found 10-bit comparator greater for signal <pos_x[9]_strRGB_i[22]_LessThan_6_o> created at line 50
+    Found 11-bit comparator greater for signal <GND_17_o_BUS_0002_LessThan_8_o> created at line 50
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <ball> synthesized.
+
+Synthesizing Unit <soundCard>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\soundCard.v".
+    Found 1-bit register for signal <tick_sound>.
+    Found 20-bit register for signal <divcounter>.
+    Found 20-bit adder for signal <divcounter[19]_GND_18_o_add_5_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <soundCard> synthesized.
+
+Synthesizing Unit <dynamicGame>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\dynamicGame.v".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <play> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <reset_goals_reg> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 7-bit register for signal <mseg>.
+    Found 1-bit register for signal <dy>.
+    Found 10-bit register for signal <y_pos>.
+    Found 2-bit register for signal <sound>.
+    Found 1-bit register for signal <dx>.
+    Found 10-bit register for signal <x_pos>.
+    Found 1-bit register for signal <goal_ply2_reg>.
+    Found 1-bit register for signal <goal_ply1_reg>.
+    Found 2-bit register for signal <channel>.
+    Found 12-bit subtractor for signal <GND_19_o_GND_19_o_sub_22_OUT> created at line 123.
+    Found 12-bit subtractor for signal <GND_19_o_GND_19_o_sub_32_OUT> created at line 138.
+    Found 10-bit subtractor for signal <x_pos[9]_GND_19_o_sub_49_OUT> created at line 178.
+    Found 10-bit subtractor for signal <y_pos[9]_GND_19_o_sub_52_OUT> created at line 184.
+    Found 11-bit adder for signal <n0129[10:0]> created at line 123.
+    Found 11-bit adder for signal <n0131[10:0]> created at line 138.
+    Found 10-bit adder for signal <x_pos[9]_GND_19_o_add_47_OUT> created at line 176.
+    Found 10-bit adder for signal <y_pos[9]_GND_19_o_add_50_OUT> created at line 182.
+    Found 7-bit subtractor for signal <GND_19_o_GND_19_o_sub_5_OUT<6:0>> created at line 95.
+    Found 10-bit comparator greater for signal <n0009> created at line 98
+    Found 10-bit comparator greater for signal <n0015> created at line 108
+    Found 10-bit comparator greater for signal <x_pos[9]_GND_19_o_LessThan_18_o> created at line 120
+    Found 10-bit comparator greater for signal <GND_19_o_x_pos[9]_LessThan_19_o> created at line 121
+    Found 10-bit comparator greater for signal <pos_ply1[9]_y_pos[9]_LessThan_20_o> created at line 122
+    Found 32-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_23_o> created at line 123
+    Found 10-bit comparator greater for signal <PWR_22_o_x_pos[9]_LessThan_28_o> created at line 135
+    Found 10-bit comparator greater for signal <x_pos[9]_PWR_22_o_LessThan_29_o> created at line 136
+    Found 10-bit comparator greater for signal <pos_ply2[9]_y_pos[9]_LessThan_30_o> created at line 137
+    Found 32-bit comparator greater for signal <GND_19_o_GND_19_o_LessThan_33_o> created at line 138
+    Found 10-bit comparator greater for signal <n0051> created at line 149
+    Found 10-bit comparator greater for signal <n0057> created at line 162
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred  11 Multiplexer(s).
+Unit <dynamicGame> synthesized.
+
+Synthesizing Unit <unzipRGB>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P6\game_pong\unzipRGB.v".
+WARNING:Xst:647 - Input <strRGB<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <strRGB<22:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <unzipRGB> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port Read Only RAM                    : 4
+# Adders/Subtractors                                   : 61
+ 10-bit addsub                                         : 4
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 34
+ 12-bit subtractor                                     : 14
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 4-bit addsub                                          : 4
+ 7-bit subtractor                                      : 1
+# Registers                                            : 47
+ 1-bit register                                        : 18
+ 10-bit register                                       : 6
+ 11-bit register                                       : 2
+ 2-bit register                                        : 3
+ 20-bit register                                       : 1
+ 26-bit register                                       : 8
+ 4-bit register                                        : 4
+ 7-bit register                                        : 5
+# Comparators                                          : 82
+ 10-bit comparator greater                             : 36
+ 11-bit comparator greater                             : 27
+ 11-bit comparator lessequal                           : 5
+ 32-bit comparator greater                             : 14
+# Multiplexers                                         : 52
+ 1-bit 2-to-1 multiplexer                              : 8
+ 10-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 7
+ 4-bit 2-to-1 multiplexer                              : 24
+ 7-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <strRGB_reg_23> in Unit <court_0> is equivalent to the following 2 FFs/Latches, which will be removed : <strRGB_reg_24> <strRGB_reg_25> 
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <court_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <player_1>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <player_2>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <digit_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <digit_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <digit_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <digit_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_0> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_3> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_4> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_5> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_6> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_7> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_8> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_9> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_10> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_11> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_12> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_13> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_14> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_15> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_16> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_17> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_18> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_19> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_20> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_21> of sequential type is unconnected in block <ball_0>.
+WARNING:Xst:2677 - Node <strRGB_reg_22> of sequential type is unconnected in block <ball_0>.
+
+Synthesizing (advanced) Unit <counter>.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <counter> prevents it from being combined with the RAM <number_tens/digit_0/Mram_number[3]_PWR_14_o_wide_mux_2_OUT> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <number_tens/number> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <number_tens/digit_0/Mram_number[3]_PWR_14_o_wide_mux_2_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3212 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <counter> prevents it from being combined with the RAM <number_units/digit_0/Mram_number[3]_PWR_14_o_wide_mux_2_OUT> for implementation as read-only block RAM.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <number_units/number> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <number_units/digit_0/Mram_number[3]_PWR_14_o_wide_mux_2_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ctlButtons>.
+The following registers are absorbed into counter <reg1>: 1 register on signal <reg1>.
+The following registers are absorbed into counter <reg2>: 1 register on signal <reg2>.
+Unit <ctlButtons> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dynamicGame>.
+The following registers are absorbed into accumulator <y_pos>: 1 register on signal <y_pos>.
+The following registers are absorbed into accumulator <x_pos>: 1 register on signal <x_pos>.
+Unit <dynamicGame> synthesized (advanced).
+
+Synthesizing (advanced) Unit <soundCard>.
+The following registers are absorbed into counter <divcounter>: 1 register on signal <divcounter>.
+Unit <soundCard> synthesized (advanced).
+
+Synthesizing (advanced) Unit <syncVGAGen>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+Unit <syncVGAGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <cont_16MHz>: 1 register on signal <cont_16MHz>.
+Unit <top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x7-bit single-port distributed Read Only RAM        : 4
+# Adders/Subtractors                                   : 47
+ 10-bit adder                                          : 2
+ 10-bit subtractor                                     : 2
+ 11-bit adder                                          : 24
+ 12-bit adder                                          : 6
+ 12-bit subtractor                                     : 8
+ 4-bit addsub                                          : 4
+ 7-bit subtractor                                      : 1
+# Counters                                             : 6
+ 10-bit updown counter                                 : 2
+ 11-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+# Accumulators                                         : 2
+ 10-bit updown accumulator                             : 2
+# Registers                                            : 301
+ Flip-Flops                                            : 301
+# Comparators                                          : 82
+ 10-bit comparator greater                             : 36
+ 11-bit comparator greater                             : 27
+ 11-bit comparator lessequal                           : 5
+ 32-bit comparator greater                             : 14
+# Multiplexers                                         : 50
+ 1-bit 2-to-1 multiplexer                              : 8
+ 2-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 7
+ 4-bit 2-to-1 multiplexer                              : 24
+ 7-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <strRGB_reg_23> in Unit <court> is equivalent to the following 2 FFs/Latches, which will be removed : <strRGB_reg_24> <strRGB_reg_25> 
+WARNING:Xst:2677 - Node <divcounter_19> of sequential type is unconnected in block <soundCard>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <syncVGAGen> ...
+
+Optimizing unit <ctlButtons> ...
+
+Optimizing unit <court> ...
+
+Optimizing unit <player_1> ...
+
+Optimizing unit <player_2> ...
+
+Optimizing unit <dynamicGame> ...
+WARNING:Xst:1293 - FF/Latch <y_pos_0> has a constant value of 0 in block <dynamicGame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_pos_0> has a constant value of 0 in block <dynamicGame>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <counter> ...
+
+Optimizing unit <dynamicNumber> ...
+
+Optimizing unit <ball> ...
+
+Optimizing unit <soundCard> ...
+WARNING:Xst:1293 - FF/Latch <pongGame_0/scoreboard_0/counter_ply1/number_units/dynamicNumber_0/stop_dec> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pongGame_0/scoreboard_0/counter_ply1/number_tens/dynamicNumber_0/stop_dec> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pongGame_0/scoreboard_0/counter_ply2/number_units/dynamicNumber_0/stop_dec> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pongGame_0/scoreboard_0/counter_ply2/number_tens/dynamicNumber_0/stop_dec> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <pongGame_0/court_0/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/verticalPlayers_0/player_1/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/verticalPlayers_0/player_2/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/scoreboard_0/counter_ply1/number_tens/digit_0/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/scoreboard_0/counter_ply1/number_units/digit_0/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/scoreboard_0/counter_ply1/number_tens/dynamicNumber_0/carry_out> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/scoreboard_0/counter_ply2/number_tens/dynamicNumber_0/carry_out> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_15> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_14> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_13> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_12> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_11> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_10> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_9> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_8> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_7> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_6> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_5> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_4> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <pongGame_0/ball_0/strRGB_reg_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:1293 - FF/Latch <pongGame_0/dynamicGame_0/x_pos_0> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pongGame_0/dynamicGame_0/y_pos_0> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <pongGame_0/dynamicGame_0/mseg_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <pongGame_0/dynamicGame_0/x_pos_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/dynamicGame_0/y_pos_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <pongGame_0/scoreboard_0/counter_ply1/number_units/digit_0/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/scoreboard_0/counter_ply1/number_units/digit_0/strRGB_reg_24> 
+INFO:Xst:2261 - The FF/Latch <pongGame_0/scoreboard_0/counter_ply1/number_tens/digit_0/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/scoreboard_0/counter_ply1/number_tens/digit_0/strRGB_reg_24> 
+INFO:Xst:2261 - The FF/Latch <pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_24> 
+INFO:Xst:2261 - The FF/Latch <pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_reg_24> 
+INFO:Xst:2261 - The FF/Latch <pongGame_0/verticalPlayers_0/player_1/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/verticalPlayers_0/player_1/strRGB_reg_24> 
+INFO:Xst:2261 - The FF/Latch <pongGame_0/verticalPlayers_0/player_2/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/verticalPlayers_0/player_2/strRGB_reg_24> 
+INFO:Xst:2261 - The FF/Latch <pongGame_0/ball_0/strRGB_reg_25> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <pongGame_0/ball_0/strRGB_reg_24> 
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 19.
+
+Final Macro Processing ...
+
+Processing Unit <top> :
+	Found 7-bit shift register for signal <pongGame_0/ball_0/strRGB_reg_2>.
+	Found 7-bit shift register for signal <pongGame_0/ball_0/strRGB_reg_1>.
+Unit <top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 323
+ Flip-Flops                                            : 323
+# Shift Registers                                      : 2
+ 7-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1185
+#      GND                         : 1
+#      INV                         : 32
+#      LUT1                        : 38
+#      LUT2                        : 204
+#      LUT3                        : 36
+#      LUT4                        : 298
+#      LUT5                        : 73
+#      LUT6                        : 99
+#      MULT_AND                    : 18
+#      MUXCY                       : 323
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 61
+# FlipFlops/Latches                : 325
+#      FD                          : 239
+#      FDE                         : 11
+#      FDR                         : 35
+#      FDRE                        : 35
+#      FDS                         : 1
+#      FDSE                        : 4
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 4
+#      OBUF                        : 7
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             325  out of  11440     2%  
+ Number of Slice LUTs:                  782  out of   5720    13%  
+    Number used as Logic:               780  out of   5720    13%  
+    Number used as Memory:                2  out of   1440     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    908
+   Number with an unused Flip Flop:     583  out of    908    64%  
+   Number with an unused LUT:           126  out of    908    13%  
+   Number of fully used LUT-FF pairs:   199  out of    908    21%  
+   Number of unique control sets:        22
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    160     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------+-----------------------------+-------+
+Clock Signal                        | Clock buffer(FF name)       | Load  |
+------------------------------------+-----------------------------+-------+
+clk_50MHz                           | BUFGP                       | 234   |
+endframe(endframeVGA_0/endframe14:O)| BUFG(*)(ctlButtons_0/reg1_0)| 73    |
+CLK                                 | BUFG                        | 20    |
+------------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.846ns (Maximum Frequency: 127.449MHz)
+   Minimum input arrival time before clock: 4.974ns
+   Maximum output required time after clock: 5.242ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_50MHz'
+  Clock period: 6.223ns (frequency: 160.694MHz)
+  Total number of paths / destination ports: 4053 / 262
+-------------------------------------------------------------------------
+Delay:               6.223ns (Levels of Logic = 9)
+  Source:            pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_4 (FF)
+  Destination:       pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_reg_25 (FF)
+  Source Clock:      clk_50MHz rising
+  Destination Clock: clk_50MHz rising
+
+  Data Path: pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_4 to pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_reg_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.525   1.284  pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_4 (pongGame_0/scoreboard_0/counter_ply2/number_units/digit_0/strRGB_reg_4)
+     LUT4:I0->O            0   0.254   0.000  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_lutdi (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_lutdi)
+     MUXCY:DI->O           1   0.181   0.000  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<0> (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<1> (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<2> (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<3> (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<3>)
+     MUXCY:CI->O           3   0.235   1.221  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<4> (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mcompar_GND_12_o_GND_12_o_LessThan_25_o_cy<4>)
+     LUT6:I0->O            1   0.254   0.682  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/segments[6]_segments[0]_OR_40_o3 (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/segments[6]_segments[0]_OR_40_o3)
+     LUT5:I4->O            2   0.254   0.954  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/segments[6]_segments[0]_OR_40_o4 (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/segments[6]_segments[0]_OR_40_o4)
+     LUT5:I2->O            1   0.235   0.000  pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/Mmux_strRGB_i[25]_PWR_14_o_mux_61_OUT11 (pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_i[25]_PWR_14_o_mux_61_OUT<0>)
+     FD:D                      0.074          pongGame_0/scoreboard_0/counter_ply2/number_tens/digit_0/strRGB_reg_23
+    ----------------------------------------
+    Total                      6.223ns (2.082ns logic, 4.141ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'endframe'
+  Clock period: 7.846ns (frequency: 127.449MHz)
+  Total number of paths / destination ports: 10299 / 121
+-------------------------------------------------------------------------
+Delay:               7.846ns (Levels of Logic = 6)
+  Source:            ctlButtons_0/reg2_6 (FF)
+  Destination:       pongGame_0/dynamicGame_0/mseg_5 (FF)
+  Source Clock:      endframe rising
+  Destination Clock: endframe rising
+
+  Data Path: ctlButtons_0/reg2_6 to pongGame_0/dynamicGame_0/mseg_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            15   0.525   1.610  ctlButtons_0/reg2_6 (ctlButtons_0/reg2_6)
+     LUT6:I0->O            4   0.254   0.804  pongGame_0/dynamicGame_0/Msub_GND_19_o_GND_19_o_sub_32_OUT1_cy<6>11 (pongGame_0/dynamicGame_0/Msub_GND_19_o_GND_19_o_sub_32_OUT1_cy<6>)
+     LUT3:I2->O            2   0.254   1.156  pongGame_0/dynamicGame_0/Msub_GND_19_o_GND_19_o_sub_32_OUT1_xor<8>11 (pongGame_0/dynamicGame_0/GND_19_o_GND_19_o_sub_32_OUT<8>)
+     LUT5:I0->O            1   0.254   0.000  pongGame_0/dynamicGame_0/Mcompar_GND_19_o_GND_19_o_LessThan_33_o_lut<4> (pongGame_0/dynamicGame_0/Mcompar_GND_19_o_GND_19_o_LessThan_33_o_lut<4>)
+     MUXCY:S->O            4   0.215   0.000  pongGame_0/dynamicGame_0/Mcompar_GND_19_o_GND_19_o_LessThan_33_o_cy<4> (pongGame_0/dynamicGame_0/Mcompar_GND_19_o_GND_19_o_LessThan_33_o_cy<4>)
+     MUXCY:CI->O          11   0.235   1.147  pongGame_0/dynamicGame_0/PWR_22_o_GND_19_o_AND_55_o4_cy (pongGame_0/dynamicGame_0/PWR_22_o_GND_19_o_AND_55_o)
+     LUT6:I4->O            5   0.250   0.840  pongGame_0/dynamicGame_0/_n0152_inv1 (pongGame_0/dynamicGame_0/_n0152_inv)
+     FDE:CE                    0.302          pongGame_0/dynamicGame_0/mseg_1
+    ----------------------------------------
+    Total                      7.846ns (2.289ns logic, 5.557ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.351ns (frequency: 425.306MHz)
+  Total number of paths / destination ports: 193 / 20
+-------------------------------------------------------------------------
+Delay:               2.351ns (Levels of Logic = 20)
+  Source:            pongGame_0/soundCard_0/divcounter_0 (FF)
+  Destination:       pongGame_0/soundCard_0/divcounter_18 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: pongGame_0/soundCard_0/divcounter_0 to pongGame_0/soundCard_0/divcounter_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  pongGame_0/soundCard_0/divcounter_0 (pongGame_0/soundCard_0/divcounter_0)
+     INV:I->O              1   0.255   0.000  pongGame_0/soundCard_0/Mcount_divcounter_lut<0>_INV_0 (pongGame_0/soundCard_0/Mcount_divcounter_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<0> (pongGame_0/soundCard_0/Mcount_divcounter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<1> (pongGame_0/soundCard_0/Mcount_divcounter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<2> (pongGame_0/soundCard_0/Mcount_divcounter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<3> (pongGame_0/soundCard_0/Mcount_divcounter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<4> (pongGame_0/soundCard_0/Mcount_divcounter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<5> (pongGame_0/soundCard_0/Mcount_divcounter_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<6> (pongGame_0/soundCard_0/Mcount_divcounter_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<7> (pongGame_0/soundCard_0/Mcount_divcounter_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<8> (pongGame_0/soundCard_0/Mcount_divcounter_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<9> (pongGame_0/soundCard_0/Mcount_divcounter_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<10> (pongGame_0/soundCard_0/Mcount_divcounter_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<11> (pongGame_0/soundCard_0/Mcount_divcounter_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<12> (pongGame_0/soundCard_0/Mcount_divcounter_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<13> (pongGame_0/soundCard_0/Mcount_divcounter_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<14> (pongGame_0/soundCard_0/Mcount_divcounter_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<15> (pongGame_0/soundCard_0/Mcount_divcounter_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<16> (pongGame_0/soundCard_0/Mcount_divcounter_cy<16>)
+     MUXCY:CI->O           0   0.023   0.000  pongGame_0/soundCard_0/Mcount_divcounter_cy<17> (pongGame_0/soundCard_0/Mcount_divcounter_cy<17>)
+     XORCY:CI->O           1   0.206   0.000  pongGame_0/soundCard_0/Mcount_divcounter_xor<18> (pongGame_0/soundCard_0/Result<18>)
+     FD:D                      0.074          pongGame_0/soundCard_0/divcounter_18
+    ----------------------------------------
+    Total                      2.351ns (1.670ns logic, 0.681ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'endframe'
+  Total number of paths / destination ports: 170 / 32
+-------------------------------------------------------------------------
+Offset:              4.974ns (Levels of Logic = 13)
+  Source:            DOWN1 (PAD)
+  Destination:       ctlButtons_0/reg1_9 (FF)
+  Destination Clock: endframe rising
+
+  Data Path: DOWN1 to ctlButtons_0/reg1_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.328   1.290  DOWN1_IBUF (DOWN1_IBUF)
+     LUT2:I0->O            1   0.250   0.681  ctlButtons_0/Mcount_reg11 (ctlButtons_0/Mcount_reg1)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<0> (ctlButtons_0/Mcount_reg1_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<1> (ctlButtons_0/Mcount_reg1_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<2> (ctlButtons_0/Mcount_reg1_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<3> (ctlButtons_0/Mcount_reg1_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<4> (ctlButtons_0/Mcount_reg1_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<5> (ctlButtons_0/Mcount_reg1_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<6> (ctlButtons_0/Mcount_reg1_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<7> (ctlButtons_0/Mcount_reg1_cy<7>)
+     MUXCY:CI->O           0   0.023   0.000  ctlButtons_0/Mcount_reg1_cy<8> (ctlButtons_0/Mcount_reg1_cy<8>)
+     XORCY:CI->O           1   0.206   0.682  ctlButtons_0/Mcount_reg1_xor<9> (ctlButtons_0/Mcount_reg110)
+     LUT6:I5->O            1   0.254   0.000  ctlButtons_0/reg1_9_glue_set (ctlButtons_0/reg1_9_glue_set)
+     FD:D                      0.074          ctlButtons_0/reg1_9
+    ----------------------------------------
+    Total                      4.974ns (2.321ns logic, 2.653ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50MHz'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            pongGame_0/ball_0/strRGB_reg_25 (FF)
+  Destination:       vga_R (PAD)
+  Source Clock:      clk_50MHz rising
+
+  Data Path: pongGame_0/ball_0/strRGB_reg_25 to vga_R
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  pongGame_0/ball_0/strRGB_reg_25 (pongGame_0/ball_0/strRGB_reg_25)
+     OBUF:I->O                 2.912          vga_G_OBUF (vga_G)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'endframe'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.242ns (Levels of Logic = 2)
+  Source:            pongGame_0/dynamicGame_0/channel_0 (FF)
+  Destination:       Rchannel (PAD)
+  Source Clock:      endframe rising
+
+  Data Path: pongGame_0/dynamicGame_0/channel_0 to Rchannel
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   0.874  pongGame_0/dynamicGame_0/channel_0 (pongGame_0/dynamicGame_0/channel_0)
+     LUT2:I0->O            1   0.250   0.681  pongGame_0/soundCard_0/Mmux_right_o11 (Rchannel_OBUF)
+     OBUF:I->O                 2.912          Rchannel_OBUF (Rchannel)
+    ----------------------------------------
+    Total                      5.242ns (3.687ns logic, 1.555ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.098ns (Levels of Logic = 2)
+  Source:            pongGame_0/soundCard_0/tick_sound (FF)
+  Destination:       Rchannel (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: pongGame_0/soundCard_0/tick_sound to Rchannel
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.726  pongGame_0/soundCard_0/tick_sound (pongGame_0/soundCard_0/tick_sound)
+     LUT2:I1->O            1   0.254   0.681  pongGame_0/soundCard_0/Mmux_left_o11 (Lchannel_OBUF)
+     OBUF:I->O                 2.912          Lchannel_OBUF (Lchannel)
+    ----------------------------------------
+    Total                      5.098ns (3.691ns logic, 1.407ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.351|         |         |         |
+endframe       |    2.670|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_50MHz      |    6.223|         |         |         |
+endframe       |    7.618|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock endframe
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+endframe       |    7.846|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.18 secs
+ 
+--> 
+
+Total memory usage is 4502436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  108 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

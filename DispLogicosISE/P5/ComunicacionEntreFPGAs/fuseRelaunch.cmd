@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/saulc/Documents/DispLogicosISE/P5/ComunicacionEntreFPGAs/Rs232RefComp_isim_beh.exe" -prj "C:/Users/saulc/Documents/DispLogicosISE/P5/ComunicacionEntreFPGAs/Rs232RefComp_beh.prj" "work.Rs232RefComp" 

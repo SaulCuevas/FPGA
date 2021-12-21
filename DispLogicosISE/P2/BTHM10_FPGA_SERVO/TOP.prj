@@ -1,0 +1,4 @@
+verilog work "servoPWM.v"
+verilog work "HM_10.v"
+verilog work "DISP7SEG.v"
+verilog work "TOP.v"

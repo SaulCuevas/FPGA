@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 06 17:05:17 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Encoder<0>" LOCATE = SITE "E4" LEVEL 1;
+COMP "Encoder<1>" LOCATE = SITE "C4" LEVEL 1;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "LEDS<0>" LOCATE = SITE "N9" LEVEL 1;
+COMP "LEDS<1>" LOCATE = SITE "M5" LEVEL 1;
+COMP "LEDS<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "LEDS<3>" LOCATE = SITE "R10" LEVEL 1;
+COMP "LEDS<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "LEDS<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "LEDS<6>" LOCATE = SITE "P1" LEVEL 1;
+COMP "LEDS<7>" LOCATE = SITE "L2" LEVEL 1;
+COMP "EncoderBUTTON" LOCATE = SITE "D6" LEVEL 1;
+SCHEMATIC END;
+

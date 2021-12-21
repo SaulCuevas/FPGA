@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 13 20:39:24 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "motor_uni<0>" LOCATE = SITE "C10" LEVEL 1;
+COMP "motor_uni<1>" LOCATE = SITE "C7" LEVEL 1;
+COMP "motor_uni<2>" LOCATE = SITE "C8" LEVEL 1;
+COMP "motor_uni<3>" LOCATE = SITE "D5" LEVEL 1;
+COMP "display<10>" LOCATE = SITE "K15" LEVEL 1;
+COMP "display<11>" LOCATE = SITE "P14" LEVEL 1;
+COMP "display<12>" LOCATE = SITE "P15" LEVEL 1;
+COMP "display<13>" LOCATE = SITE "M15" LEVEL 1;
+COMP "display<14>" LOCATE = SITE "L15" LEVEL 1;
+COMP "display<15>" LOCATE = SITE "K13" LEVEL 1;
+COMP "display<0>" LOCATE = SITE "K12" LEVEL 1;
+COMP "display<1>" LOCATE = SITE "J13" LEVEL 1;
+COMP "display<2>" LOCATE = SITE "K11" LEVEL 1;
+COMP "display<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "display<4>" LOCATE = SITE "G13" LEVEL 1;
+COMP "display<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "display<6>" LOCATE = SITE "F13" LEVEL 1;
+COMP "display<7>" LOCATE = SITE "G12" LEVEL 1;
+COMP "display<8>" LOCATE = SITE "N15" LEVEL 1;
+COMP "display<9>" LOCATE = SITE "L14" LEVEL 1;
+COMP "bocina" LOCATE = SITE "D6" LEVEL 1;
+COMP "limINF" LOCATE = SITE "E2" LEVEL 1;
+COMP "limSUP" LOCATE = SITE "C12" LEVEL 1;
+COMP "Encoder1<0>" LOCATE = SITE "E4" LEVEL 1;
+COMP "Encoder1<1>" LOCATE = SITE "C4" LEVEL 1;
+COMP "Encoder2<0>" LOCATE = SITE "D13" LEVEL 1;
+COMP "Encoder2<1>" LOCATE = SITE "D10" LEVEL 1;
+COMP "LEDS<0>" LOCATE = SITE "N9" LEVEL 1;
+COMP "LEDS<1>" LOCATE = SITE "M5" LEVEL 1;
+COMP "LEDS<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "LEDS<3>" LOCATE = SITE "R10" LEVEL 1;
+COMP "LEDS<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "LEDS<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "LEDS<6>" LOCATE = SITE "P1" LEVEL 1;
+COMP "LEDS<7>" LOCATE = SITE "L2" LEVEL 1;
+SCHEMATIC END;
+

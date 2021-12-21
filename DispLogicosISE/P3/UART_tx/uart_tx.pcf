@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Oct 09 23:53:57 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "o_dout" LOCATE = SITE "F15" LEVEL 1;
+COMP "o_busy" LOCATE = SITE "P1" LEVEL 1;
+COMP "i_clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "i_start" LOCATE = SITE "J4" LEVEL 1;
+COMP "i_data<0>" LOCATE = SITE "M8" LEVEL 1;
+COMP "i_data<1>" LOCATE = SITE "N6" LEVEL 1;
+COMP "i_data<2>" LOCATE = SITE "N4" LEVEL 1;
+COMP "i_data<3>" LOCATE = SITE "P9" LEVEL 1;
+COMP "o_done" LOCATE = SITE "N1" LEVEL 1;
+COMP "i_data<4>" LOCATE = SITE "R7" LEVEL 1;
+COMP "i_data<5>" LOCATE = SITE "P5" LEVEL 1;
+COMP "i_data<6>" LOCATE = SITE "N2" LEVEL 1;
+COMP "i_data<7>" LOCATE = SITE "L1" LEVEL 1;
+SCHEMATIC END;
+

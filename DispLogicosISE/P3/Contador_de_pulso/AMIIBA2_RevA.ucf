@@ -1,0 +1,133 @@
+//RELOJ
+NET "clk" 	LOC = E7;	//oscilador 50MHz
+
+//LEDS BOTONES IZQUIERDA A DERECHA
+NET "ledsR(7)" LOC = M1;  //D1R
+NET "ledsG(7)" LOC = N1;  //D1G
+NET "ledsB(7)" LOC = L2;  //D1B
+NET "ledsR(6)" LOC = P2;  //D2R
+NET "ledsG(6)" LOC = R4;  //D2G
+NET "ledsB(6)" LOC = P1;  //D2B
+NET "ledsR(5)" LOC = R6;  //D3R
+NET "ledsG(5)" LOC = P7;  //D3G
+NET "ledsB(5)" LOC = R5;  //D3B
+NET "ledsR(4)" LOC = R8;  //D4R
+NET "ledsG(4)" LOC = R9;  //D4G
+NET "ledsB(4)" LOC = N8;  //D4B
+NET "ledsR(3)" LOC = R13; //D5R
+NET "ledsG(3)" LOC = P13; //D5G
+NET "ledsB(3)" LOC = R10; //D5B
+NET "ledsR(2)" LOC = N5;  //D6R
+NET "ledsG(2)" LOC = M4;  //D6G
+NET "ledsB(2)" LOC = M3;  //D6B
+NET "ledsR(1)" LOC = N7;  //D7R
+NET "ledsG(1)" LOC = M6;  //D7G
+NET "ledsB(1)" LOC = M5;  //D7B
+NET "ledsR(0)" LOC = N14; //D8R
+NET "ledsG(0)" LOC = M11; //D8G
+NET "ledsB(0)" LOC = N9;  //D8B
+
+//SWITCHES DE IZQUIERDA A DERECHA
+//NET "" LOC = L1; //S1
+//NET "" LOC = N2; //S2
+//NET "" LOC = P5; //S3
+//NET "" LOC = R7; //S4
+//NET "" LOC = P9; //S5
+//NET "" LOC = N4; //S6
+//NET "" LOC = N6; //S7
+//NET "" LOC = M8; //S8
+
+//DISPLAY 7 SEG 2X4 DIGITOS ANODO COMUN
+NET "display(15)" LOC = K13; //A
+NET "display(14)" LOC = L15; //B
+NET "display(13)" LOC = M15; //C
+NET "display(12)" LOC = P15; //D
+NET "display(11)" LOC = P14; //E
+NET "display(10)" LOC = K15; //F
+NET "display(9)" LOC = L14; //G
+NET "display(8)" LOC = N15; //PD
+NET "display(7)" LOC = G12; //DISP1
+NET "display(6)" LOC = F13; //DISP2
+NET "display(5)" LOC = H12; //DISP3
+NET "display(4)" LOC = G13; //DISP4
+NET "display(3)" LOC = H13; //DISP5
+NET "display(2)" LOC = K11; //DISP6
+NET "display(1)" LOC = J13; //DISP7
+NET "display(0)" LOC = K12; //DISP8
+
+//PUSH BUTTON
+//NET "" LOC = J4; //PB ARRIBA
+//NET "" LOC = H4; //PB ABAJO
+NET "reset" LOC = K1; //PB IZQUIERDA
+NET "boton" LOC = K3; //PB DERECHA
+//NET "" LOC = J3; //PB CENTRO
+
+//PUERTO DE EXPANSION 1 (PROTOBOARD) IZQ->DER
+//NET "" LOC = D4;  //GPIO0
+//NET "" LOC = E6;  //GPIO1
+//NET "" LOC = D7;  //GPIO2
+//NET "" LOC = D8;  //GPIO3
+//NET "" LOC = D11; //GPIO4
+//NET "" LOC = F11; //GPIO5/GCLK
+//NET "" LOC = D1;  //GPIO6
+//NET "" LOC = C2;  //GPIO7
+//NET "" LOC = A4;  //GPIO8
+//NET "" LOC = B5;  //GPIO9
+//NET "" LOC = A7;  //GPIO10
+//NET "" LOC = B9;  //GPIO11
+//NET "" LOC = A10; //GPIO12
+//NET "" LOC = C11; //GPIO13
+//NET "" LOC = A13; //GPIO14
+//NET "" LOC = C14; //GPIO15
+//NET "" LOC = E14; //GPIO16
+
+//PUERTO DE EXPANSION 2 (HEMBRA)
+//(HORIZONTAL, VERTICAL) DE IZQ->DER
+//NET "" LOC = C4;  //GPIO17 (1,ABAJO)
+//NET "" LOC = E4;  //GPIO18 (1,ARRIBA)
+//NET "" LOC = D6;  //GPIO19 (2,ABAJO)
+//NET "" LOC = D5;  //GPIO20 (2,ARRIBA)
+//NET "" LOC = C8;  //GPIO21 (3,ABAJO)
+//NET "" LOC = C7;  //GPIO22 (3,ARRIBA)
+//NET "" LOC = C10; //GPIO23 (4,ABAJO)
+//NET "" LOC = D10; //GPIO24 (4,ARRIBA)
+//NET "" LOC = D13; //GPIO25 (5,ABAJO)
+//NET "" LOC = C12; //GPIO26 (5,ARRIBA)
+//NET "" LOC = E2;  //GPIO27 (6,ABAJO)
+//NET "" LOC = E1;  //GPIO28 (6,ARRIBA)
+//NET "" LOC = A2;  //GPIO29 (7,ABAJO)
+//NET "" LOC = C1;  //GPIO30 (7,ARRIBA)
+//NET "" LOC = B3;  //GPIO31 (8,ABAJO)
+//NET "" LOC = A3;  //GPIO32 (8,ARRIBA)
+//NET "" LOC = A5;  //GPIO33 (9,ABAJO)
+//NET "" LOC = C5;  //GPIO34 (9,ARRIBA)
+//NET "" LOC = C6;  //GPIO35 (10,ABAJO)
+//NET "" LOC = A6;  //GPIO36 (10,ARRIBA)
+//NET "" LOC = A8;  //GPIO37 (11,ABAJO)
+//NET "" LOC = B7;  //GPIO38 (11,ARRIBA)
+//NET "" LOC = C9;  //GPIO39 (12,ABAJO)
+//NET "" LOC = A9;  //GPIO40 (12,ARRIBA)
+//NET "" LOC = A11; //GPIO41 (13,ABAJO)
+//NET "" LOC = B11; //GPIO42 (13,ARRIBA)
+//NET "" LOC = B13; //GPIO43 (14,ABAJO)
+//NET "" LOC = A12; //GPIO44 (14,ARRIBA)
+//NET "" LOC = B15; //GPIO45 (15,ABAJO)
+//NET "" LOC = B14; //GPIO46 (15,ARRIBA)
+//NET "" LOC = D15; //GPIO47 (16,ABAJO)
+//NET "" LOC = C15; //GPIO48 (16,ARRIBA)
+//NET "" LOC = F15; //GPIO49 (17,ABAJO)
+NET "playNext" LOC = E15; //GPIO50 (17,ARRIBA)
+
+
+//PUERTO DE EXPANSION 3 (LCD)
+//NET "RS" 	LOC = D13;	//RS
+//NET "RW" 	LOC = E2;	//RW
+//NET "ENA" 	LOC = A2;	//ENA
+//NET "DATA_LCD(0)" LOC = B3;  	//DT0
+//NET "DATA_LCD(1)" LOC = A5;  	//DT1
+//NET "DATA_LCD(2)" LOC = C6;	//DT2
+//NET "DATA_LCD(3)" LOC = A8;	//DT3
+//NET "DATA_LCD(4)" LOC = C9;  	//DT4
+//NET "DATA_LCD(5)" LOC = A11; 	//DT5
+//NET "DATA_LCD(6)" LOC = B13; 	//DT6
+//NET "DATA_LCD(7)" LOC = B15; 	//DT7

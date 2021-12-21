@@ -1,0 +1,17 @@
+NET "CLK" LOC = E7; //Este cambialo, no s[e que pedo no encontre los pines de entrada especifica para un CLK externo
+NET "CS" 	  LOC = L1;
+NET "SENSOR"  LOC = E4;
+NET "SELREL[1]" LOC = N6;
+NET "SELREL[0]" LOC = M8; //Selector del reloj
+NET "DATA[0]" LOC = N15;
+NET "DATA[1]" LOC = L14;
+NET "DATA[2]" LOC = K15;
+NET "DATA[3]" LOC = P14;
+NET "DATA[4]" LOC = P15;
+NET "DATA[5]" LOC = M15;
+NET "DATA[6]" LOC = L15;
+NET "DATA[7]" LOC = K13;
+NET "DATA[8]" LOC = G13;
+NET "DATA[9]" LOC = H12;
+NET "DATA[10]" LOC = F13;
+NET "DATA[11]" LOC = G12;

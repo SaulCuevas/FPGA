@@ -1,0 +1,438 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+Reading design: P1_4bitMagnitudeComparator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "P1_4bitMagnitudeComparator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "P1_4bitMagnitudeComparator"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : P1_4bitMagnitudeComparator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.v" into library work
+Parsing module <P1_4bitMagnitudeComparator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <P1_4bitMagnitudeComparator>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <P1_4bitMagnitudeComparator>.
+    Related source file is "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.v".
+        n = 3
+    Found 19-bit register for signal <contador>.
+    Found 19-bit adder for signal <contador[18]_GND_1_o_add_7_OUT> created at line 29.
+    Found 4x72-bit Read Only RAM for signal <_n0065>
+    Found 4-bit comparator equal for signal <a[3]_b[3]_equal_1_o> created at line 23
+    Found 4-bit comparator greater for signal <b[3]_a[3]_LessThan_2_o> created at line 23
+    Found 4-bit comparator greater for signal <a[3]_b[3]_LessThan_3_o> created at line 23
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <P1_4bitMagnitudeComparator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x72-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 1
+ 19-bit adder                                          : 1
+# Registers                                            : 1
+ 19-bit register                                       : 1
+# Comparators                                          : 3
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 8
+ 12-bit 2-to-1 multiplexer                             : 6
+ 6-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <P1_4bitMagnitudeComparator>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0065> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 72-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <contador>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <P1_4bitMagnitudeComparator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 4x72-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 1
+ 19-bit up counter                                     : 1
+# Comparators                                          : 3
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 8
+ 12-bit 2-to-1 multiplexer                             : 6
+ 6-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <P1_4bitMagnitudeComparator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block P1_4bitMagnitudeComparator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : P1_4bitMagnitudeComparator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 84
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 18
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 2
+#      LUT5                        : 7
+#      LUT6                        : 12
+#      MUXCY                       : 18
+#      VCC                         : 1
+#      XORCY                       : 19
+# FlipFlops/Latches                : 19
+#      FDC                         : 19
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 12
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              19  out of  11440     0%  
+ Number of Slice LUTs:                   45  out of   5720     0%  
+    Number used as Logic:                45  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     45
+   Number with an unused Flip Flop:      26  out of     45    57%  
+   Number with an unused LUT:             0  out of     45     0%  
+   Number of fully used LUT-FF pairs:    19  out of     45    42%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    160    15%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 19    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.372ns (Maximum Frequency: 421.585MHz)
+   Minimum input arrival time before clock: 3.047ns
+   Maximum output required time after clock: 7.930ns
+   Maximum combinational path delay: 11.369ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.372ns (frequency: 421.585MHz)
+  Total number of paths / destination ports: 190 / 19
+-------------------------------------------------------------------------
+Delay:               2.372ns (Levels of Logic = 3)
+  Source:            contador_17 (FF)
+  Destination:       contador_18 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: contador_17 to contador_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.525   1.098  contador_17 (contador_17)
+     LUT1:I0->O            1   0.254   0.000  Mcount_contador_cy<17>_rt (Mcount_contador_cy<17>_rt)
+     MUXCY:S->O            0   0.215   0.000  Mcount_contador_cy<17> (Mcount_contador_cy<17>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_contador_xor<18> (Result<18>)
+     FDC:D                     0.074          contador_18
+    ----------------------------------------
+    Total                      2.372ns (1.274ns logic, 1.098ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              3.047ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       contador_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to contador_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.328   1.260  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.459          contador_0
+    ----------------------------------------
+    Total                      3.047ns (1.787ns logic, 1.260ns route)
+                                       (58.6% logic, 41.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 10
+-------------------------------------------------------------------------
+Offset:              7.930ns (Levels of Logic = 4)
+  Source:            contador_18 (FF)
+  Destination:       disp<9> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: contador_18 to disp<9>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.525   1.235  contador_18 (contador_18)
+     LUT6:I4->O            1   0.250   1.137  Mmux_disp161 (Mmux_disp16)
+     LUT6:I0->O            1   0.254   0.682  Mmux_disp162 (Mmux_disp161)
+     LUT5:I4->O            1   0.254   0.681  Mmux_disp163 (disp_9_OBUF)
+     OBUF:I->O                 2.912          disp_9_OBUF (disp<9>)
+    ----------------------------------------
+    Total                      7.930ns (4.195ns logic, 3.735ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 179 / 10
+-------------------------------------------------------------------------
+Delay:               11.369ns (Levels of Logic = 7)
+  Source:            a<0> (PAD)
+  Destination:       disp<8> (PAD)
+
+  Data Path: a<0> to disp<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.328   1.042  a_0_IBUF (a_0_IBUF)
+     LUT4:I0->O            2   0.254   1.156  a[3]_b[3]_equal_1_o4_SW0 (N3)
+     LUT5:I0->O            5   0.254   1.296  a[3]_b[3]_equal_1_o4 (a[3]_b[3]_equal_1_o)
+     LUT6:I0->O            2   0.254   1.002  Mmux_disp101 (Mmux_disp101)
+     LUT6:I2->O            1   0.254   0.682  Mmux_disp102 (Mmux_disp4)
+     LUT6:I5->O            1   0.254   0.681  Mmux_disp15 (disp_8_OBUF)
+     OBUF:I->O                 2.912          disp_8_OBUF (disp<8>)
+    ----------------------------------------
+    Total                     11.369ns (5.510ns logic, 5.859ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.372|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 23.18 secs
+ 
+--> 
+
+
+Total memory usage is 385856 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

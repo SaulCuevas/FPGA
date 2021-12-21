@@ -1,0 +1,65 @@
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/ALU_4BIT/ALU_top.xst" -ofn "/home/ise/Documents/ALU_4BIT/ALU_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ALU_4BIT.ucf -p xc6slx9-csg225-2 ALU_top.ngc ALU_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ALU_top_map.ncd ALU_top.ngd ALU_top.pcf 
+par -w -intstyle ise -ol high -mt off ALU_top_map.ncd ALU_top.ncd ALU_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf ALU_4BIT.ucf 
+bitgen -intstyle ise -f ALU_top.ut ALU_top.ncd 

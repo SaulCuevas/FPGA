@@ -1,0 +1,27 @@
+-- INSTITUTO POLITECNICO NACIONAL
+-- 				UPIITA
+-- AUTORES: SAUL CUEVAS MORALES
+-- 			ALEXIS GONZALEZ ZUNIGA
+-- TECLADO A NUMERO
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity KBDaBIN is
+port(
+		CLK : IN STD_LOGIC;
+		BOTON_PRES : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+		CAMBIO : IN STD_LOGIC;
+		A,B : OUT STD_LOGIC_VECTOR(3 DOWNTO 0) --SALIDAS A Y B EN BINARIO
+		);
+end KBDaBIN;
+
+architecture Behavioral of KBDaBIN is
+begin
+	process(CLK, BOTON_PRES, CAMBIO) begin
+		if(CLK'event and CLK='1' and CAMBIO='1') then B <= BOTON_PRES;
+		elsif(CLK'event and CLK='1' and CAMBIO='0') then A <= BOTON_PRES;
+		end if;
+	end process;
+end Behavioral;

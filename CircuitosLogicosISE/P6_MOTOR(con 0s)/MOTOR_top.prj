@@ -1,0 +1,7 @@
+vhdl work "INTESC_LCD_8BITS_RevD/PROCESADOR_LCD_REVD.vhd"
+vhdl work "INTESC_LCD_8BITS_RevD/COMANDOS_LCD_REVD.vhd"
+vhdl work "INTESC_LCD_8BITS_RevD/CARACTERES_ESPECIALES_REVD.vhd"
+vhdl work "MOTOR.vhd"
+vhdl work "INTESC_LCD_8BITS_RevD/LIB_LCD_INTESC_REVD.vhd"
+vhdl work "BOTON.vhd"
+vhdl work "MOTOR_top.vhd"

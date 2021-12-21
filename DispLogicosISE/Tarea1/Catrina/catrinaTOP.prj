@@ -1,0 +1,5 @@
+verilog work "SERVO.v"
+verilog work "OJOS.v"
+verilog work "MANDIBULA.v"
+verilog work "CUELLO.v"
+verilog work "catrinaTOP.v"

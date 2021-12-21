@@ -1,0 +1,4 @@
+vhdl work "MOTOR.vhd"
+vhdl work "DISPLAY_4X7SEGMENTOS.vhd"
+vhdl work "BOTON.vhd"
+vhdl work "MOTOR_top.vhd"

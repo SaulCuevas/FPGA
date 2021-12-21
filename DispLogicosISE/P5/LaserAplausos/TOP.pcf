@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 27 12:42:06 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "aplauso" LOCATE = SITE "C4" LEVEL 1;
+COMP "servo1" LOCATE = SITE "E4" LEVEL 1;
+COMP "servo2" LOCATE = SITE "D6" LEVEL 1;
+SCHEMATIC END;
+

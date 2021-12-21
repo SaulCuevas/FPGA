@@ -1,0 +1,537 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Reading design: receptor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "receptor.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "receptor"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : receptor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.v" into library work
+Parsing module <receptor>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <receptor>.
+WARNING:HDLCompiler:413 - "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.v" Line 36: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.v" Line 51: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.v" Line 162: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <receptor>.
+    Related source file is "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.v".
+        EDO_1 = 2'b00
+        EDO_2 = 2'b10
+    Found 2-bit register for signal <presentstate>.
+    Found 1-bit register for signal <delay>.
+    Found 2-bit register for signal <c2>.
+    Found 9-bit register for signal <tmp>.
+    Found 8-bit register for signal <leds>.
+    Found 4-bit register for signal <anode>.
+    Found 4-bit register for signal <i>.
+    Found 1-bit register for signal <done>.
+    Found 8-bit register for signal <dsply>.
+    Found 10-bit register for signal <c>.
+    Found finite state machine <FSM_0> for signal <presentstate>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | capture (rising_edge)                          |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <c[9]_GND_1_o_add_2_OUT> created at line 36.
+    Found 2-bit adder for signal <c2[1]_GND_1_o_add_7_OUT> created at line 51.
+    Found 4-bit adder for signal <i[3]_GND_1_o_add_57_OUT> created at line 162.
+WARNING:Xst:737 - Found 1-bit latch for signal <control>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 10-bit comparator greater for signal <c[9]_PWR_1_o_LessThan_2_o> created at line 35
+    Found 2-bit comparator greater for signal <GND_1_o_c2[1]_LessThan_7_o> created at line 48
+    Found 4-bit comparator greater for signal <n0034> created at line 130
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  47 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <receptor> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 10-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 2
+ 10-bit register                                       : 1
+ 2-bit register                                        : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 2
+ 9-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 1
+ 2-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 1
+ 1-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <anode_0> has a constant value of 0 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <anode_1> has a constant value of 1 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <anode_2> has a constant value of 1 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <anode_3> has a constant value of 1 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <tmp_0> of sequential type is unconnected in block <receptor>.
+
+Synthesizing (advanced) Unit <receptor>.
+The following registers are absorbed into counter <c>: 1 register on signal <c>.
+The following registers are absorbed into counter <c2>: 1 register on signal <c2>.
+The following registers are absorbed into counter <i>: 1 register on signal <i>.
+Unit <receptor> synthesized (advanced).
+WARNING:Xst:2677 - Node <tmp_0> of sequential type is unconnected in block <receptor>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 1
+ 2-bit comparator greater                              : 1
+ 4-bit comparator greater                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <anode_0> has a constant value of 0 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <anode_1> has a constant value of 1 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <anode_2> has a constant value of 1 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <anode_3> has a constant value of 1 in block <receptor>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <presentstate[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0
+ 10    | 1
+-------------------
+WARNING:Xst:1294 - Latch <control> is equivalent to a wire in block <receptor>.
+
+Optimizing unit <receptor> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block receptor, actual ratio is 1.
+FlipFlop tmp_5 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : receptor.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 96
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 9
+#      LUT2                        : 2
+#      LUT3                        : 19
+#      LUT4                        : 14
+#      LUT5                        : 9
+#      LUT6                        : 20
+#      MUXCY                       : 9
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 10
+# FlipFlops/Latches                : 44
+#      FD                          : 18
+#      FDC                         : 1
+#      FDE                         : 17
+#      FDRE                        : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 2
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              44  out of  11440     0%  
+ Number of Slice LUTs:                   74  out of   5720     1%  
+    Number used as Logic:                74  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     83
+   Number with an unused Flip Flop:      39  out of     83    46%  
+   Number with an unused LUT:             9  out of     83    10%  
+   Number of fully used LUT-FF pairs:    35  out of     83    42%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    160    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+c2_1_glue_rst(capture<1>1:O)       | BUFG(*)(dsply_0)       | 31    |
+clk                                | BUFGP                  | 11    |
+delay                              | NONE(c2_0)             | 2     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.468ns (Maximum Frequency: 223.814MHz)
+   Minimum input arrival time before clock: 4.742ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c2_1_glue_rst'
+  Clock period: 4.468ns (frequency: 223.814MHz)
+  Total number of paths / destination ports: 305 / 55
+-------------------------------------------------------------------------
+Delay:               4.468ns (Levels of Logic = 3)
+  Source:            tmp_1 (FF)
+  Destination:       dsply_5 (FF)
+  Source Clock:      c2_1_glue_rst rising
+  Destination Clock: c2_1_glue_rst rising
+
+  Data Path: tmp_1 to dsply_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             17   0.525   1.639  tmp_1 (tmp_1)
+     LUT6:I1->O            1   0.254   0.790  tmp[8]_GND_1_o_select_56_OUT<2>2 (tmp[8]_GND_1_o_select_56_OUT<2>3)
+     LUT6:I4->O            1   0.250   0.682  tmp[8]_GND_1_o_select_56_OUT<2>3 (tmp[8]_GND_1_o_select_56_OUT<6>)
+     LUT3:I2->O            1   0.254   0.000  dsply_6_dpot (dsply_6_dpot)
+     FDE:D                     0.074          dsply_6
+    ----------------------------------------
+    Total                      4.468ns (1.357ns logic, 3.111ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.555ns (frequency: 281.294MHz)
+  Total number of paths / destination ports: 144 / 11
+-------------------------------------------------------------------------
+Delay:               3.555ns (Levels of Logic = 4)
+  Source:            c_8 (FF)
+  Destination:       c_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: c_8 to c_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.525   1.069  c_8 (c_8)
+     LUT1:I0->O            1   0.254   0.000  Mcount_c_cy<8>_rt (Mcount_c_cy<8>_rt)
+     MUXCY:S->O            0   0.215   0.000  Mcount_c_cy<8> (Mcount_c_cy<8>)
+     XORCY:CI->O           1   0.206   0.958  Mcount_c_xor<9> (Result<9>)
+     LUT4:I0->O            1   0.254   0.000  c_9_glue_rst (c_9_glue_rst)
+     FD:D                      0.074          c_9
+    ----------------------------------------
+    Total                      3.555ns (1.528ns logic, 2.027ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'delay'
+  Clock period: 1.683ns (frequency: 594.177MHz)
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Delay:               1.683ns (Levels of Logic = 1)
+  Source:            c2_0 (FF)
+  Destination:       c2_0 (FF)
+  Source Clock:      delay rising
+  Destination Clock: delay rising
+
+  Data Path: c2_0 to c2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.834  c2_0 (c2_0)
+     LUT2:I0->O            1   0.250   0.000  capture<1>1 (c2_1_glue_rst)
+     FD:D                      0.074          c2_1
+    ----------------------------------------
+    Total                      1.683ns (0.849ns logic, 0.834ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c2_1_glue_rst'
+  Total number of paths / destination ports: 56 / 49
+-------------------------------------------------------------------------
+Offset:              4.742ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       dsply_1 (FF)
+  Destination Clock: c2_1_glue_rst rising
+
+  Data Path: reset to dsply_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.328   1.612  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            8   0.254   1.220  _n01311_rstpot (_n01311_rstpot)
+     LUT6:I2->O            1   0.254   0.000  dsply_1_dpot (dsply_1_dpot)
+     FDE:D                     0.074          dsply_1
+    ----------------------------------------
+    Total                      4.742ns (1.910ns logic, 2.832ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c2_1_glue_rst'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            leds_7 (FF)
+  Destination:       leds<7> (PAD)
+  Source Clock:      c2_1_glue_rst rising
+
+  Data Path: leds_7 to leds<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   0.725  leds_7 (leds_7)
+     OBUF:I->O                 2.912          leds_7_OBUF (leds<7>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock c2_1_glue_rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+c2_1_glue_rst  |    4.468|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.555|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock delay
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+delay          |    1.683|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 1.42 secs
+ 
+--> 
+
+
+Total memory usage is 482900 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

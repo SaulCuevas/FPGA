@@ -1,0 +1,665 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> 
+Reading design: PWM_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PWM_TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PWM_TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : PWM_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/CircuitosLogicosISE/CONTROL_PWM/MOTORES.v" into library work
+Parsing module <MOTORES>.
+Analyzing Verilog file "/home/ise/CircuitosLogicosISE/CONTROL_PWM/FRECUENCIA.v" into library work
+Parsing module <FRECUENCIA>.
+Analyzing Verilog file "/home/ise/CircuitosLogicosISE/CONTROL_PWM/DISPLAY.v" into library work
+Parsing module <DISPLAY>.
+Analyzing Verilog file "/home/ise/CircuitosLogicosISE/CONTROL_PWM/CONTROL.v" into library work
+Parsing module <CONTROL>.
+Analyzing Verilog file "/home/ise/CircuitosLogicosISE/CONTROL_PWM/PWM_TOP.v" into library work
+Parsing module <PWM_TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <PWM_TOP>.
+
+Elaborating module <CONTROL>.
+
+Elaborating module <FRECUENCIA>.
+
+Elaborating module <MOTORES>.
+
+Elaborating module <DISPLAY>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PWM_TOP>.
+    Related source file is "/home/ise/CircuitosLogicosISE/CONTROL_PWM/PWM_TOP.v".
+    Summary:
+	no macro.
+Unit <PWM_TOP> synthesized.
+
+Synthesizing Unit <CONTROL>.
+    Related source file is "/home/ise/CircuitosLogicosISE/CONTROL_PWM/CONTROL.v".
+    Found 1-bit register for signal <sampled_BOTON_MDC>.
+    Found 1-bit register for signal <sampled_BOTON_LED>.
+    Found 1-bit register for signal <BOTON_PRES_MR>.
+    Found 1-bit register for signal <BOTON_PRES_MDC>.
+    Found 1-bit register for signal <BOTON_PRES_LED>.
+    Found 22-bit register for signal <sclk>.
+    Found 2-bit register for signal <BOTON_SEL>.
+    Found 1-bit register for signal <sampled_BOTON_MR>.
+    Found 18-bit register for signal <PWM>.
+    Found 22-bit adder for signal <sclk[21]_GND_2_o_add_5_OUT> created at line 35.
+    Found 1-bit comparator not equal for signal <sampled_BOTON_MR_BOTON_MR_equal_3_o> created at line 30
+    Found 1-bit comparator not equal for signal <sampled_BOTON_MDC_BOTON_MDC_equal_4_o> created at line 31
+    Found 1-bit comparator not equal for signal <sampled_BOTON_LED_BOTON_LED_equal_5_o> created at line 32
+    WARNING:Xst:2404 -  FFs/Latches <PWM<18:18>> (without init value) have a constant value of 0 in block <CONTROL>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <CONTROL> synthesized.
+
+Synthesizing Unit <FRECUENCIA>.
+    Related source file is "/home/ise/CircuitosLogicosISE/CONTROL_PWM/FRECUENCIA.v".
+    Found 19-bit register for signal <CONT_FREC>.
+    Found 1-bit register for signal <FREC>.
+    Found 19-bit adder for signal <CONT_FREC[18]_GND_3_o_add_3_OUT> created at line 17.
+    Found 19-bit comparator equal for signal <CONT_FREC[18]_PWM[18]_equal_2_o> created at line 11
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <FRECUENCIA> synthesized.
+
+Synthesizing Unit <MOTORES>.
+    Related source file is "/home/ise/CircuitosLogicosISE/CONTROL_PWM/MOTORES.v".
+    Found 1-bit register for signal <LED>.
+    Found 1-bit register for signal <MOTORREDUCTOR>.
+    Found 1-bit register for signal <MOTOR_DC>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <MOTORES> synthesized.
+
+Synthesizing Unit <DISPLAY>.
+    Related source file is "/home/ise/CircuitosLogicosISE/CONTROL_PWM/DISPLAY.v".
+    Found 1-bit register for signal <FREC_300>.
+    Found 2-bit register for signal <CONTADOR_DISP>.
+    Found 19-bit register for signal <CONT_PORC>.
+    Found 7-bit register for signal <PORCENTAJE>.
+    Found 7-bit register for signal <AUXILIAR>.
+    Found 8-bit register for signal <DIGIT_1_DISP>.
+    Found 8-bit register for signal <DIGIT_2_DISP>.
+    Found 8-bit register for signal <DIGIT_3_DISP>.
+    Found 16-bit register for signal <DISPLAY>.
+    Found 17-bit register for signal <CONT_FREC_300>.
+    Found 19-bit subtractor for signal <CONT_PORC[18]_GND_5_o_sub_13_OUT> created at line 47.
+    Found 17-bit adder for signal <CONT_FREC_300[16]_GND_5_o_add_2_OUT> created at line 22.
+    Found 2-bit adder for signal <CONTADOR_DISP[1]_GND_5_o_add_7_OUT> created at line 28.
+    Found 7-bit adder for signal <AUXILIAR[6]_GND_5_o_add_13_OUT> created at line 48.
+    Found 4-bit adder for signal <n0084> created at line 73.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_24_OUT> created at line 73.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_27_OUT> created at line 73.
+    Found 4-bit adder for signal <n0094> created at line 72.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_33_OUT> created at line 73.
+    Found 16x8-bit Read Only RAM for signal <UNID[3]_GND_5_o_wide_mux_37_OUT>
+    Found 16x8-bit Read Only RAM for signal <DECE[3]_GND_5_o_wide_mux_38_OUT>
+    Found 16x8-bit Read Only RAM for signal <CENT[3]_GND_5_o_wide_mux_39_OUT>
+    Found 16-bit 4-to-1 multiplexer for signal <CONTADOR_DISP[1]_DIGIT_1_DISP[7]_wide_mux_44_OUT> created at line 152.
+    Found 19-bit comparator greater for signal <CONT_PORC[18]_GND_5_o_LessThan_12_o> created at line 40
+    Found 3-bit comparator lessequal for signal <n0020> created at line 73
+    Found 4-bit comparator lessequal for signal <n0024> created at line 73
+    Found 4-bit comparator lessequal for signal <n0028> created at line 73
+    Found 3-bit comparator lessequal for signal <n0032> created at line 72
+    Found 4-bit comparator lessequal for signal <n0036> created at line 73
+    Summary:
+	inferred   3 RAM(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  93 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <DISPLAY> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port Read Only RAM                    : 3
+# Adders/Subtractors                                   : 11
+ 17-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 19-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 22-bit adder                                          : 1
+ 4-bit adder                                           : 5
+ 7-bit adder                                           : 1
+# Registers                                            : 24
+ 1-bit register                                        : 11
+ 16-bit register                                       : 1
+ 17-bit register                                       : 1
+ 18-bit register                                       : 1
+ 19-bit register                                       : 2
+ 2-bit register                                        : 2
+ 22-bit register                                       : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 3
+# Comparators                                          : 10
+ 1-bit comparator not equal                            : 3
+ 19-bit comparator equal                               : 1
+ 19-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator lessequal                            : 3
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 3
+ 16-bit 4-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <PWM_1> in Unit <U1> is equivalent to the following 8 FFs/Latches, which will be removed : <PWM_2> <PWM_3> <PWM_4> <PWM_5> <PWM_6> <PWM_7> <PWM_8> <PWM_9> 
+WARNING:Xst:1710 - FF/Latch <PWM_0> (without init value) has a constant value of 1 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <PWM_1> (without init value) has a constant value of 0 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <CONTROL>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+Unit <CONTROL> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DISPLAY>.
+The following registers are absorbed into counter <AUXILIAR>: 1 register on signal <AUXILIAR>.
+The following registers are absorbed into counter <CONT_FREC_300>: 1 register on signal <CONT_FREC_300>.
+The following registers are absorbed into counter <CONTADOR_DISP>: 1 register on signal <CONTADOR_DISP>.
+INFO:Xst:3231 - The small RAM <Mram_UNID[3]_GND_5_o_wide_mux_37_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(UNID<2:0>,PORCENTAJE<0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_DECE[3]_GND_5_o_wide_mux_38_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(DECE<2:0>,UNID<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_CENT[3]_GND_5_o_wide_mux_39_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("000",DECE<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DISPLAY> synthesized (advanced).
+
+Synthesizing (advanced) Unit <FRECUENCIA>.
+The following registers are absorbed into counter <CONT_FREC>: 1 register on signal <CONT_FREC>.
+Unit <FRECUENCIA> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 16x8-bit single-port distributed Read Only RAM        : 3
+# Adders/Subtractors                                   : 6
+ 19-bit subtractor                                     : 1
+ 4-bit adder                                           : 5
+# Counters                                             : 5
+ 17-bit up counter                                     : 1
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 22-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+# Comparators                                          : 10
+ 1-bit comparator not equal                            : 3
+ 19-bit comparator equal                               : 1
+ 19-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator lessequal                            : 3
+# Multiplexers                                         : 10
+ 1-bit 2-to-1 multiplexer                              : 3
+ 16-bit 4-to-1 multiplexer                             : 1
+ 19-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <PWM_0> (without init value) has a constant value of 1 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_1> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_2> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_3> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_4> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_5> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_6> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_7> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_8> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PWM_9> (without init value) has a constant value of 0 in block <CONTROL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U4/DIGIT_3_DISP_6> has a constant value of 0 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U4/DIGIT_3_DISP_5> has a constant value of 0 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U4/DIGIT_3_DISP_1> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U4/DIGIT_3_DISP_0> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U4/DISPLAY_3> (without init value) has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U4/DISPLAY_2> (without init value) has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U4/DISPLAY_1> (without init value) has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U4/DISPLAY_0> (without init value) has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <U4/CONT_PORC_2> of sequential type is unconnected in block <PWM_TOP>.
+WARNING:Xst:2677 - Node <U4/CONT_PORC_1> of sequential type is unconnected in block <PWM_TOP>.
+WARNING:Xst:2677 - Node <U4/CONT_PORC_0> of sequential type is unconnected in block <PWM_TOP>.
+INFO:Xst:2261 - The FF/Latch <U4/DIGIT_3_DISP_7> in Unit <PWM_TOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U4/DIGIT_3_DISP_4> <U4/DIGIT_3_DISP_3> <U4/DIGIT_3_DISP_2> 
+
+Optimizing unit <PWM_TOP> ...
+WARNING:Xst:1293 - FF/Latch <U4/DIGIT_2_DISP_0> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U4/DIGIT_2_DISP_0> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U4/DIGIT_1_DISP_0> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U4/DISPLAY_8> (without init value) has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CONTROL> ...
+
+Optimizing unit <MOTORES> ...
+WARNING:Xst:1293 - FF/Latch <U4/DIGIT_2_DISP_0> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U4/DIGIT_1_DISP_0> has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U4/CONT_PORC_18> (without init value) has a constant value of 0 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U4/DISPLAY_8> (without init value) has a constant value of 1 in block <PWM_TOP>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <U4/CONT_PORC_3> in Unit <PWM_TOP> is equivalent to the following FF/Latch, which will be removed : <U4/AUXILIAR_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PWM_TOP, actual ratio is 3.
+FlipFlop U4/PORCENTAJE_2 has been replicated 1 time(s)
+FlipFlop U4/PORCENTAJE_3 has been replicated 1 time(s)
+FlipFlop U4/PORCENTAJE_4 has been replicated 2 time(s)
+FlipFlop U4/PORCENTAJE_5 has been replicated 2 time(s)
+FlipFlop U4/PORCENTAJE_6 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 143
+ Flip-Flops                                            : 143
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PWM_TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 407
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 61
+#      LUT2                        : 9
+#      LUT3                        : 12
+#      LUT4                        : 14
+#      LUT5                        : 43
+#      LUT6                        : 97
+#      MUXCY                       : 78
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 73
+# FlipFlops/Latches                : 143
+#      FD                          : 123
+#      FDE                         : 15
+#      FDR                         : 4
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 11
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             143  out of  11440     1%  
+ Number of Slice LUTs:                  252  out of   5720     4%  
+    Number used as Logic:               252  out of   5720     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    271
+   Number with an unused Flip Flop:     128  out of    271    47%  
+   Number with an unused LUT:            19  out of    271     7%  
+   Number of fully used LUT-FF pairs:   124  out of    271    45%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    160    19%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+U4/FREC_300                        | NONE(U4/DISPLAY_15)    | 13    |
+CLK                                | BUFGP                  | 130   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.888ns (Maximum Frequency: 204.583MHz)
+   Minimum input arrival time before clock: 3.748ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U4/FREC_300'
+  Clock period: 3.165ns (frequency: 315.956MHz)
+  Total number of paths / destination ports: 29 / 15
+-------------------------------------------------------------------------
+Delay:               3.165ns (Levels of Logic = 1)
+  Source:            U4/CONTADOR_DISP_1 (FF)
+  Destination:       U4/CONTADOR_DISP_0 (FF)
+  Source Clock:      U4/FREC_300 rising
+  Destination Clock: U4/FREC_300 rising
+
+  Data Path: U4/CONTADOR_DISP_1 to U4/CONTADOR_DISP_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             13   0.525   1.206  U4/CONTADOR_DISP_1 (U4/CONTADOR_DISP_1)
+     LUT2:I0->O            2   0.250   0.725  U4/CONTADOR_DISP[1]_PWR_5_o_equal_7_o<1>1 (U4/CONTADOR_DISP[1]_PWR_5_o_equal_7_o)
+     FDR:R                     0.459          U4/CONTADOR_DISP_0
+    ----------------------------------------
+    Total                      3.165ns (1.234ns logic, 1.931ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.888ns (frequency: 204.583MHz)
+  Total number of paths / destination ports: 2984 / 137
+-------------------------------------------------------------------------
+Delay:               4.888ns (Levels of Logic = 2)
+  Source:            U2/CONT_FREC_15 (FF)
+  Destination:       U2/FREC (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: U2/CONT_FREC_15 to U2/FREC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.196  U2/CONT_FREC_15 (U2/CONT_FREC_15)
+     LUT5:I0->O           21   0.254   1.538  U2/CONT_FREC[18]_PWR_3_o_equal_3_o<18>1 (U2/CONT_FREC[18]_PWR_3_o_equal_3_o<18>)
+     LUT5:I2->O            1   0.235   0.681  U2/CONT_FREC[18]_PWR_3_o_equal_3_o<18>4 (U2/CONT_FREC[18]_PWR_3_o_equal_3_o)
+     FDS:S                     0.459          U2/FREC
+    ----------------------------------------
+    Total                      4.888ns (1.473ns logic, 3.415ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              3.748ns (Levels of Logic = 3)
+  Source:            BOTON_LED (PAD)
+  Destination:       U1/BOTON_PRES_LED (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BOTON_LED to U1/BOTON_PRES_LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   0.726  BOTON_LED_IBUF (BOTON_LED_IBUF)
+     LUT3:I2->O            1   0.254   1.112  U1/sclk[21]_PWR_2_o_equal_2_o<21>5_SW0 (N59)
+     LUT6:I1->O            1   0.254   0.000  U1/BOTON_PRES_LED_rstpot (U1/BOTON_PRES_LED_rstpot)
+     FD:D                      0.074          U1/BOTON_PRES_LED
+    ----------------------------------------
+    Total                      3.748ns (1.910ns logic, 1.838ns route)
+                                       (51.0% logic, 49.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U4/FREC_300'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            U4/DISPLAY_15 (FF)
+  Destination:       DISPLAY<15> (PAD)
+  Source Clock:      U4/FREC_300 rising
+
+  Data Path: U4/DISPLAY_15 to DISPLAY<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  U4/DISPLAY_15 (U4/DISPLAY_15)
+     OBUF:I->O                 2.912          DISPLAY_15_OBUF (DISPLAY<15>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            U3/MOTORREDUCTOR (FF)
+  Destination:       MOTORREDUCTOR (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: U3/MOTORREDUCTOR to MOTORREDUCTOR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  U3/MOTORREDUCTOR (U3/MOTORREDUCTOR)
+     OBUF:I->O                 2.912          MOTORREDUCTOR_OBUF (MOTORREDUCTOR)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.888|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U4/FREC_300
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.866|         |         |         |
+U4/FREC_300    |    3.165|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 22.44 secs
+ 
+--> 
+
+
+Total memory usage is 386652 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

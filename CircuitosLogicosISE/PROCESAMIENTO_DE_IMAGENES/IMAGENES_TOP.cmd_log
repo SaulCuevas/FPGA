@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/ise/Documents/PROCESAMIENTO_DE_IMAGENES/IMAGENES_TOP.xst" -ofn "/home/ise/Documents/PROCESAMIENTO_DE_IMAGENES/IMAGENES_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PROCESAMIENTO_DE_IMAGENES/IMAGENES_TOP.xst" -ofn "/home/ise/Documents/PROCESAMIENTO_DE_IMAGENES/IMAGENES_TOP.syr" 

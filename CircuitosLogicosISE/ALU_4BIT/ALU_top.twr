@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml ALU_top.twx ALU_top.ncd -o ALU_top.twr ALU_top.pcf -ucf
+ALU_4BIT.ucf
+
+Design file:              ALU_top.ncd
+Physical constraint file: ALU_top.pcf
+Device,package,speed:     xc6slx9,csg225,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CAMBIO      |    7.086(R)|      SLOW  |   -0.505(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
+KBD_COL<0>  |    1.342(R)|      SLOW  |    0.710(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
+KBD_COL<1>  |    2.797(R)|      SLOW  |    0.207(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
+KBD_COL<2>  |    2.195(R)|      SLOW  |    0.116(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
+KBD_COL<3>  |    2.031(R)|      SLOW  |   -0.046(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
+SEL<0>      |   15.017(R)|      SLOW  |   -3.162(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+SEL<1>      |   15.001(R)|      SLOW  |   -3.690(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+SEL<2>      |   15.812(R)|      SLOW  |   -3.826(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+DATA_LCD<0> |        10.493(R)|      SLOW  |         4.593(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<1> |        10.099(R)|      SLOW  |         4.312(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<2> |         9.846(R)|      SLOW  |         4.163(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<3> |         9.572(R)|      SLOW  |         3.910(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<4> |         9.681(R)|      SLOW  |         3.997(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<5> |        10.164(R)|      SLOW  |         4.247(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<6> |        10.299(R)|      SLOW  |         4.338(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_LCD<7> |        10.313(R)|      SLOW  |         4.334(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+ENA         |        12.878(R)|      SLOW  |         4.303(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+KBD_FIL<0>  |         9.573(R)|      SLOW  |         3.812(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+KBD_FIL<1>  |        10.286(R)|      SLOW  |         4.251(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+KBD_FIL<2>  |        10.741(R)|      SLOW  |         4.645(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+KBD_FIL<3>  |        11.087(R)|      SLOW  |         4.810(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+RS          |         9.473(R)|      SLOW  |         3.992(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |   13.216|    5.457|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CAMBIO         |LEDSW_G<7>     |    8.791|
+CAMBIO         |LEDSW_R<7>     |    7.438|
+SEL<0>         |LEDSW_B<0>     |    7.505|
+SEL<0>         |LEDSW_G<0>     |    8.024|
+SEL<0>         |LEDSW_R<0>     |    9.189|
+SEL<1>         |LEDSW_B<1>     |    7.722|
+SEL<1>         |LEDSW_G<1>     |    7.816|
+SEL<1>         |LEDSW_R<1>     |    8.618|
+SEL<2>         |LEDSW_B<2>     |    9.162|
+SEL<2>         |LEDSW_G<2>     |    7.599|
+SEL<2>         |LEDSW_R<2>     |    7.250|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Nov 24 02:15:14 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 390 MB
+
+
+

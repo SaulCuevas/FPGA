@@ -1,0 +1,5 @@
+verilog work "MOTORES.v"
+verilog work "FRECUENCIA.v"
+verilog work "DISPLAY.v"
+verilog work "CONTROL.v"
+verilog work "PWM_TOP.v"

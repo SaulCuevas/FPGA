@@ -1,0 +1,10 @@
+Command line:
+   ADS1115_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  59102
+
+Sat Dec 11 16:26:10 2021
+
+
+ Elaboration Time: 0.40625 sec

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\saulc\Documents\DispLogicosISE\P4\MCP4725_DAC\MCP4725.ncd
+OUTFILE=C:\Users\saulc\Documents\DispLogicosISE\P4\MCP4725_DAC\MCP4725.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=C:\Users\saulc\Documents\DispLogicosISE\P4\MCP4725_DAC
+LICENSE=WebPack
+USER_INFO=212062008_0_0_771

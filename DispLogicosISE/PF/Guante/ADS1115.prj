@@ -1,0 +1,6 @@
+vhdl work "INTESC_LCD_8BITS_RevD/PROCESADOR_LCD_REVD.vhd"
+vhdl work "INTESC_LCD_8BITS_RevD/COMANDOS_LCD_REVD.vhd"
+vhdl work "INTESC_LCD_8BITS_RevD/CARACTERES_ESPECIALES_REVD.vhd"
+vhdl work "INTESC_LCD_8BITS_RevD/LIB_LCD_INTESC_REVD.vhd"
+verilog work "BINaBCD.v"
+verilog work "ADS1115.v"

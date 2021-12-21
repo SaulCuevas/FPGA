@@ -1,0 +1,6 @@
+verilog work "Motor.v"
+verilog work "Encoder.v"
+verilog work "Display7SEG.v"
+verilog work "Bocina_beep.v"
+verilog work "AnimacionLEDs.v"
+verilog work "TOP.v"

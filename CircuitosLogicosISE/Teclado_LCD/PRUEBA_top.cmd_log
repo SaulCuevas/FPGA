@@ -1,0 +1,36 @@
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PRUEBA_top_map.ncd PRUEBA_top.ngd PRUEBA_top.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PRUEBA_top_map.ncd PRUEBA_top.ngd PRUEBA_top.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PRUEBA_top_map.ncd PRUEBA_top.ngd PRUEBA_top.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PRUEBA_top_map.ncd PRUEBA_top.ngd PRUEBA_top.pcf 
+par -w -intstyle ise -ol high -mt off PRUEBA_top_map.ncd PRUEBA_top.ncd PRUEBA_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PRUEBA_top.twx PRUEBA_top.ncd -o PRUEBA_top.twr PRUEBA_top.pcf -ucf Teclado_LCD.ucf 
+bitgen -intstyle ise -f PRUEBA_top.ut PRUEBA_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PRUEBA_top_map.ncd PRUEBA_top.ngd PRUEBA_top.pcf 
+par -w -intstyle ise -ol high -mt off PRUEBA_top_map.ncd PRUEBA_top.ncd PRUEBA_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PRUEBA_top.twx PRUEBA_top.ncd -o PRUEBA_top.twr PRUEBA_top.pcf -ucf Teclado_LCD.ucf 
+bitgen -intstyle ise -f PRUEBA_top.ut PRUEBA_top.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.xst" -ofn "/home/ise/Documents/Teclado_LCD/PRUEBA_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Teclado_LCD.ucf -p xc6slx9-csg225-2 PRUEBA_top.ngc PRUEBA_top.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PRUEBA_top_map.ncd PRUEBA_top.ngd PRUEBA_top.pcf 
+par -w -intstyle ise -ol high -mt off PRUEBA_top_map.ncd PRUEBA_top.ncd PRUEBA_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PRUEBA_top.twx PRUEBA_top.ncd -o PRUEBA_top.twr PRUEBA_top.pcf -ucf Teclado_LCD.ucf 
+bitgen -intstyle ise -f PRUEBA_top.ut PRUEBA_top.ncd 

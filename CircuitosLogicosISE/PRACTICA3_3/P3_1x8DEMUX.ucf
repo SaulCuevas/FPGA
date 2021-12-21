@@ -1,0 +1,46 @@
+NET "sel(0)" LOC = M8;		//SW7
+NET "sel(1)" LOC = N6;		//SW6
+NET "sel(2)" LOC = N4;		//SW5
+NET "enable" LOC = N2;		//SW2
+NET "entrada" LOC = L1; 	//SW1
+
+NET "ledsbtR(0)" LOC = N14; // LEDBT D8 R
+NET "ledsbtR(1)" LOC = N7; 	// LEDBT D7 R
+NET "ledsbtR(2)" LOC = N5; 	// LEDBT D6 R
+NET "ledsbtR(3)" LOC = P2; 	// LEDBT D2 R
+NET "ledsbtR(4)" LOC = M1; 	// LEDBT D1 R
+
+NET "ledsbtG(0)" LOC = M11; // LEDBT D8 G
+NET "ledsbtG(1)" LOC = M6; 	// LEDBT D7 G
+NET "ledsbtG(2)" LOC = M4; 	// LEDBT D6 G
+NET "ledsbtG(3)" LOC = R4; 	// LEDBT D2 G
+NET "ledsbtG(4)" LOC = N1; 	// LEDBT D1 G
+
+NET "clk" 		LOC = E7; //oscilador 50MHz
+NET "clear" 	LOC = J4; // B4
+
+NET "salida(0)" 	LOC = E4; 	// E/S P2
+NET "salida(1)" 	LOC = D5; 	// E/S P2
+NET "salida(2)" 	LOC = C7; 	// E/S P2
+NET "salida(3)" 	LOC = D10; 	// E/S P2
+NET "salida(4)" 	LOC = C12; 	// E/S P2
+NET "salida(5)" 	LOC = E1; 	// E/S P2
+NET "salida(6)" 	LOC = C1; 	// E/S P2
+NET "salida(7)" 	LOC = A3; 	// E/S P2
+
+NET "disp(15)" 	LOC = K13; 	// A
+NET "disp(14)" 	LOC = L15; 	// B
+NET "disp(13)" 	LOC = M15; 	// C
+NET "disp(12)" 	LOC = P15; 	// D
+NET "disp(11)" 	LOC = P14; 	// E
+NET "disp(10)" 	LOC = K15; 	// F
+NET "disp(9)" 		LOC = L14; 	// G
+NET "disp(8)" 		LOC = N15; 	// P
+NET "disp(7)" 		LOC = G12;	// ANODO 1
+NET "disp(6)" 		LOC = F13;	// A2
+NET "disp(5)" 		LOC = H12;	// A3
+NET "disp(4)" 		LOC = G13;	// A4
+NET "disp(3)" 		LOC = H13;	// A5
+NET "disp(2)" 		LOC = K11;	// A6
+NET "disp(1)" 		LOC = J13;	// A7
+NET "disp(0)" 		LOC = K12;	// A8

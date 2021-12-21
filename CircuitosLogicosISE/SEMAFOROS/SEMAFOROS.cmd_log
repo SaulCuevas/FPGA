@@ -1,0 +1,64 @@
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.xst" -ofn "/home/ise/Documents/SEMAFOROS/SEMAFOROS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SEMAFOROS.ucf -p xc6slx9-csg225-2 SEMAFOROS.ngc SEMAFOROS.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o SEMAFOROS_map.ncd SEMAFOROS.ngd SEMAFOROS.pcf 
+par -w -intstyle ise -ol high -mt off SEMAFOROS_map.ncd SEMAFOROS.ncd SEMAFOROS.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml SEMAFOROS.twx SEMAFOROS.ncd -o SEMAFOROS.twr SEMAFOROS.pcf -ucf SEMAFOROS.ucf 
+bitgen -intstyle ise -f SEMAFOROS.ut SEMAFOROS.ncd 

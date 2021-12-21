@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 16 14:11:45 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "sensFRENTE" LOCATE = SITE "E4" LEVEL 1;
+COMP "audio" LOCATE = SITE "D13" LEVEL 1;
+COMP "servoOJOSH" LOCATE = SITE "C8" LEVEL 1;
+COMP "servoOJOSV" LOCATE = SITE "C7" LEVEL 1;
+COMP "sensDER" LOCATE = SITE "D6" LEVEL 1;
+COMP "sensIZQ" LOCATE = SITE "C4" LEVEL 1;
+COMP "servoCUELLO" LOCATE = SITE "D10" LEVEL 1;
+COMP "servoMAND" LOCATE = SITE "C10" LEVEL 1;
+COMP "sensBOCA" LOCATE = SITE "D5" LEVEL 1;
+SCHEMATIC END;
+

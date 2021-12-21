@@ -1,0 +1,851 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ADS1115.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADS1115.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADS1115"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : ADS1115
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\div_int.v" into library work
+Parsing module <division>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\DISPLAY.v" into library work
+Parsing module <DISPLAY>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\CONVERSION.v" into library work
+Parsing module <CONVERSION>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\ADS1115.v" into library work
+Parsing module <ADS1115>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ADS1115>.
+
+Elaborating module <CONVERSION>.
+
+Elaborating module <division>.
+
+Elaborating module <DISPLAY>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ADS1115>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\ADS1115.v".
+        CONFIG_LSB = 8'b10000011
+        ADDR = 7'b1001000
+        ACK = 1'bz
+        P1 = 1'b0
+        P0 = 1'b0
+        CONFIGURACION = 2'b00
+        APUNTADOR = 2'b01
+        LECTURA = 2'b10
+    Found 1-bit register for signal <cambio>.
+    Found 3-bit register for signal <cont_frec_100kHz>.
+    Found 1-bit register for signal <SCL>.
+    Found 2-bit register for signal <sampled_cambio>.
+    Found 1-bit register for signal <out_EN>.
+    Found 1-bit register for signal <SDA_out_clk_DFF_15_q>.
+    Found 1-bit register for signal <sampled_cambio[1]_clk_DFF_16>.
+    Found 1-bit register for signal <working>.
+    Found 1-bit register for signal <STOP>.
+    Found 2-bit register for signal <estado>.
+    Found 6-bit register for signal <op_counter>.
+    Found 16-bit register for signal <DATA>.
+    Found 6-bit register for signal <cont_gen_frec>.
+    Found finite state machine <FSM_0> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 23                                             |
+    | Inputs             | 12                                             |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit adder for signal <cambio_PWR_1_o_add_5_OUT<0>> created at line 89.
+    Found 3-bit adder for signal <cont_frec_100kHz[2]_GND_1_o_add_7_OUT> created at line 96.
+    Found 6-bit adder for signal <cont_gen_frec[5]_GND_1_o_add_9_OUT> created at line 98.
+    Found 6-bit adder for signal <op_counter[5]_GND_1_o_add_77_OUT> created at line 286.
+    Found 64x2-bit Read Only RAM for signal <_n0444>
+    Found 1-bit tristate buffer for signal <SDA> created at line 118
+    Found 1-bit tristate buffer for signal <SDA_out> created at line 125
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+	inferred   2 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <ADS1115> synthesized.
+
+Synthesizing Unit <CONVERSION>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\CONVERSION.v".
+        divisor = 16'b0000000010010000
+    Found 8-bit register for signal <numero>.
+    Found 23-bit register for signal <cont_100ms>.
+    Found 16-bit subtractor for signal <DATA[15]_GND_5_o_sub_12_OUT> created at line 29.
+    Found 23-bit adder for signal <cont_100ms[22]_GND_5_o_add_5_OUT> created at line 25.
+    Found 16-bit comparator greater for signal <GND_5_o_DATA[15]_LessThan_11_o> created at line 29
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <CONVERSION> synthesized.
+
+Synthesizing Unit <division>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\div_int.v".
+        WIDTH = 16
+    Found 17-bit subtractor for signal <n0192> created at line 23.
+    Found 17-bit subtractor for signal <n0195> created at line 23.
+    Found 17-bit subtractor for signal <n0198> created at line 23.
+    Found 17-bit subtractor for signal <n0201> created at line 23.
+    Found 17-bit subtractor for signal <n0204> created at line 23.
+    Found 17-bit subtractor for signal <n0207> created at line 23.
+    Found 17-bit subtractor for signal <n0210> created at line 23.
+    Found 17-bit subtractor for signal <n0213> created at line 23.
+    Found 17-bit subtractor for signal <n0216> created at line 23.
+    Found 17-bit subtractor for signal <n0219> created at line 23.
+    Found 17-bit subtractor for signal <n0222> created at line 23.
+    Found 17-bit subtractor for signal <n0225> created at line 23.
+    Found 17-bit subtractor for signal <n0228> created at line 23.
+    Found 17-bit subtractor for signal <n0231> created at line 23.
+    Found 17-bit subtractor for signal <n0234> created at line 23.
+    Found 17-bit subtractor for signal <n0127> created at line 23.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_2_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_6_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_10_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_14_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_18_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_22_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_26_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_30_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_34_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_38_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_42_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_46_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_50_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_54_OUT> created at line 26.
+    Found 17-bit adder for signal <GND_6_o_GND_6_o_add_58_OUT> created at line 26.
+    Summary:
+	inferred  31 Adder/Subtractor(s).
+	inferred  15 Multiplexer(s).
+Unit <division> synthesized.
+
+Synthesizing Unit <DISPLAY>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P4\ADS1115_ADC\DISPLAY.v".
+    Found 1-bit register for signal <FREC_600>.
+    Found 3-bit register for signal <CONTADOR_DISP>.
+    Found 8-bit register for signal <DIGIT_8_DISP>.
+    Found 8-bit register for signal <DIGIT_7_DISP>.
+    Found 8-bit register for signal <DIGIT_6_DISP>.
+    Found 8-bit register for signal <DIGIT_5_DISP>.
+    Found 8-bit register for signal <DIGIT_1_DISP>.
+    Found 8-bit register for signal <DIGIT_2_DISP>.
+    Found 8-bit register for signal <DIGIT_3_DISP>.
+    Found 16-bit register for signal <DISPLAY>.
+    Found 16-bit register for signal <CONT_FREC_600>.
+    Found 16-bit adder for signal <CONT_FREC_600[15]_GND_7_o_add_2_OUT> created at line 23.
+    Found 3-bit adder for signal <CONTADOR_DISP[2]_GND_7_o_add_7_OUT> created at line 29.
+    Found 4-bit adder for signal <n0101> created at line 72.
+    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_23_OUT> created at line 72.
+    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_26_OUT> created at line 72.
+    Found 4-bit adder for signal <n0111> created at line 71.
+    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_32_OUT> created at line 72.
+    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_35_OUT> created at line 71.
+    Found 4-bit adder for signal <GND_7_o_GND_7_o_add_38_OUT> created at line 72.
+    Found 16x8-bit Read Only RAM for signal <UNID[3]_GND_7_o_wide_mux_43_OUT>
+    Found 16x8-bit Read Only RAM for signal <DECE[3]_GND_7_o_wide_mux_44_OUT>
+    Found 16x8-bit Read Only RAM for signal <CENT[3]_GND_7_o_wide_mux_45_OUT>
+    Found 16-bit 8-to-1 multiplexer for signal <CONTADOR_DISP[2]_DIGIT_1_DISP[7]_wide_mux_52_OUT> created at line 155.
+    Found 3-bit comparator lessequal for signal <n0019> created at line 72
+    Found 4-bit comparator lessequal for signal <n0023> created at line 72
+    Found 4-bit comparator lessequal for signal <n0027> created at line 72
+    Found 3-bit comparator lessequal for signal <n0031> created at line 71
+    Found 4-bit comparator lessequal for signal <n0035> created at line 72
+    Found 4-bit comparator lessequal for signal <n0039> created at line 71
+    Found 4-bit comparator lessequal for signal <n0043> created at line 72
+    WARNING:Xst:2404 -  FFs/Latches <DIGIT_4_DISP<7:2>> (without init value) have a constant value of 0 in block <DISPLAY>.
+    WARNING:Xst:2404 -  FFs/Latches <DIGIT_4_DISP<2:1>> (without init value) have a constant value of 1 in block <DISPLAY>.
+    Summary:
+	inferred   3 RAM(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred  92 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <DISPLAY> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x8-bit single-port Read Only RAM                    : 3
+ 64x2-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 46
+ 1-bit adder                                           : 1
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 17-bit adder                                          : 15
+ 17-bit subtractor                                     : 16
+ 23-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 7
+ 6-bit adder                                           : 2
+# Registers                                            : 25
+ 1-bit register                                        : 8
+ 16-bit register                                       : 3
+ 2-bit register                                        : 1
+ 23-bit register                                       : 1
+ 3-bit register                                        : 2
+ 6-bit register                                        : 2
+ 8-bit register                                        : 8
+# Comparators                                          : 8
+ 16-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator lessequal                            : 5
+# Multiplexers                                         : 39
+ 1-bit 2-to-1 multiplexer                              : 9
+ 16-bit 2-to-1 multiplexer                             : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 15
+ 4-bit 2-to-1 multiplexer                              : 7
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <DIGIT_6_DISP_2> in Unit <U2> is equivalent to the following 3 FFs/Latches, which will be removed : <DIGIT_6_DISP_5> <DIGIT_8_DISP_5> <DIGIT_8_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_8_DISP_1> in Unit <U2> is equivalent to the following FF/Latch, which will be removed : <DIGIT_7_DISP_1> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_6_DISP_4> in Unit <U2> is equivalent to the following 4 FFs/Latches, which will be removed : <DIGIT_7_DISP_2> <DIGIT_7_DISP_4> <DIGIT_7_DISP_5> <DIGIT_7_DISP_6> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_5_DISP_2> in Unit <U2> is equivalent to the following FF/Latch, which will be removed : <DIGIT_5_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_8_DISP_6> in Unit <U2> is equivalent to the following FF/Latch, which will be removed : <DIGIT_7_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_6_DISP_0> in Unit <U2> is equivalent to the following 2 FFs/Latches, which will be removed : <DIGIT_8_DISP_0> <DIGIT_7_DISP_0> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_6_DISP_3> in Unit <U2> is equivalent to the following 6 FFs/Latches, which will be removed : <DIGIT_6_DISP_6> <DIGIT_6_DISP_7> <DIGIT_8_DISP_2> <DIGIT_8_DISP_3> <DIGIT_8_DISP_4> <DIGIT_7_DISP_3> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_5_DISP_3> in Unit <U2> is equivalent to the following 3 FFs/Latches, which will be removed : <DIGIT_5_DISP_4> <DIGIT_5_DISP_5> <DIGIT_5_DISP_6> 
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_8_DISP_6 hinder the constant cleaning in the block U2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_6_DISP_1 hinder the constant cleaning in the block U2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_5_DISP_2 hinder the constant cleaning in the block U2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <DIGIT_6_DISP_0> has a constant value of 1 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DIGIT_6_DISP_3> has a constant value of 0 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DIGIT_5_DISP_0> has a constant value of 1 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ADS1115>.
+The following registers are absorbed into counter <cont_gen_frec>: 1 register on signal <cont_gen_frec>.
+The following registers are absorbed into counter <cambio>: 1 register on signal <cambio>.
+The following registers are absorbed into counter <cont_frec_100kHz>: 1 register on signal <cont_frec_100kHz>.
+INFO:Xst:3231 - The small RAM <Mram__n0444> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 2-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <op_counter>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ADS1115> synthesized (advanced).
+
+Synthesizing (advanced) Unit <CONVERSION>.
+The following registers are absorbed into counter <cont_100ms>: 1 register on signal <cont_100ms>.
+Unit <CONVERSION> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DISPLAY>.
+The following registers are absorbed into counter <CONT_FREC_600>: 1 register on signal <CONT_FREC_600>.
+The following registers are absorbed into counter <CONTADOR_DISP>: 1 register on signal <CONTADOR_DISP>.
+INFO:Xst:3231 - The small RAM <Mram_UNID[3]_GND_7_o_wide_mux_43_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(UNID<2:0>,numero<0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_DECE[3]_GND_7_o_wide_mux_44_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(DECE<2:0>,UNID<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_CENT[3]_GND_7_o_wide_mux_45_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("00",CENT<3>,DECE<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DISPLAY> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x8-bit single-port distributed Read Only RAM        : 3
+ 64x2-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 40
+ 16-bit subtractor                                     : 2
+ 17-bit adder                                          : 15
+ 17-bit subtractor                                     : 15
+ 4-bit adder                                           : 7
+ 6-bit adder                                           : 1
+# Counters                                             : 6
+ 1-bit up counter                                      : 1
+ 16-bit up counter                                     : 1
+ 23-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 6-bit up counter                                      : 1
+# Registers                                            : 111
+ Flip-Flops                                            : 111
+# Comparators                                          : 8
+ 16-bit comparator greater                             : 1
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator lessequal                            : 5
+# Multiplexers                                         : 36
+ 1-bit 2-to-1 multiplexer                              : 6
+ 16-bit 2-to-1 multiplexer                             : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+ 17-bit 2-to-1 multiplexer                             : 15
+ 4-bit 2-to-1 multiplexer                              : 7
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_8_DISP_6 hinder the constant cleaning in the block DISPLAY.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_7_DISP_7 hinder the constant cleaning in the block DISPLAY.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_6_DISP_1 hinder the constant cleaning in the block DISPLAY.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_5_DISP_2 hinder the constant cleaning in the block DISPLAY.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_5_DISP_7 hinder the constant cleaning in the block DISPLAY.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <DIGIT_6_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_6_DISP_3> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_6_DISP_6> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_6_DISP_7> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_8_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_8_DISP_2> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_8_DISP_3> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_8_DISP_4> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_7_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_7_DISP_3> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_5_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DIGIT_6_DISP_2> in Unit <DISPLAY> is equivalent to the following 3 FFs/Latches, which will be removed : <DIGIT_6_DISP_5> <DIGIT_8_DISP_5> <DIGIT_8_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_8_DISP_1> in Unit <DISPLAY> is equivalent to the following FF/Latch, which will be removed : <DIGIT_7_DISP_1> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_6_DISP_4> in Unit <DISPLAY> is equivalent to the following 4 FFs/Latches, which will be removed : <DIGIT_7_DISP_2> <DIGIT_7_DISP_4> <DIGIT_7_DISP_5> <DIGIT_7_DISP_6> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_5_DISP_2> in Unit <DISPLAY> is equivalent to the following FF/Latch, which will be removed : <DIGIT_5_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_8_DISP_6> in Unit <DISPLAY> is equivalent to the following FF/Latch, which will be removed : <DIGIT_7_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_5_DISP_3> in Unit <DISPLAY> is equivalent to the following 3 FFs/Latches, which will be removed : <DIGIT_5_DISP_4> <DIGIT_5_DISP_5> <DIGIT_5_DISP_6> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <estado[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1293 - FF/Latch <DIGIT_3_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_3_DISP_6> has a constant value of 0 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DIGIT_3_DISP_4> in Unit <DISPLAY> is equivalent to the following FF/Latch, which will be removed : <DIGIT_3_DISP_7> 
+WARNING:Xst:2041 - Unit ADS1115: 1 internal tristate is replaced by logic (pull-up yes): SDA_out.
+
+Optimizing unit <ADS1115> ...
+
+Optimizing unit <CONVERSION> ...
+
+Optimizing unit <division> ...
+
+Optimizing unit <DISPLAY> ...
+WARNING:Xst:1293 - FF/Latch <DIGIT_1_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_2_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DISPLAY_8> (without init value) has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/DIGIT_2_DISP_0> has a constant value of 1 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/DIGIT_1_DISP_0> has a constant value of 1 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <U2/DISPLAY_8> (without init value) has a constant value of 1 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <cont_gen_frec_0> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <U1/cont_100ms_0> 
+INFO:Xst:2261 - The FF/Latch <U2/DIGIT_3_DISP_4> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <U2/DIGIT_3_DISP_3> 
+INFO:Xst:2261 - The FF/Latch <U2/DIGIT_5_DISP_1> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <U2/DIGIT_8_DISP_1> 
+INFO:Xst:2261 - The FF/Latch <U2/DIGIT_5_DISP_2> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <U2/DIGIT_8_DISP_6> 
+INFO:Xst:2261 - The FF/Latch <U2/DIGIT_5_DISP_3> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <U2/DIGIT_6_DISP_2> 
+INFO:Xst:3203 - The FF/Latch <U2/DIGIT_3_DISP_5> in Unit <ADS1115> is the opposite to the following FF/Latch, which will be removed : <U2/DIGIT_3_DISP_1> 
+INFO:Xst:3203 - The FF/Latch <U2/DIGIT_5_DISP_1> in Unit <ADS1115> is the opposite to the following FF/Latch, which will be removed : <U2/DIGIT_6_DISP_4> 
+INFO:Xst:3203 - The FF/Latch <U2/DIGIT_5_DISP_2> in Unit <ADS1115> is the opposite to the following FF/Latch, which will be removed : <U2/DIGIT_6_DISP_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+WARNING:Xst:1426 - The value init of the FF/Latch U2/DIGIT_5_DISP_2 hinder the constant cleaning in the block ADS1115.
+   You should achieve better results by setting this init to 1.
+Found area constraint ratio of 100 (+ 5) on block ADS1115, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 127
+ Flip-Flops                                            : 127
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ADS1115.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 930
+#      GND                         : 1
+#      INV                         : 47
+#      LUT1                        : 117
+#      LUT2                        : 21
+#      LUT3                        : 120
+#      LUT4                        : 14
+#      LUT5                        : 35
+#      LUT6                        : 80
+#      MUXCY                       : 241
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 250
+# FlipFlops/Latches                : 127
+#      FD                          : 39
+#      FDE                         : 25
+#      FDR                         : 49
+#      FDRE                        : 13
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 1
+#      IOBUF                       : 1
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             127  out of  11440     1%  
+ Number of Slice LUTs:                  434  out of   5720     7%  
+    Number used as Logic:               434  out of   5720     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    454
+   Number with an unused Flip Flop:     327  out of    454    72%  
+   Number with an unused LUT:            20  out of    454     4%  
+   Number of fully used LUT-FF pairs:   107  out of    454    23%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    160    13%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+clk                                | BUFGP                   | 109   |
+U2/FREC_600                        | NONE(U2/CONTADOR_DISP_2)| 18    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 28.673ns (Maximum Frequency: 34.876MHz)
+   Minimum input arrival time before clock: 5.265ns
+   Maximum output required time after clock: 5.202ns
+   Maximum combinational path delay: 6.273ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 28.673ns (frequency: 34.876MHz)
+  Total number of paths / destination ports: 544845353124316 / 202
+-------------------------------------------------------------------------
+Delay:               28.673ns (Levels of Logic = 55)
+  Source:            DATA_13 (FF)
+  Destination:       U1/numero_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DATA_13 to U1/numero_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.525   1.032  DATA_13 (DATA_13)
+     LUT3:I0->O            1   0.235   0.910  U1/GND_5_o_DATA[15]_LessThan_11_o21 (U1/GND_5_o_DATA[15]_LessThan_11_o2)
+     LUT6:I3->O           12   0.235   1.069  U1/GND_5_o_DATA[15]_LessThan_11_o26 (U1/GND_5_o_DATA[15]_LessThan_11_o)
+     LUT2:I1->O            1   0.254   0.000  U1/Mmux_dividendo51 (U1/dividendo<13>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0210_cy<4> (U1/DIV/Msub_n0210_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U1/DIV/Msub_n0210_cy<5> (U1/DIV/Msub_n0210_cy<5>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Msub_n0210_xor<6> (U1/DIV/n0210<6>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_26_OUT_cy<6>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_26_OUT_cy<6>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_26_OUT_cy<6> (U1/DIV/Madd_GND_6_o_GND_6_o_add_26_OUT_cy<6>)
+     XORCY:CI->O           1   0.206   0.681  U1/DIV/Madd_GND_6_o_GND_6_o_add_26_OUT_xor<7> (U1/DIV/GND_6_o_GND_6_o_add_26_OUT<7>)
+     INV:I->O              1   0.255   0.000  U1/DIV/Msub_n0213_lut<8>_INV_0 (U1/DIV/Msub_n0213_lut<8>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0213_cy<8> (U1/DIV/Msub_n0213_cy<8>)
+     XORCY:CI->O           2   0.206   0.726  U1/DIV/Msub_n0213_xor<9> (U1/DIV/n0213<9>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_30_OUT_cy<9>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_30_OUT_cy<9>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_30_OUT_cy<9> (U1/DIV/Madd_GND_6_o_GND_6_o_add_30_OUT_cy<9>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Madd_GND_6_o_GND_6_o_add_30_OUT_xor<10> (U1/DIV/GND_6_o_GND_6_o_add_30_OUT<10>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0216_lut<11> (U1/DIV/Msub_n0216_lut<11>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0216_cy<11> (U1/DIV/Msub_n0216_cy<11>)
+     XORCY:CI->O           2   0.206   0.726  U1/DIV/Msub_n0216_xor<12> (U1/DIV/n0216<12>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_34_OUT_cy<12>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_34_OUT_cy<12>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_34_OUT_cy<12> (U1/DIV/Madd_GND_6_o_GND_6_o_add_34_OUT_cy<12>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Madd_GND_6_o_GND_6_o_add_34_OUT_xor<13> (U1/DIV/GND_6_o_GND_6_o_add_34_OUT<13>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0219_lut<14> (U1/DIV/Msub_n0219_lut<14>)
+     MUXCY:S->O            0   0.215   0.000  U1/DIV/Msub_n0219_cy<14> (U1/DIV/Msub_n0219_cy<14>)
+     XORCY:CI->O          12   0.206   1.069  U1/DIV/Msub_n0219_xor<15> (U1/DIV/n0219<15>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0222_lut<5> (U1/DIV/Msub_n0222_lut<5>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0222_cy<5> (U1/DIV/Msub_n0222_cy<5>)
+     XORCY:CI->O           2   0.206   0.726  U1/DIV/Msub_n0222_xor<6> (U1/DIV/n0222<6>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_42_OUT_cy<6>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_42_OUT_cy<6>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_42_OUT_cy<6> (U1/DIV/Madd_GND_6_o_GND_6_o_add_42_OUT_cy<6>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Madd_GND_6_o_GND_6_o_add_42_OUT_xor<7> (U1/DIV/GND_6_o_GND_6_o_add_42_OUT<7>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0225_lut<8> (U1/DIV/Msub_n0225_lut<8>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0225_cy<8> (U1/DIV/Msub_n0225_cy<8>)
+     XORCY:CI->O           2   0.206   0.726  U1/DIV/Msub_n0225_xor<9> (U1/DIV/n0225<9>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_46_OUT_cy<9>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_46_OUT_cy<9>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_46_OUT_cy<9> (U1/DIV/Madd_GND_6_o_GND_6_o_add_46_OUT_cy<9>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Madd_GND_6_o_GND_6_o_add_46_OUT_xor<10> (U1/DIV/GND_6_o_GND_6_o_add_46_OUT<10>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0228_lut<11> (U1/DIV/Msub_n0228_lut<11>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0228_cy<11> (U1/DIV/Msub_n0228_cy<11>)
+     XORCY:CI->O           2   0.206   0.726  U1/DIV/Msub_n0228_xor<12> (U1/DIV/n0228<12>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_50_OUT_cy<12>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_50_OUT_cy<12>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_50_OUT_cy<12> (U1/DIV/Madd_GND_6_o_GND_6_o_add_50_OUT_cy<12>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Madd_GND_6_o_GND_6_o_add_50_OUT_xor<13> (U1/DIV/GND_6_o_GND_6_o_add_50_OUT<13>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0231_lut<14> (U1/DIV/Msub_n0231_lut<14>)
+     MUXCY:S->O            0   0.215   0.000  U1/DIV/Msub_n0231_cy<14> (U1/DIV/Msub_n0231_cy<14>)
+     XORCY:CI->O          12   0.206   1.297  U1/DIV/Msub_n0231_xor<15> (U1/DIV/n0231<15>)
+     LUT3:I0->O            1   0.235   0.000  U1/DIV/Msub_n0234_lut<11> (U1/DIV/Msub_n0234_lut<11>)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Msub_n0234_cy<11> (U1/DIV/Msub_n0234_cy<11>)
+     XORCY:CI->O           2   0.206   0.726  U1/DIV/Msub_n0234_xor<12> (U1/DIV/n0234<12>)
+     LUT1:I0->O            1   0.254   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_58_OUT_cy<12>_rt (U1/DIV/Madd_GND_6_o_GND_6_o_add_58_OUT_cy<12>_rt)
+     MUXCY:S->O            1   0.215   0.000  U1/DIV/Madd_GND_6_o_GND_6_o_add_58_OUT_cy<12> (U1/DIV/Madd_GND_6_o_GND_6_o_add_58_OUT_cy<12>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Madd_GND_6_o_GND_6_o_add_58_OUT_xor<13> (U1/DIV/GND_6_o_GND_6_o_add_58_OUT<13>)
+     LUT3:I2->O            1   0.254   0.000  U1/DIV/Msub_n0127_Madd_lut<14> (U1/DIV/Msub_n0127_Madd_lut<14>)
+     MUXCY:S->O            0   0.215   0.000  U1/DIV/Msub_n0127_Madd_cy<14> (U1/DIV/Msub_n0127_Madd_cy<14>)
+     XORCY:CI->O           1   0.206   0.682  U1/DIV/Msub_n0127_Madd_xor<15> (U1/DIV/n0127<15>)
+     LUT3:I2->O            1   0.254   0.000  U1/Mmux_resultado[7]_DATA[14]_mux_3_OUT11 (U1/resultado[7]_DATA[14]_mux_3_OUT<0>)
+     FDRE:D                    0.074          U1/numero_0
+    ----------------------------------------
+    Total                     28.673ns (12.803ns logic, 15.870ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/FREC_600'
+  Clock period: 3.624ns (frequency: 275.938MHz)
+  Total number of paths / destination ports: 73 / 21
+-------------------------------------------------------------------------
+Delay:               3.624ns (Levels of Logic = 2)
+  Source:            U2/CONTADOR_DISP_1 (FF)
+  Destination:       U2/DISPLAY_13 (FF)
+  Source Clock:      U2/FREC_600 rising
+  Destination Clock: U2/FREC_600 rising
+
+  Data Path: U2/CONTADOR_DISP_1 to U2/DISPLAY_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             24   0.525   1.835  U2/CONTADOR_DISP_1 (U2/CONTADOR_DISP_1)
+     LUT6:I0->O            1   0.254   0.682  U2/Mmux_CONTADOR_DISP[2]_DIGIT_1_DISP[7]_wide_mux_52_OUT51 (U2/Mmux_CONTADOR_DISP[2]_DIGIT_1_DISP[7]_wide_mux_52_OUT5)
+     LUT6:I5->O            1   0.254   0.000  U2/Mmux_CONTADOR_DISP[2]_DIGIT_1_DISP[7]_wide_mux_52_OUT52 (U2/CONTADOR_DISP[2]_DIGIT_1_DISP[7]_wide_mux_52_OUT<13>)
+     FD:D                      0.074          U2/DISPLAY_13
+    ----------------------------------------
+    Total                      3.624ns (1.107ns logic, 2.517ns route)
+                                       (30.5% logic, 69.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              5.265ns (Levels of Logic = 4)
+  Source:            switch (PAD)
+  Destination:       SDA_out (FF)
+  Destination Clock: clk rising
+
+  Data Path: switch to SDA_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.326  switch_IBUF (U2/DIGIT_5_DISP_3_glue_set)
+     LUT6:I3->O            1   0.235   1.112  Mmux_SDA_out_SDA_out_MUX_133_o12 (Mmux_SDA_out_SDA_out_MUX_133_o11)
+     LUT6:I1->O            1   0.254   0.682  Mmux_SDA_out_SDA_out_MUX_133_o14 (Mmux_SDA_out_SDA_out_MUX_133_o13)
+     LUT6:I5->O            1   0.254   0.000  SDA_out_glue_set (SDA_out_glue_set)
+     FDR:D                     0.074          SDA_out
+    ----------------------------------------
+    Total                      5.265ns (2.145ns logic, 3.120ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U2/FREC_600'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            U2/DISPLAY_15 (FF)
+  Destination:       DISPLAY<15> (PAD)
+  Source Clock:      U2/FREC_600 rising
+
+  Data Path: U2/DISPLAY_15 to DISPLAY<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  U2/DISPLAY_15 (U2/DISPLAY_15)
+     OBUF:I->O                 2.912          DISPLAY_15_OBUF (DISPLAY<15>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Offset:              5.202ns (Levels of Logic = 2)
+  Source:            sampled_cambio[1]_clk_DFF_16 (FF)
+  Destination:       SDA (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sampled_cambio[1]_clk_DFF_16 to SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.525   0.790  sampled_cambio[1]_clk_DFF_16 (sampled_cambio[1]_clk_DFF_16)
+     LUT2:I0->O            2   0.250   0.725  SDA_outLogicTrst1 (SDA_out)
+     IOBUF:I->IO               2.912          SDA_IOBUF (SDA)
+    ----------------------------------------
+    Total                      5.202ns (3.687ns logic, 1.515ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               6.273ns (Levels of Logic = 3)
+  Source:            switch (PAD)
+  Destination:       ledR (PAD)
+
+  Data Path: switch to ledR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.328   1.097  switch_IBUF (U2/DIGIT_5_DISP_3_glue_set)
+     INV:I->O              1   0.255   0.681  CONFIG_MSB<4>1_INV_0 (ledR_OBUF)
+     OBUF:I->O                 2.912          ledR_OBUF (ledR)
+    ----------------------------------------
+    Total                      6.273ns (4.495ns logic, 1.778ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U2/FREC_600
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/FREC_600    |    3.624|         |         |         |
+clk            |    2.932|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   28.673|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.01 secs
+ 
+--> 
+
+Total memory usage is 4502444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :   28 (   0 filtered)
+

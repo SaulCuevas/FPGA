@@ -1,0 +1,747 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\LEDS.v" into library work
+Parsing module <LEDS>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\DISPLAY.v" into library work
+Parsing module <DISPLAY>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\BOTON.v" into library work
+Parsing module <BOTON>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\BOCINA.v" into library work
+Parsing module <BOCINA>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\TOP.v" into library work
+Parsing module <TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TOP>.
+
+Elaborating module <BOTON>.
+
+Elaborating module <DISPLAY>.
+
+Elaborating module <LEDS>.
+
+Elaborating module <BOCINA>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\TOP.v".
+    Summary:
+	no macro.
+Unit <TOP> synthesized.
+
+Synthesizing Unit <BOTON>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\BOTON.v".
+    Found 1-bit register for signal <BOTON_PRES_reset>.
+    Found 22-bit register for signal <sclk>.
+    Found 1-bit register for signal <frec_1ms>.
+    Found 16-bit register for signal <cont_frec_1ms>.
+    Found 15-bit register for signal <cont_tiempo>.
+    Found 1-bit register for signal <sampled_reset>.
+    Found 22-bit adder for signal <sclk[21]_GND_2_o_add_3_OUT> created at line 25.
+    Found 16-bit adder for signal <cont_frec_1ms[15]_GND_2_o_add_8_OUT> created at line 43.
+    Found 15-bit adder for signal <cont_tiempo[14]_GND_2_o_add_15_OUT> created at line 55.
+    Found 1-bit comparator not equal for signal <sampled_reset_reset_equal_3_o> created at line 22
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <BOTON> synthesized.
+
+Synthesizing Unit <DISPLAY>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\DISPLAY.v".
+    Found 1-bit register for signal <FREC_300>.
+    Found 2-bit register for signal <CONTADOR_DISP>.
+    Found 8-bit register for signal <DIGIT_1_DISP>.
+    Found 8-bit register for signal <DIGIT_2_DISP>.
+    Found 8-bit register for signal <DIGIT_3_DISP>.
+    Found 8-bit register for signal <DIGIT_4_DISP>.
+    Found 16-bit register for signal <DISPLAY>.
+    Found 17-bit register for signal <CONT_FREC_300>.
+    Found 17-bit adder for signal <CONT_FREC_300[16]_GND_3_o_add_2_OUT> created at line 22.
+    Found 2-bit adder for signal <CONTADOR_DISP[1]_GND_3_o_add_7_OUT> created at line 28.
+    Found 4-bit adder for signal <n0220> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_14_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_17_OUT> created at line 52.
+    Found 4-bit adder for signal <n0230> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_23_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_26_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_29_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_32_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_35_OUT> created at line 52.
+    Found 4-bit adder for signal <n0249> created at line 50.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_41_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_44_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_47_OUT> created at line 50.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_50_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_53_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_56_OUT> created at line 50.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_59_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_62_OUT> created at line 52.
+    Found 4-bit adder for signal <n0277> created at line 49.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_68_OUT> created at line 50.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_71_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_74_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_77_OUT> created at line 49.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_80_OUT> created at line 50.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_83_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_86_OUT> created at line 52.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_89_OUT> created at line 49.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_92_OUT> created at line 50.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_95_OUT> created at line 51.
+    Found 4-bit adder for signal <GND_3_o_GND_3_o_add_98_OUT> created at line 52.
+    Found 16x8-bit Read Only RAM for signal <UNID[3]_GND_3_o_wide_mux_102_OUT>
+    Found 16x8-bit Read Only RAM for signal <DECE[3]_GND_3_o_wide_mux_103_OUT>
+    Found 16x8-bit Read Only RAM for signal <CENT[3]_GND_3_o_wide_mux_104_OUT>
+    Found 16x8-bit Read Only RAM for signal <MILL[3]_GND_3_o_wide_mux_105_OUT>
+    Found 16-bit 4-to-1 multiplexer for signal <CONTADOR_DISP[1]_DIGIT_1_DISP[7]_wide_mux_111_OUT> created at line 131.
+    Found 3-bit comparator lessequal for signal <n0011> created at line 52
+    Found 4-bit comparator lessequal for signal <n0015> created at line 52
+    Found 4-bit comparator lessequal for signal <n0019> created at line 52
+    Found 3-bit comparator lessequal for signal <n0023> created at line 51
+    Found 4-bit comparator lessequal for signal <n0027> created at line 52
+    Found 4-bit comparator lessequal for signal <n0031> created at line 51
+    Found 4-bit comparator lessequal for signal <n0035> created at line 52
+    Found 4-bit comparator lessequal for signal <n0039> created at line 51
+    Found 4-bit comparator lessequal for signal <n0043> created at line 52
+    Found 3-bit comparator lessequal for signal <n0047> created at line 50
+    Found 4-bit comparator lessequal for signal <n0051> created at line 51
+    Found 4-bit comparator lessequal for signal <n0055> created at line 52
+    Found 4-bit comparator lessequal for signal <n0059> created at line 50
+    Found 4-bit comparator lessequal for signal <n0063> created at line 51
+    Found 4-bit comparator lessequal for signal <n0067> created at line 52
+    Found 4-bit comparator lessequal for signal <n0071> created at line 50
+    Found 4-bit comparator lessequal for signal <n0075> created at line 51
+    Found 4-bit comparator lessequal for signal <n0079> created at line 52
+    Found 3-bit comparator lessequal for signal <n0083> created at line 49
+    Found 4-bit comparator lessequal for signal <n0087> created at line 50
+    Found 4-bit comparator lessequal for signal <n0091> created at line 51
+    Found 4-bit comparator lessequal for signal <n0095> created at line 52
+    Found 4-bit comparator lessequal for signal <n0099> created at line 49
+    Found 4-bit comparator lessequal for signal <n0103> created at line 50
+    Found 4-bit comparator lessequal for signal <n0107> created at line 51
+    Found 4-bit comparator lessequal for signal <n0111> created at line 52
+    Found 4-bit comparator lessequal for signal <n0115> created at line 49
+    Found 4-bit comparator lessequal for signal <n0119> created at line 50
+    Found 4-bit comparator lessequal for signal <n0123> created at line 51
+    Found 4-bit comparator lessequal for signal <n0127> created at line 52
+    Summary:
+	inferred   4 RAM(s).
+	inferred  32 Adder/Subtractor(s).
+	inferred  68 D-type flip-flop(s).
+	inferred  30 Comparator(s).
+	inferred  31 Multiplexer(s).
+Unit <DISPLAY> synthesized.
+
+Synthesizing Unit <LEDS>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\LEDS.v".
+    Found 8-bit register for signal <ledsG>.
+    Found 8-bit register for signal <ledsB>.
+    Found 8-bit register for signal <ledsR>.
+    Found 15-bit comparator greater for signal <n0000> created at line 12
+    Found 15-bit comparator greater for signal <n0002> created at line 13
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <LEDS> synthesized.
+
+Synthesizing Unit <BOCINA>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P3\Contador_de_pulso\BOCINA.v".
+    Found 22-bit register for signal <delay>.
+    Found 1-bit register for signal <fin>.
+    Found 1-bit register for signal <playNext>.
+    Found 22-bit adder for signal <delay[21]_GND_5_o_add_2_OUT> created at line 17.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <BOCINA> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x8-bit single-port Read Only RAM                    : 4
+# Adders/Subtractors                                   : 36
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 22-bit adder                                          : 2
+ 4-bit adder                                           : 30
+# Registers                                            : 20
+ 1-bit register                                        : 6
+ 15-bit register                                       : 1
+ 16-bit register                                       : 2
+ 17-bit register                                       : 1
+ 2-bit register                                        : 1
+ 22-bit register                                       : 2
+ 8-bit register                                        : 7
+# Comparators                                          : 33
+ 1-bit comparator not equal                            : 1
+ 15-bit comparator greater                             : 2
+ 3-bit comparator lessequal                            : 4
+ 4-bit comparator lessequal                            : 26
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 4-to-1 multiplexer                             : 1
+ 22-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 30
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <ledsB_0> in Unit <U3> is equivalent to the following 7 FFs/Latches, which will be removed : <ledsB_1> <ledsB_2> <ledsB_3> <ledsB_4> <ledsB_5> <ledsB_6> <ledsB_7> 
+INFO:Xst:2261 - The FF/Latch <ledsR_0> in Unit <U3> is equivalent to the following 7 FFs/Latches, which will be removed : <ledsR_1> <ledsR_2> <ledsR_3> <ledsR_4> <ledsR_5> <ledsR_6> <ledsR_7> 
+INFO:Xst:2261 - The FF/Latch <ledsG_0> in Unit <U3> is equivalent to the following 7 FFs/Latches, which will be removed : <ledsG_1> <ledsG_2> <ledsG_3> <ledsG_4> <ledsG_5> <ledsG_6> <ledsG_7> 
+
+Synthesizing (advanced) Unit <BOCINA>.
+The following registers are absorbed into counter <delay>: 1 register on signal <delay>.
+Unit <BOCINA> synthesized (advanced).
+
+Synthesizing (advanced) Unit <BOTON>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+The following registers are absorbed into counter <cont_frec_1ms>: 1 register on signal <cont_frec_1ms>.
+The following registers are absorbed into counter <cont_tiempo>: 1 register on signal <cont_tiempo>.
+Unit <BOTON> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DISPLAY>.
+The following registers are absorbed into counter <CONT_FREC_300>: 1 register on signal <CONT_FREC_300>.
+The following registers are absorbed into counter <CONTADOR_DISP>: 1 register on signal <CONTADOR_DISP>.
+INFO:Xst:3231 - The small RAM <Mram_UNID[3]_GND_3_o_wide_mux_102_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(UNID<2:0>,cont_tiempo<0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_DECE[3]_GND_3_o_wide_mux_103_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(DECE<2:0>,UNID<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_CENT[3]_GND_3_o_wide_mux_104_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(CENT<2:0>,DECE<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_MILL[3]_GND_3_o_wide_mux_105_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(MILL,CENT<3>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DISPLAY> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 16x8-bit single-port distributed Read Only RAM        : 4
+# Adders/Subtractors                                   : 30
+ 4-bit adder                                           : 30
+# Counters                                             : 6
+ 15-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 22-bit up counter                                     : 2
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+# Comparators                                          : 33
+ 1-bit comparator not equal                            : 1
+ 15-bit comparator greater                             : 2
+ 3-bit comparator lessequal                            : 4
+ 4-bit comparator lessequal                            : 26
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 2
+ 16-bit 4-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 30
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <ledsB_0> in Unit <LEDS> is equivalent to the following 7 FFs/Latches, which will be removed : <ledsB_1> <ledsB_2> <ledsB_3> <ledsB_4> <ledsB_5> <ledsB_6> <ledsB_7> 
+INFO:Xst:2261 - The FF/Latch <ledsR_0> in Unit <LEDS> is equivalent to the following 7 FFs/Latches, which will be removed : <ledsR_1> <ledsR_2> <ledsR_3> <ledsR_4> <ledsR_5> <ledsR_6> <ledsR_7> 
+INFO:Xst:2261 - The FF/Latch <ledsG_0> in Unit <LEDS> is equivalent to the following 7 FFs/Latches, which will be removed : <ledsG_1> <ledsG_2> <ledsG_3> <ledsG_4> <ledsG_5> <ledsG_6> <ledsG_7> 
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_4_DISP_0 hinder the constant cleaning in the block DISPLAY.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <DISPLAY_0> (without init value) has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DISPLAY_1> (without init value) has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DISPLAY_2> (without init value) has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <DISPLAY_3> (without init value) has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <BOTON> ...
+
+Optimizing unit <DISPLAY> ...
+WARNING:Xst:1293 - FF/Latch <DIGIT_1_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_2_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_3_DISP_0> has a constant value of 1 in block <DISPLAY>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <BOCINA> ...
+WARNING:Xst:1710 - FF/Latch <U1/cont_frec_1ms_15> (without init value) has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/DIGIT_3_DISP_0> has a constant value of 1 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/DIGIT_2_DISP_0> has a constant value of 1 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/DIGIT_1_DISP_0> has a constant value of 1 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 6.
+FlipFlop U3/ledsR_0 has been replicated 7 time(s) to handle iob=true attribute.
+FlipFlop U3/ledsG_0 has been replicated 7 time(s) to handle iob=true attribute.
+FlipFlop U3/ledsB_0 has been replicated 7 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 164
+ Flip-Flops                                            : 164
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 450
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 65
+#      LUT2                        : 32
+#      LUT3                        : 6
+#      LUT4                        : 10
+#      LUT5                        : 32
+#      LUT6                        : 121
+#      MUXCY                       : 86
+#      VCC                         : 1
+#      XORCY                       : 91
+# FlipFlops/Latches                : 164
+#      FD                          : 53
+#      FDR                         : 75
+#      FDRE                        : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 2
+#      OBUF                        : 41
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             140  out of  11440     1%  
+ Number of Slice LUTs:                  271  out of   5720     4%  
+    Number used as Logic:               271  out of   5720     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    273
+   Number with an unused Flip Flop:     133  out of    273    48%  
+   Number with an unused LUT:             2  out of    273     0%  
+   Number of fully used LUT-FF pairs:   138  out of    273    50%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    160    27%  
+    IOB Flip Flops/Latches:              24
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+clk                                | BUFGP                   | 135   |
+U1/frec_1ms                        | NONE(U1/cont_tiempo_14) | 15    |
+U2/FREC_300                        | NONE(U2/CONTADOR_DISP_1)| 14    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.720ns (Maximum Frequency: 174.825MHz)
+   Minimum input arrival time before clock: 4.175ns
+   Maximum output required time after clock: 4.872ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.720ns (frequency: 174.825MHz)
+  Total number of paths / destination ports: 2690 / 180
+-------------------------------------------------------------------------
+Delay:               5.720ns (Levels of Logic = 3)
+  Source:            U4/delay_6 (FF)
+  Destination:       U4/delay_21 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U4/delay_6 to U4/delay_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.525   1.181  U4/delay_6 (U4/delay_6)
+     LUT6:I0->O            1   0.254   0.910  U4/delay[21]_PWR_5_o_equal_2_o<21>3 (U4/delay[21]_PWR_5_o_equal_2_o<21>2)
+     LUT4:I1->O            2   0.235   0.726  U4/delay[21]_PWR_5_o_equal_2_o<21>5 (U4/delay[21]_PWR_5_o_equal_2_o)
+     LUT5:I4->O           22   0.254   1.333  U4/_n0060_inv1 (U4/playNext_glue_set)
+     FDRE:CE                   0.302          U4/delay_1
+    ----------------------------------------
+    Total                      5.720ns (1.570ns logic, 4.150ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U1/frec_1ms'
+  Clock period: 4.803ns (frequency: 208.203MHz)
+  Total number of paths / destination ports: 345 / 30
+-------------------------------------------------------------------------
+Delay:               4.803ns (Levels of Logic = 2)
+  Source:            U1/cont_tiempo_7 (FF)
+  Destination:       U1/cont_tiempo_14 (FF)
+  Source Clock:      U1/frec_1ms rising
+  Destination Clock: U1/frec_1ms rising
+
+  Data Path: U1/cont_tiempo_7 to U1/cont_tiempo_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            13   0.525   1.528  U1/cont_tiempo_7 (U1/cont_tiempo_7)
+     LUT6:I1->O            1   0.254   0.790  U1/_n0049_inv4_SW0 (N18)
+     LUT6:I4->O           15   0.250   1.154  U1/_n0049_inv4 (U1/_n0049_inv)
+     FDRE:CE                   0.302          U1/cont_tiempo_0
+    ----------------------------------------
+    Total                      4.803ns (1.331ns logic, 3.472ns route)
+                                       (27.7% logic, 72.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/FREC_300'
+  Clock period: 3.194ns (frequency: 313.087MHz)
+  Total number of paths / destination ports: 31 / 16
+-------------------------------------------------------------------------
+Delay:               3.194ns (Levels of Logic = 1)
+  Source:            U2/CONTADOR_DISP_1 (FF)
+  Destination:       U2/CONTADOR_DISP_1 (FF)
+  Source Clock:      U2/FREC_300 rising
+  Destination Clock: U2/FREC_300 rising
+
+  Data Path: U2/CONTADOR_DISP_1 to U2/CONTADOR_DISP_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.525   1.235  U2/CONTADOR_DISP_1 (U2/CONTADOR_DISP_1)
+     LUT2:I0->O            2   0.250   0.725  U2/CONTADOR_DISP[1]_PWR_3_o_equal_7_o<1>1 (U2/CONTADOR_DISP[1]_PWR_3_o_equal_7_o)
+     FDR:R                     0.459          U2/CONTADOR_DISP_0
+    ----------------------------------------
+    Total                      3.194ns (1.234ns logic, 1.960ns route)
+                                       (38.6% logic, 61.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U1/frec_1ms'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              4.175ns (Levels of Logic = 2)
+  Source:            boton (PAD)
+  Destination:       U1/cont_tiempo_14 (FF)
+  Destination Clock: U1/frec_1ms rising
+
+  Data Path: boton to U1/cont_tiempo_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   1.137  boton_IBUF (boton_IBUF)
+     LUT6:I0->O           15   0.254   1.154  U1/_n0049_inv4 (U1/_n0049_inv)
+     FDRE:CE                   0.302          U1/cont_tiempo_0
+    ----------------------------------------
+    Total                      4.175ns (1.884ns logic, 2.291ns route)
+                                       (45.1% logic, 54.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.969ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       U1/BOTON_PRES_reset (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to U1/BOTON_PRES_reset
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.328   1.317  reset_IBUF (reset_IBUF)
+     LUT4:I2->O            1   0.250   0.000  U1/BOTON_PRES_reset_rstpot (U1/BOTON_PRES_reset_rstpot)
+     FD:D                      0.074          U1/BOTON_PRES_reset
+    ----------------------------------------
+    Total                      2.969ns (1.652ns logic, 1.317ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              4.872ns (Levels of Logic = 1)
+  Source:            U4/playNext (FF)
+  Destination:       playNext (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U4/playNext to playNext
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             27   0.525   1.435  U4/playNext (U4/playNext)
+     OBUF:I->O                 2.912          playNext_OBUF (playNext)
+    ----------------------------------------
+    Total                      4.872ns (3.437ns logic, 1.435ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U2/FREC_300'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            U2/DISPLAY_15 (FF)
+  Destination:       display<15> (PAD)
+  Source Clock:      U2/FREC_300 rising
+
+  Data Path: U2/DISPLAY_15 to display<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  U2/DISPLAY_15 (U2/DISPLAY_15)
+     OBUF:I->O                 2.912          display_15_OBUF (display<15>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U1/frec_1ms
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/frec_1ms    |    4.803|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U2/FREC_300
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/FREC_300    |    3.194|         |         |         |
+clk            |    1.811|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U1/frec_1ms    |   21.513|         |         |         |
+clk            |    5.720|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.99 secs
+ 
+--> 
+
+Total memory usage is 4486256 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

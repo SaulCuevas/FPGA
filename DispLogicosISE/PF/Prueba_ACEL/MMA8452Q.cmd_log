@@ -1,0 +1,115 @@
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Prueba_ACEL/MMA8452Q.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MMA8452Q.ngc MMA8452Q.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MMA8452Q_map.ncd MMA8452Q.ngd MMA8452Q.pcf 
+par -w -intstyle ise -ol high -mt off MMA8452Q_map.ncd MMA8452Q.ncd MMA8452Q.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MMA8452Q.twx MMA8452Q.ncd -o MMA8452Q.twr MMA8452Q.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MMA8452Q.ut MMA8452Q.ncd 

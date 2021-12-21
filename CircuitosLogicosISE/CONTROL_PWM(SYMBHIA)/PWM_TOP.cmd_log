@@ -1,0 +1,71 @@
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.xst" -ofn "/home/ise/Documents/CONTROL_PWM/PWM_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PWM.ucf -p xc6slx9-csg225-2 PWM_TOP.ngc PWM_TOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PWM_TOP_map.ncd PWM_TOP.ngd PWM_TOP.pcf 
+par -w -intstyle ise -ol high -mt off PWM_TOP_map.ncd PWM_TOP.ncd PWM_TOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PWM_TOP.twx PWM_TOP.ncd -o PWM_TOP.twr PWM_TOP.pcf -ucf PWM.ucf 
+bitgen -intstyle ise -f PWM_TOP.ut PWM_TOP.ncd 

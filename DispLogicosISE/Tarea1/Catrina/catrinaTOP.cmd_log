@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/Tarea1/Catrina/catrinaTOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 catrinaTOP.ngc catrinaTOP.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o catrinaTOP_map.ncd catrinaTOP.ngd catrinaTOP.pcf 
+par -w -intstyle ise -ol high -mt off catrinaTOP_map.ncd catrinaTOP.ncd catrinaTOP.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml catrinaTOP.twx catrinaTOP.ncd -o catrinaTOP.twr catrinaTOP.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f catrinaTOP.ut catrinaTOP.ncd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT_isim_beh.exe" -prj "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT_beh.prj" "work.MULTI_DIV_SHIFT" "work.glbl" 

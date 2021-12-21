@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\saulc\Documents\DispLogicosISE\P3\Encoders_PAP_UNI\TOP.ncd
+OUTFILE=C:\Users\saulc\Documents\DispLogicosISE\P3\Encoders_PAP_UNI\TOP.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=C:\Users\saulc\Documents\DispLogicosISE\P3\Encoders_PAP_UNI
+LICENSE=WebPack
+USER_INFO=212062008_0_0_771

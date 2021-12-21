@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 04 15:13:24 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "VGA_vsync" LOCATE = SITE "E15" LEVEL 1;
+COMP "btn0" LOCATE = SITE "J3" LEVEL 1;
+COMP "VGA_green<0>" LOCATE = SITE "B14" LEVEL 1;
+COMP "VGA_green<1>" LOCATE = SITE "B15" LEVEL 1;
+COMP "VGA_green<2>" LOCATE = SITE "A12" LEVEL 1;
+COMP "VGA_red<0>" LOCATE = SITE "B13" LEVEL 1;
+COMP "VGA_red<1>" LOCATE = SITE "B11" LEVEL 1;
+COMP "VGA_red<2>" LOCATE = SITE "A11" LEVEL 1;
+COMP "clk_50MHz" LOCATE = SITE "E7" LEVEL 1;
+COMP "desactivado" LOCATE = SITE "L1" LEVEL 1;
+COMP "VGA_hsync" LOCATE = SITE "F15" LEVEL 1;
+COMP "VGA_blue<0>" LOCATE = SITE "C15" LEVEL 1;
+COMP "VGA_blue<1>" LOCATE = SITE "D15" LEVEL 1;
+COMP "desactivado2" LOCATE = SITE "N2" LEVEL 1;
+SCHEMATIC END;
+

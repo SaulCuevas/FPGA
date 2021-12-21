@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725_isim_beh.exe" -prj "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725_beh.prj" "work.MCP4725" "work.glbl" 

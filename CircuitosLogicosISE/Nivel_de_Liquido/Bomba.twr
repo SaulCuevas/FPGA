@@ -1,0 +1,93 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml Bomba.twx Bomba.ncd -o Bomba.twr Bomba.pcf -ucf
+Nivel_de_Liquido.ucf
+
+Design file:              Bomba.ncd
+Physical constraint file: Bomba.pcf
+Device,package,speed:     xc6slx9,csg225,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+CONTENEDOR  |    3.505(R)|      SLOW  |   -1.071(R)|      FAST  |CLK_BUFGP         |   0.000|
+SENSORES<0> |    1.284(R)|      SLOW  |    0.117(R)|      SLOW  |CLK_BUFGP         |   0.000|
+SENSORES<1> |    1.477(R)|      SLOW  |   -0.057(R)|      SLOW  |CLK_BUFGP         |   0.000|
+SENSORES<2> |    1.432(R)|      SLOW  |    0.119(R)|      SLOW  |CLK_BUFGP         |   0.000|
+SENSORES<3> |    2.213(R)|      SLOW  |   -0.623(R)|      FAST  |CLK_BUFGP         |   0.000|
+SENSORES<4> |    2.736(R)|      SLOW  |   -0.910(R)|      FAST  |CLK_BUFGP         |   0.000|
+SENSORES<5> |    2.062(R)|      SLOW  |   -0.531(R)|      FAST  |CLK_BUFGP         |   0.000|
+SENSORES<6> |    4.943(R)|      SLOW  |   -2.249(R)|      FAST  |CLK_BUFGP         |   0.000|
+SENSORES<7> |    2.379(R)|      SLOW  |   -0.752(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+MOTOBOMBA<1>|         8.544(R)|      SLOW  |         3.415(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.815|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CONTENEDOR     |LEDCONTENEDOR  |   10.269|
+SENSORES<0>    |VUMMER<0>      |    7.871|
+SENSORES<1>    |VUMMER<1>      |    7.583|
+SENSORES<2>    |VUMMER<2>      |    8.406|
+SENSORES<3>    |VUMMER<3>      |    7.894|
+SENSORES<4>    |VUMMER<4>      |    8.391|
+SENSORES<5>    |VUMMER<5>      |    8.574|
+SENSORES<6>    |VUMMER<6>      |   10.048|
+SENSORES<7>    |VUMMER<7>      |    9.305|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec  3 03:41:52 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 382 MB
+
+
+

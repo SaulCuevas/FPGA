@@ -1,0 +1,30 @@
+Command line:
+   MCP4725_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62121
+
+Fri Oct 29 14:29:16 2021
+
+
+ Elaboration Time: 0.28125 sec
+
+ Current Memory Usage: 5804.24 Meg
+
+ Total Signals          : 15
+ Total Nets             : 16
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 136
+Total Line Count : 73
+Total Line Count : 73
+
+ Total Simulation Time: 1.26563 sec
+
+ Current Memory Usage: 4703.24 Meg
+
+Fri Oct 29 14:37:10 2021
+

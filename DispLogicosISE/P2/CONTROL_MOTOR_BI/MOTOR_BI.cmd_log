@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_BI/MOTOR_BI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_BI/MOTOR_BI.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_BI/MOTOR_BI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_BI/MOTOR_BI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA_2_RevA.ucf -p xc6slx9-csg225-2 MOTOR_BI.ngc MOTOR_BI.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MOTOR_BI_map.ncd MOTOR_BI.ngd MOTOR_BI.pcf 
+par -w -intstyle ise -ol high -mt off MOTOR_BI_map.ncd MOTOR_BI.ncd MOTOR_BI.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MOTOR_BI.twx MOTOR_BI.ncd -o MOTOR_BI.twr MOTOR_BI.pcf -ucf AMIIBA_2_RevA.ucf 
+bitgen -intstyle ise -f MOTOR_BI.ut MOTOR_BI.ncd 

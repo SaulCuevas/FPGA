@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Documents/Nivel_de_Liquido/Bomba_isim_beh.exe" -prj "/home/ise/Documents/Nivel_de_Liquido/Bomba_beh.prj" "work.Bomba" 

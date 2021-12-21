@@ -1,0 +1,5 @@
+verilog work "LEDS.v"
+verilog work "DISPLAY.v"
+verilog work "BOTON.v"
+verilog work "BOCINA.v"
+verilog work "TOP.v"

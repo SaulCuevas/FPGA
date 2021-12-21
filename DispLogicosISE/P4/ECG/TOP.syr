@@ -1,0 +1,546 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\MCP4725.v" into library work
+Parsing module <MCP4725>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\TOP.v" into library work
+Parsing module <TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TOP>.
+
+Elaborating module <MCP4725>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\TOP.v".
+    Found 12-bit register for signal <ECG>.
+    Found 12-bit adder for signal <ECG[11]_GND_1_o_add_1_OUT> created at line 10.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+Unit <TOP> synthesized.
+
+Synthesizing Unit <MCP4725>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\MCP4725.v".
+        byteInicio = 8'b11000000
+        ACK = 1'bz
+    Found 4-bit register for signal <cont_pulsos>.
+    Found 1-bit register for signal <frec_200kHz>.
+    Found 1-bit register for signal <cambioLOW>.
+    Found 1-bit register for signal <cambioHIGH>.
+    Found 5-bit register for signal <estado>.
+    Found 12-bit register for signal <DATA>.
+    Found 5-bit register for signal <cont_1MHz>.
+    Found 4-bit adder for signal <cont_pulsos[3]_GND_2_o_add_2_OUT> created at line 24.
+    Found 5-bit adder for signal <cont_1MHz[4]_GND_2_o_add_8_OUT> created at line 39.
+    Found 5-bit adder for signal <estado[4]_GND_2_o_add_15_OUT> created at line 49.
+    Found 32x3-bit Read Only RAM for signal <_n0158>
+WARNING:Xst:737 - Found 1-bit latch for signal <estado[4]_estado[4]_DLATCH_1_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <estado[4]_estado[4]_DLATCH_2_q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <busy>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit tristate buffer for signal <SDA> created at line 58
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   3 Latch(s).
+	inferred  26 Multiplexer(s).
+	inferred   1 Tristate(s).
+Unit <MCP4725> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x3-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 12-bit adder                                          : 1
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 2
+# Registers                                            : 8
+ 1-bit register                                        : 3
+ 12-bit register                                       : 2
+ 4-bit register                                        : 1
+ 5-bit register                                        : 2
+# Latches                                              : 3
+ 1-bit latch                                           : 3
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 26
+# Tristates                                            : 1
+ 1-bit tristate buffer                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <MCP4725>.
+The following registers are absorbed into counter <cont_1MHz>: 1 register on signal <cont_1MHz>.
+The following registers are absorbed into counter <cont_pulsos>: 1 register on signal <cont_pulsos>.
+The following registers are absorbed into counter <estado>: 1 register on signal <estado>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0158> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 3-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <estado>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <MCP4725> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TOP>.
+The following registers are absorbed into counter <ECG>: 1 register on signal <ECG>.
+Unit <TOP> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x3-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 4
+ 12-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 2
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 26
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <TOP> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 71
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 11
+#      LUT2                        : 2
+#      LUT3                        : 1
+#      LUT4                        : 2
+#      LUT5                        : 16
+#      LUT6                        : 9
+#      MUXCY                       : 11
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 44
+#      FD                          : 29
+#      FD_1                        : 12
+#      LD                          : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      OBUF                        : 1
+#      OBUFT                       : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              43  out of  11440     0%  
+ Number of Slice LUTs:                   44  out of   5720     0%  
+    Number used as Logic:                44  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     50
+   Number with an unused Flip Flop:       7  out of     50    14%  
+   Number with an unused LUT:             6  out of     50    12%  
+   Number of fully used LUT-FF pairs:    37  out of     50    74%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    160     1%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------+-------------------------------------------+-------+
+Clock Signal                                                                 | Clock buffer(FF name)                     | Load  |
+-----------------------------------------------------------------------------+-------------------------------------------+-------+
+U2/busy                                                                      | BUFG                                      | 24    |
+U2/estado[4]_GND_3_o_Mux_22_o(U2/Mmux_estado[4]_GND_3_o_Mux_22_o1:O)         | NONE(*)(U2/estado[4]_estado[4]_DLATCH_1_q)| 2     |
+U2/Mmux_estado[4]_GND_3_o_Mux_22_o11(U2/Mmux_estado[4]_GND_3_o_Mux_22_o111:O)| NONE(*)(U2/busy)                          | 1     |
+clk                                                                          | BUFGP                                     | 12    |
+U2/frec_200kHz                                                               | NONE(U2/estado_4)                         | 5     |
+-----------------------------------------------------------------------------+-------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.288ns (Maximum Frequency: 304.136MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.110ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/busy'
+  Clock period: 2.233ns (frequency: 447.928MHz)
+  Total number of paths / destination ports: 90 / 24
+-------------------------------------------------------------------------
+Delay:               2.233ns (Levels of Logic = 13)
+  Source:            ECG_0 (FF)
+  Destination:       ECG_11 (FF)
+  Source Clock:      U2/busy falling
+  Destination Clock: U2/busy falling
+
+  Data Path: ECG_0 to ECG_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  ECG_0 (ECG_0)
+     INV:I->O              1   0.255   0.000  Mcount_ECG_lut<0>_INV_0 (Mcount_ECG_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcount_ECG_cy<0> (Mcount_ECG_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<1> (Mcount_ECG_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<2> (Mcount_ECG_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<3> (Mcount_ECG_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<4> (Mcount_ECG_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<5> (Mcount_ECG_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<6> (Mcount_ECG_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<7> (Mcount_ECG_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<8> (Mcount_ECG_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_ECG_cy<9> (Mcount_ECG_cy<9>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_ECG_cy<10> (Mcount_ECG_cy<10>)
+     XORCY:CI->O           1   0.206   0.000  Mcount_ECG_xor<11> (Result<11>)
+     FD:D                      0.074          ECG_11
+    ----------------------------------------
+    Total                      2.233ns (1.508ns logic, 0.725ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.288ns (frequency: 304.136MHz)
+  Total number of paths / destination ports: 91 / 12
+-------------------------------------------------------------------------
+Delay:               3.288ns (Levels of Logic = 2)
+  Source:            U2/cont_1MHz_4 (FF)
+  Destination:       U2/frec_200kHz (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U2/cont_1MHz_4 to U2/frec_200kHz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.525   1.271  U2/cont_1MHz_4 (U2/cont_1MHz_4)
+     LUT5:I0->O            7   0.254   0.910  U2/cont_1MHz[4]_PWR_2_o_equal_2_o<4>1 (U2/cont_1MHz[4]_PWR_2_o_equal_2_o)
+     LUT6:I5->O            1   0.254   0.000  U2/cambioLOW_rstpot (U2/cambioLOW_rstpot)
+     FD:D                      0.074          U2/cambioLOW
+    ----------------------------------------
+    Total                      3.288ns (1.107ns logic, 2.181ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'U2/frec_200kHz'
+  Clock period: 2.381ns (frequency: 419.992MHz)
+  Total number of paths / destination ports: 22 / 5
+-------------------------------------------------------------------------
+Delay:               2.381ns (Levels of Logic = 1)
+  Source:            U2/estado_0 (FF)
+  Destination:       U2/estado_0 (FF)
+  Source Clock:      U2/frec_200kHz rising
+  Destination Clock: U2/frec_200kHz rising
+
+  Data Path: U2/estado_0 to U2/estado_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.525   1.528  U2/estado_0 (U2/estado_0)
+     LUT5:I0->O            1   0.254   0.000  U2/estado_0_rstpot (U2/estado_0_rstpot)
+     FD:D                      0.074          U2/estado_0
+    ----------------------------------------
+    Total                      2.381ns (0.853ns logic, 1.528ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.346ns (Levels of Logic = 1)
+  Source:            U2/frec_200kHz (FF)
+  Destination:       SCL (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U2/frec_200kHz to SCL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.525   0.909  U2/frec_200kHz (U2/frec_200kHz)
+     OBUF:I->O                 2.912          SCL_OBUF (SCL)
+    ----------------------------------------
+    Total                      4.346ns (3.437ns logic, 0.909ns route)
+                                       (79.1% logic, 20.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U2/estado[4]_GND_3_o_Mux_22_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.110ns (Levels of Logic = 2)
+  Source:            U2/estado[4]_estado[4]_DLATCH_2_q (LATCH)
+  Destination:       SDA (PAD)
+  Source Clock:      U2/estado[4]_GND_3_o_Mux_22_o falling
+
+  Data Path: U2/estado[4]_estado[4]_DLATCH_2_q to SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.581   0.681  U2/estado[4]_estado[4]_DLATCH_2_q (U2/estado[4]_estado[4]_DLATCH_2_q)
+     INV:I->O              1   0.255   0.681  U2/estado[4]_estado[4]_DLATCH_2_q_inv1_INV_0 (U2/estado[4]_estado[4]_DLATCH_2_q_inv)
+     OBUFT:T->O                2.912          SDA_OBUFT (SDA)
+    ----------------------------------------
+    Total                      5.110ns (3.748ns logic, 1.362ns route)
+                                       (73.3% logic, 26.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock U2/Mmux_estado[4]_GND_3_o_Mux_22_o11
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/frec_200kHz |         |         |    2.343|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U2/busy
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/busy        |         |         |    2.233|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U2/estado[4]_GND_3_o_Mux_22_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/busy        |         |         |    4.005|         |
+U2/frec_200kHz |         |         |    4.671|         |
+clk            |         |         |    1.886|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock U2/frec_200kHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+U2/frec_200kHz |    2.381|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.288|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.73 secs
+ 
+--> 
+
+Total memory usage is 4486252 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

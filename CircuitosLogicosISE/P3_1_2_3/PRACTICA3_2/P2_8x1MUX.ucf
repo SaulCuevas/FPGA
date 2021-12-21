@@ -1,0 +1,28 @@
+NET "Entrada(0)" LOC = B14; //SW0
+NET "Entrada(1)" LOC = C14; //SW1
+NET "Entrada(2)" LOC = D13; //SW2
+NET "Entrada(3)" LOC = E14; //SW3
+NET "Entrada(4)" LOC = F13; //SW4
+NET "Entrada(5)" LOC = M13; //SW5
+NET "Entrada(6)" LOC = N14; //SW6
+NET "Entrada(7)" LOC = P14; //SW7
+
+NET "clk" 		LOC = E7; //oscilador 50MHz
+NET "Enable" 	LOC = F1; // E/S P1
+NET "Sel1" 		LOC = E1; // E/S P1 SELECTOR BIT 1
+NET "Sel2" 		LOC = F3; // E/S P1 SELECTOR BIT 2
+NET "Sel3" 		LOC = B3; // E/S P1 SELECTOR BIT 3
+NET "Salida"	LOC = A3; // E/S P1 LED
+
+NET "disp(0)" 	LOC = D5; 	// E/S P6 A
+NET "disp(1)" 	LOC = C5; 	// E/S P6 B
+NET "disp(2)" 	LOC = C9; 	// E/S P6 C
+NET "disp(3)" 	LOC = D8; 	// E/S P6 D
+NET "disp(4)" 	LOC = C8; 	// E/S P6 E
+NET "disp(5)" 	LOC = D10; 	// E/S P6 F
+NET "disp(6)" 	LOC = C10; 	// E/S P6 G
+NET "disp(7)" 	LOC = D11; 	// E/S P6 P
+NET "disp(8)" 	LOC = D1;	// E/S P3 ANODO 1
+NET "disp(9)" 	LOC = G2;	// E/S P3 A2
+NET "disp(10)" LOC = C2;	// E/S P3 A3
+NET "disp(11)" LOC = D3;	// E/S P3 A4

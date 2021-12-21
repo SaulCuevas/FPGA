@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/saulc/Documents/DispLogicosISE/P3/MP3_TF_16P/MP3_TF_16P_isim_beh.exe" -prj "C:/Users/saulc/Documents/DispLogicosISE/P3/MP3_TF_16P/MP3_TF_16P_beh.prj" "work.MP3_TF_16P" "work.glbl" 

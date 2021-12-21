@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\saulc\Documents\DispLogicosISE\P6\VGA\pong.ncd
+OUTFILE=C:\Users\saulc\Documents\DispLogicosISE\P6\VGA\pong.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=C:\Users\saulc\Documents\DispLogicosISE\P6\VGA
+LICENSE=WebPack
+USER_INFO=212062008_0_0_771

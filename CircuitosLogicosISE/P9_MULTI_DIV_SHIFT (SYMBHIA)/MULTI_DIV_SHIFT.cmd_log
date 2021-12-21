@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+par -w -intstyle ise -ol high -mt off MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ncd MULTI_DIV_SHIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MULTI_DIV_SHIFT.twx MULTI_DIV_SHIFT.ncd -o MULTI_DIV_SHIFT.twr MULTI_DIV_SHIFT.pcf -ucf MULTI_DIV_SHIFT.ucf 
+bitgen -intstyle ise -f MULTI_DIV_SHIFT.ut MULTI_DIV_SHIFT.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+par -w -intstyle ise -ol high -mt off MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ncd MULTI_DIV_SHIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MULTI_DIV_SHIFT.twx MULTI_DIV_SHIFT.ncd -o MULTI_DIV_SHIFT.twr MULTI_DIV_SHIFT.pcf -ucf MULTI_DIV_SHIFT.ucf 
+bitgen -intstyle ise -f MULTI_DIV_SHIFT.ut MULTI_DIV_SHIFT.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+par -w -intstyle ise -ol high -mt off MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ncd MULTI_DIV_SHIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MULTI_DIV_SHIFT.twx MULTI_DIV_SHIFT.ncd -o MULTI_DIV_SHIFT.twr MULTI_DIV_SHIFT.pcf -ucf MULTI_DIV_SHIFT.ucf 
+xst -intstyle ise -ifn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.xst" -ofn "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+par -w -intstyle ise -ol high -mt off MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ncd MULTI_DIV_SHIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MULTI_DIV_SHIFT.twx MULTI_DIV_SHIFT.ncd -o MULTI_DIV_SHIFT.twr MULTI_DIV_SHIFT.pcf -ucf MULTI_DIV_SHIFT.ucf 
+bitgen -intstyle ise -f MULTI_DIV_SHIFT.ut MULTI_DIV_SHIFT.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MULTI_DIV_SHIFT.ucf -p xc6slx9-csg225-2 MULTI_DIV_SHIFT.ngc MULTI_DIV_SHIFT.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ngd MULTI_DIV_SHIFT.pcf 
+par -w -intstyle ise -ol high -mt off MULTI_DIV_SHIFT_map.ncd MULTI_DIV_SHIFT.ncd MULTI_DIV_SHIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MULTI_DIV_SHIFT.twx MULTI_DIV_SHIFT.ncd -o MULTI_DIV_SHIFT.twr MULTI_DIV_SHIFT.pcf -ucf MULTI_DIV_SHIFT.ucf 
+bitgen -intstyle ise -f MULTI_DIV_SHIFT.ut MULTI_DIV_SHIFT.ncd 

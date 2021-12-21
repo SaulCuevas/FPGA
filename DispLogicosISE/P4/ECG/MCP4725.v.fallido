@@ -1,0 +1,258 @@
+//////////////////////////////////////////////////////////////////////////////////
+module MCP4725(
+    input clk,
+    input [11:0] data,
+    output reg ready,
+    //output reg busy,
+    //output reg done,
+    output reg SCL,
+    output reg SDA
+    );
+
+reg [5:0] estado = inicio, futuro = inicio;
+
+// Generador de una senal de 100kHz a SCL
+reg [7:0] cont_10us = 0;
+reg frec = 0;
+reg holdSDL = 0;
+
+always @ ( posedge clk )
+	begin
+		if( cont_10us == 8'd250 )
+			begin
+				cont_10us <= 0;
+				frec <= ~frec;
+				if( holdSDL ) SCL <= 1'b1;
+				else SCL <= ~frec;
+			end
+		else cont_10us <= cont_10us + 1'b1;
+	end
+
+parameter inicio = 6'd0,
+			paso1 = 6'd1,
+			paso2 = 6'd2,
+			paso3 = 6'd3,
+			paso4 = 6'd4,
+			paso5 = 6'd5,
+			paso6 = 6'd6,
+			paso7 = 6'd7,
+			paso8 = 6'd8,
+			paso9 = 6'd9,
+			paso10 = 6'd10,
+			paso11 = 6'd11,
+			paso12 = 6'd12,
+			paso13 = 6'd13,
+			paso14 = 6'd14,
+			paso15 = 6'd15,
+			paso16 = 6'd16,
+			paso17 = 6'd17,
+			paso18 = 6'd18,
+			paso19 = 6'd19,
+			paso20 = 6'd20,
+			paso21 = 6'd21,
+			paso22 = 6'd22,
+			paso23 = 6'd23,
+			paso24 = 6'd24,
+			paso25 = 6'd25,
+			paso26 = 6'd26,
+			paso27 = 6'd27,
+			paso28 = 6'd28,
+			paso29 = 6'd29,
+			fin1 = 6'd30,
+			fin2 = 6'd31,
+			fin3 = 6'd32;
+
+parameter [7:0] byteInicio = 8'hC0;
+parameter ACK = 1'b0;
+
+always @ ( posedge frec )
+	begin
+		case( estado )
+			inicio:
+				begin
+					ready <= 1'b1;
+					futuro <= paso1;
+					holdSDL <= 1'b1;
+				end
+			paso1:
+				begin
+					ready <= 1'b0;
+					//busy <= 1'b1;
+					//done <= 1'b0;
+					SDA <= 1'b0; //Cambio de HIGH a LOW para iniciar
+					futuro <= paso2;
+				end
+			paso2:
+				begin
+					futuro <= paso3;
+					holdSDL <= 1'b0;
+				end
+			paso3:
+				begin
+					SDA <= byteInicio[7]; //Empieza la transmision con el primer byte
+					futuro <= paso4;
+				end
+			paso4:
+				begin
+					SDA <= byteInicio[6];
+					futuro <= paso5;
+				end
+			paso5:
+				begin
+					SDA <= byteInicio[5];
+					futuro <= paso6;
+				end
+			paso6:
+				begin
+					SDA <= byteInicio[4];
+					futuro <= paso7;
+				end
+			paso7:
+				begin
+					SDA <= byteInicio[3];
+					futuro <= paso8;
+				end
+			paso8:
+				begin
+					SDA <= byteInicio[2];
+					futuro <= paso9;
+				end
+			paso9:
+				begin
+					SDA <= byteInicio[1];
+					futuro <= paso10;
+				end
+			paso10:
+				begin
+					SDA <= byteInicio[0];
+					futuro <= paso11;
+				end
+			paso11:
+				begin
+					SDA <= ACK;
+					futuro <= paso12;
+				end
+			////////////////////////////////////
+			//fin del mandado del ADDRESS BYTE//
+			////////////////////////////////////
+			paso12:
+				begin
+					SDA <= 1'b0; //C2 = 0
+					futuro <= paso13;
+				end
+			paso13:
+				begin
+					SDA <= 1'b0; //C1 = 0 FAST MODE
+					futuro <= paso14;
+				end
+			paso14:
+				begin
+					SDA <= 1'b0; //PD1 = 0 NORMAL MODE
+					futuro <= paso15;
+				end
+			paso15:
+				begin
+					SDA <= 1'b0; //PD0 = 0 NORMAL MODE
+					futuro <= paso16;
+				end
+			paso16:
+				begin
+					SDA <= data[11];
+					futuro <= paso17;
+				end
+			paso17:
+				begin
+					SDA <= data[10];
+					futuro <= paso18;
+				end
+			paso18:
+				begin
+					SDA <= data[9];
+					futuro <= paso19;
+				end
+			paso19:
+				begin
+					SDA <= data[8];
+					futuro <= paso20;
+				end
+			paso20:
+				begin
+					SDA <= ACK;
+					futuro <= paso21;
+				end
+			////////////////////////////////////
+			//fin del mandado del segundo BYTE//
+			////////////////////////////////////
+			paso21:
+				begin
+					SDA <= data[7];
+					futuro <= paso22;
+				end
+			paso22:
+				begin
+					SDA <= data[6];
+					futuro <= paso23;
+				end
+			paso23:
+				begin
+					SDA <= data[5];
+					futuro <= paso24;
+				end
+			paso24:
+				begin
+					SDA <= data[4];
+					futuro <= paso25;
+				end
+			paso25:
+				begin
+					SDA <= data[3];
+					futuro <= paso26;
+				end
+			paso26:
+				begin
+					SDA <= data[2];
+					futuro <= paso27;
+				end
+			paso27:
+				begin
+					SDA <= data[1];
+					futuro <= paso28;
+				end
+			paso28:
+				begin
+					SDA <= data[0];
+					futuro <= paso29;
+				end
+			paso29:
+				begin
+					SDA <= ACK;
+					futuro <= fin1;
+				end
+			////////////////////////////////////
+			//fin del mandado del tercer BYTE //
+			////////////////////////////////////
+			fin1:
+				begin
+					SDA <= 1'b0;
+					holdSDL <= 1'b1;
+					futuro <= fin2;
+				end
+			fin2:
+				begin
+					SDA <= 1'b1; //Cambio de LOW a HIGH para marcar el fin
+					futuro <= fin3;
+				end
+			fin3:
+				begin
+					holdSDL <= 1'b0;
+					//busy <= 1'b0;
+					//done <= 1'b1;
+					futuro <= inicio;
+				end
+			
+			endcase
+	end
+
+always @ ( posedge frec ) estado <= futuro;
+
+endmodule

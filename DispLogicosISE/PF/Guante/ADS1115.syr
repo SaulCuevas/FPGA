@@ -1,0 +1,1054 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Reading design: ADS1115.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADS1115.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADS1115"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : ADS1115
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\BINaBCD.v" into library work
+Parsing module <BINaBCD>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\ADS1115.v" into library work
+Parsing module <ADS1115>.
+Parsing VHDL file "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\PROCESADOR_LCD_REVD.vhd" into library work
+Parsing entity <PROCESADOR_LCD_REVD>.
+Parsing architecture <Behavioral> of entity <procesador_lcd_revd>.
+Parsing VHDL file "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\COMANDOS_LCD_REVD.vhd" into library work
+Parsing package <COMANDOS_LCD_REVD>.
+Parsing package body <COMANDOS_LCD_REVD>.
+Parsing VHDL file "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\CARACTERES_ESPECIALES_REVD.vhd" into library work
+Parsing entity <CARACTERES_ESPECIALES_REVD>.
+Parsing architecture <Behavioral> of entity <caracteres_especiales_revd>.
+Parsing VHDL file "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\LIB_LCD_INTESC_REVD.vhd" into library work
+Parsing entity <LIB_LCD_INTESC_REVD>.
+Parsing architecture <Behavioral> of entity <lib_lcd_intesc_revd>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ADS1115>.
+
+Elaborating module <BINaBCD>.
+Going to vhdl side to elaborate module LIB_LCD_INTESC_REVD
+
+Elaborating entity <LIB_LCD_INTESC_REVD> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <PROCESADOR_LCD_REVD> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <CARACTERES_ESPECIALES_REVD> (architecture <Behavioral>) from library <work>.
+Back to verilog to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ADS1115>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\ADS1115.v".
+        CONFIG_LSB = 8'b10000011
+        A0_CMSB = 8'b11000100
+        A1_CMSB = 8'b11010100
+        ADDR = 7'b1001000
+        ACK = 1'bz
+        P1 = 1'b0
+        P0 = 1'b0
+        CONFIGURACION = 2'b00
+        APUNTADOR = 2'b01
+        LECTURA = 2'b10
+    Found 21-bit register for signal <cont_rebotes>.
+    Found 1-bit register for signal <pausar_lectura>.
+    Found 6-bit register for signal <cont_gen_frec>.
+    Found 1-bit register for signal <cambio>.
+    Found 3-bit register for signal <cont_frec_100kHz>.
+    Found 1-bit register for signal <SCL>.
+    Found 2-bit register for signal <sampled_cambio>.
+    Found 1-bit register for signal <out_EN>.
+    Found 1-bit register for signal <STOP>.
+    Found 1-bit register for signal <SDA_out_clk_DFF_39_q>.
+    Found 1-bit register for signal <pausar_lectura_clk_DFF_40>.
+    Found 1-bit register for signal <working>.
+    Found 21-bit register for signal <cont_delayEL>.
+    Found 1-bit register for signal <delayEntreLec>.
+    Found 2-bit register for signal <estado>.
+    Found 6-bit register for signal <op_counter>.
+    Found 1-bit register for signal <switch>.
+    Found 8-bit register for signal <numero1>.
+    Found 8-bit register for signal <numero2>.
+    Found 16-bit register for signal <DATA1>.
+    Found 16-bit register for signal <DATA2>.
+    Found 1-bit register for signal <sampled_stop>.
+    Found finite state machine <FSM_0> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 14                                             |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 21-bit adder for signal <cont_rebotes[20]_GND_1_o_add_4_OUT> created at line 82.
+    Found 1-bit adder for signal <cambio_PWR_1_o_add_12_OUT<0>> created at line 105.
+    Found 3-bit adder for signal <cont_frec_100kHz[2]_GND_1_o_add_14_OUT> created at line 112.
+    Found 6-bit adder for signal <cont_gen_frec[5]_GND_1_o_add_16_OUT> created at line 114.
+    Found 21-bit adder for signal <cont_delayEL[20]_GND_1_o_add_23_OUT> created at line 165.
+    Found 6-bit adder for signal <op_counter[5]_GND_1_o_add_95_OUT> created at line 329.
+    Found 64x2-bit Read Only RAM for signal <_n0817>
+    Found 1-bit tristate buffer for signal <SDA> created at line 135
+    Found 1-bit tristate buffer for signal <SDA_out> created at line 147
+    Found 1-bit comparator equal for signal <sampled_stop_boton_stop_equal_3_o> created at line 78
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred 118 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  18 Multiplexer(s).
+	inferred   2 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <ADS1115> synthesized.
+
+Synthesizing Unit <BINaBCD>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\BINaBCD.v".
+    Found 7-bit register for signal <DECE>.
+    Found 7-bit register for signal <CENT>.
+    Found 7-bit register for signal <UNID>.
+    Found 4-bit adder for signal <n0064> created at line 31.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_4_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_7_OUT> created at line 31.
+    Found 4-bit adder for signal <n0074> created at line 30.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_13_OUT> created at line 31.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_16_OUT> created at line 30.
+    Found 4-bit adder for signal <GND_5_o_GND_5_o_add_19_OUT> created at line 31.
+    Found 7-bit adder for signal <n0108[6:0]> created at line 47.
+    Found 7-bit adder for signal <n0110[6:0]> created at line 48.
+    Found 7-bit adder for signal <n0112[6:0]> created at line 49.
+    Found 3-bit comparator lessequal for signal <n0000> created at line 31
+    Found 4-bit comparator lessequal for signal <n0004> created at line 31
+    Found 4-bit comparator lessequal for signal <n0008> created at line 31
+    Found 3-bit comparator lessequal for signal <n0012> created at line 30
+    Found 4-bit comparator lessequal for signal <n0016> created at line 31
+    Found 4-bit comparator lessequal for signal <n0020> created at line 30
+    Found 4-bit comparator lessequal for signal <n0024> created at line 31
+    WARNING:Xst:2404 -  FFs/Latches <MILL<7:6>> (without init value) have a constant value of 0 in block <BINaBCD>.
+    WARNING:Xst:2404 -  FFs/Latches <MILL<6:5>> (without init value) have a constant value of 1 in block <BINaBCD>.
+    WARNING:Xst:2404 -  FFs/Latches <MILL<5:2>> (without init value) have a constant value of 0 in block <BINaBCD>.
+    WARNING:Xst:2404 -  FFs/Latches <DECE<7:7>> (without init value) have a constant value of 0 in block <BINaBCD>.
+    WARNING:Xst:2404 -  FFs/Latches <CENT<7:7>> (without init value) have a constant value of 0 in block <BINaBCD>.
+    WARNING:Xst:2404 -  FFs/Latches <UNID<7:7>> (without init value) have a constant value of 0 in block <BINaBCD>.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <BINaBCD> synthesized.
+
+Synthesizing Unit <LIB_LCD_INTESC_REVD>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\LIB_LCD_INTESC_REVD.vhd".
+        FPGA_CLK = 50000000
+INFO:Xst:3210 - "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\LIB_LCD_INTESC_REVD.vhd" line 284: Output port <BD_LCD> of the instance <u1> is unconnected or connected to loadless signal.
+    Found 9-bit 15-to-1 multiplexer for signal <vector_mem> created at line 294.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <LIB_LCD_INTESC_REVD> synthesized.
+
+Synthesizing Unit <PROCESADOR_LCD_REVD>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\PROCESADOR_LCD_REVD.vhd".
+        FPGA_CLK = 50000000
+        NUM_INST = 14
+    Found 7-bit register for signal <edo>.
+    Found 1-bit register for signal <RS>.
+    Found 1-bit register for signal <RW>.
+    Found 16-bit register for signal <ciclo_enable>.
+    Found 8-bit register for signal <DATA>.
+    Found 1-bit register for signal <ok_enable>.
+    Found 8-bit register for signal <BD_LCD>.
+    Found 1-bit register for signal <avanzar>.
+    Found 9-bit register for signal <data_s>.
+    Found 4-bit register for signal <dir_salto_mem>.
+    Found 1-bit register for signal <salto>.
+    Found 8-bit register for signal <vec_ram>.
+    Found 40-bit register for signal <vec_c_char>.
+    Found 8-bit register for signal <vec_l_ram>.
+    Found 2-bit register for signal <edo_enable>.
+    Found 16-bit register for signal <conta_enable>.
+    Found 1-bit register for signal <enable_fin>.
+    Found 4-bit register for signal <dir_mem_s>.
+    Found 22-bit register for signal <conta_delay>.
+    Found finite state machine <FSM_2> for signal <edo_enable>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <edo>.
+    -----------------------------------------------------------------------
+    | States             | 63                                             |
+    | Transitions        | 236                                            |
+    | Inputs             | 21                                             |
+    | Outputs            | 15                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Power Up State     | 0000000                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 22-bit adder for signal <conta_delay[21]_GND_13_o_add_48_OUT> created at line 141.
+    Found 16-bit adder for signal <conta_enable[15]_GND_13_o_add_652_OUT> created at line 652.
+    Found 17-bit adder for signal <n1587> created at line 669.
+    Found 17-bit adder for signal <n1590> created at line 669.
+    Found 4-bit adder for signal <dir_mem_s[3]_GND_13_o_add_669_OUT> created at line 685.
+    Found 9-bit subtractor for signal <GND_13_o_GND_13_o_sub_84_OUT<8:0>> created at line 273.
+    Found 9-bit subtractor for signal <GND_13_o_GND_13_o_sub_87_OUT<8:0>> created at line 275.
+    Found 9-bit subtractor for signal <GND_13_o_GND_13_o_sub_88_OUT<8:0>> created at line 277.
+    Found 9-bit subtractor for signal <GND_13_o_GND_13_o_sub_98_OUT<8:0>> created at line 305.
+    Found 9-bit subtractor for signal <GND_13_o_GND_13_o_sub_101_OUT<8:0>> created at line 307.
+    Found 8-bit subtractor for signal <GND_13_o_GND_13_o_sub_200_OUT<7:0>> created at line 609.
+    Found 8-bit comparator greater for signal <n0012> created at line 77
+    Found 8-bit comparator greater for signal <n0014> created at line 77
+    Found 8-bit comparator greater for signal <n0017> created at line 79
+    Found 8-bit comparator greater for signal <n0019> created at line 79
+    Found 8-bit comparator greater for signal <n0022> created at line 81
+    Found 8-bit comparator greater for signal <n0024> created at line 81
+    Found 8-bit comparator greater for signal <n0029> created at line 87
+    Found 8-bit comparator greater for signal <n0031> created at line 87
+    Found 8-bit comparator greater for signal <n0034> created at line 89
+    Found 8-bit comparator greater for signal <n0036> created at line 89
+    Found 8-bit comparator lessequal for signal <n0041> created at line 93
+    Found 8-bit comparator lessequal for signal <n0043> created at line 93
+    Found 9-bit comparator lessequal for signal <n0098> created at line 272
+    Found 9-bit comparator lessequal for signal <n0100> created at line 272
+    Found 9-bit comparator lessequal for signal <n0104> created at line 274
+    Found 9-bit comparator lessequal for signal <n0106> created at line 274
+    Found 9-bit comparator lessequal for signal <n0117> created at line 304
+    Found 9-bit comparator lessequal for signal <n0119> created at line 304
+    Found 9-bit comparator lessequal for signal <n0123> created at line 306
+    Found 9-bit comparator lessequal for signal <n0125> created at line 306
+    Found 16-bit comparator greater for signal <n0987> created at line 653
+    Found 17-bit comparator greater for signal <BUS_0005_GND_13_o_LessThan_666_o> created at line 669
+    Found 17-bit comparator greater for signal <GND_13_o_BUS_0006_LessThan_668_o> created at line 669
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred 148 D-type flip-flop(s).
+	inferred  23 Comparator(s).
+	inferred  70 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <PROCESADOR_LCD_REVD> synthesized.
+
+Synthesizing Unit <CARACTERES_ESPECIALES_REVD>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\PF\Guante\INTESC_LCD_8BITS_RevD\CARACTERES_ESPECIALES_REVD.vhd".
+    Summary:
+	no macro.
+Unit <CARACTERES_ESPECIALES_REVD> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x2-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 33
+ 1-bit adder                                           : 1
+ 16-bit adder                                          : 1
+ 17-bit adder                                          : 2
+ 21-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 15
+ 6-bit adder                                           : 2
+ 7-bit adder                                           : 6
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 43
+ 1-bit register                                        : 16
+ 16-bit register                                       : 4
+ 2-bit register                                        : 1
+ 21-bit register                                       : 2
+ 22-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 40-bit register                                       : 1
+ 6-bit register                                        : 2
+ 7-bit register                                        : 6
+ 8-bit register                                        : 6
+ 9-bit register                                        : 1
+# Comparators                                          : 38
+ 1-bit comparator equal                                : 1
+ 16-bit comparator greater                             : 1
+ 17-bit comparator greater                             : 2
+ 3-bit comparator lessequal                            : 4
+ 4-bit comparator lessequal                            : 10
+ 8-bit comparator greater                              : 10
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 8
+# Multiplexers                                         : 103
+ 1-bit 2-to-1 multiplexer                              : 17
+ 22-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 15
+ 40-bit 2-to-1 multiplexer                             : 7
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 49
+ 9-bit 15-to-1 multiplexer                             : 1
+ 9-bit 2-to-1 multiplexer                              : 4
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# FSMs                                                 : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <ciclo_enable_3> in Unit <u1> is equivalent to the following 4 FFs/Latches, which will be removed : <ciclo_enable_7> <ciclo_enable_8> <ciclo_enable_9> <ciclo_enable_12> 
+INFO:Xst:2261 - The FF/Latch <ciclo_enable_0> in Unit <u1> is equivalent to the following 10 FFs/Latches, which will be removed : <ciclo_enable_1> <ciclo_enable_2> <ciclo_enable_4> <ciclo_enable_5> <ciclo_enable_6> <ciclo_enable_10> <ciclo_enable_11> <ciclo_enable_13> <ciclo_enable_14> <ciclo_enable_15> 
+WARNING:Xst:1426 - The value init of the FF/Latch ciclo_enable_3 hinder the constant cleaning in the block u1.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <ciclo_enable_0> has a constant value of 0 in block <u1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_s_8> of sequential type is unconnected in block <u1>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_2> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_3> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_4> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_5> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_6> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_0> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_1> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_2> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_3> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_4> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_5> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_6> of sequential type is unconnected in block <ADS1115>.
+
+Synthesizing (advanced) Unit <ADS1115>.
+The following registers are absorbed into counter <cont_rebotes>: 1 register on signal <cont_rebotes>.
+The following registers are absorbed into counter <cont_gen_frec>: 1 register on signal <cont_gen_frec>.
+The following registers are absorbed into counter <cambio>: 1 register on signal <cambio>.
+The following registers are absorbed into counter <cont_delayEL>: 1 register on signal <cont_delayEL>.
+The following registers are absorbed into counter <cont_frec_100kHz>: 1 register on signal <cont_frec_100kHz>.
+INFO:Xst:3231 - The small RAM <Mram__n0817> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 2-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <op_counter>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ADS1115> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PROCESADOR_LCD_REVD>.
+The following registers are absorbed into counter <dir_mem_s>: 1 register on signal <dir_mem_s>.
+The following registers are absorbed into counter <conta_enable>: 1 register on signal <conta_enable>.
+Unit <PROCESADOR_LCD_REVD> synthesized (advanced).
+WARNING:Xst:2677 - Node <data_s_8> of sequential type is unconnected in block <PROCESADOR_LCD_REVD>.
+WARNING:Xst:2677 - Node <DATA1_0> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_1> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_2> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_3> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_4> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_5> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA1_6> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_0> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_1> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_2> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_3> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_4> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_5> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <DATA2_6> of sequential type is unconnected in block <ADS1115>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 64x2-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 26
+ 17-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 4-bit adder                                           : 14
+ 6-bit adder                                           : 1
+ 7-bit adder                                           : 6
+ 8-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 7
+ 1-bit up counter                                      : 1
+ 16-bit up counter                                     : 1
+ 21-bit up counter                                     : 2
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 221
+ Flip-Flops                                            : 221
+# Comparators                                          : 38
+ 1-bit comparator equal                                : 1
+ 16-bit comparator greater                             : 1
+ 17-bit comparator greater                             : 2
+ 3-bit comparator lessequal                            : 4
+ 4-bit comparator lessequal                            : 10
+ 8-bit comparator greater                              : 10
+ 8-bit comparator lessequal                            : 2
+ 9-bit comparator lessequal                            : 8
+# Multiplexers                                         : 114
+ 1-bit 2-to-1 multiplexer                              : 31
+ 22-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 14
+ 40-bit 2-to-1 multiplexer                             : 7
+ 6-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 47
+ 9-bit 15-to-1 multiplexer                             : 1
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch ciclo_enable_3 hinder the constant cleaning in the block PROCESADOR_LCD_REVD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch ciclo_enable_7 hinder the constant cleaning in the block PROCESADOR_LCD_REVD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch ciclo_enable_8 hinder the constant cleaning in the block PROCESADOR_LCD_REVD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch ciclo_enable_9 hinder the constant cleaning in the block PROCESADOR_LCD_REVD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch ciclo_enable_12 hinder the constant cleaning in the block PROCESADOR_LCD_REVD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <ciclo_enable_0> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_1> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_2> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_4> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_5> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_6> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_10> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_11> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_13> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_14> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ciclo_enable_15> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ciclo_enable_3> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following 4 FFs/Latches, which will be removed : <ciclo_enable_7> <ciclo_enable_8> <ciclo_enable_9> <ciclo_enable_12> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <estado[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U2/u1/FSM_1> on signal <edo[1:63]> with one-hot encoding.
+----------------------------------------------------------------------------
+ State   | Encoding
+----------------------------------------------------------------------------
+ 0000000 | 000000000000000000000000000000000000000000000000000000000000001
+ 0000001 | 000000000000000000000000000000000000000000000000000000000000010
+ 0000010 | 000000000000000000000000000000000000000000000000000000000000100
+ 0011110 | 000000000000000000000000000000000000000000000000000000000001000
+ 1100100 | 000000000000000000000000000000000000000000000000000000000010000
+ 0111100 | 000000000000000000000000000000000000000000000000000000000100000
+ 0111010 | 000000000000000000000000000000000000000000000000000000001000000
+ 0110111 | 000000000000000000000000000000000000000000000000000000010000000
+ 0100010 | 000000000000000000000000000000000000000000000000000000100000000
+ 0100001 | 000000000000000000000000000000000000000000000000000001000000000
+ 0100000 | 000000000000000000000000000000000000000000000000000010000000000
+ 0011011 | 000000000000000000000000000000000000000000000000000100000000000
+ 0010111 | 000000000000000000000000000000000000000000000000001000000000000
+ 0000011 | 000000000000000000000000000000000000000000000000010000000000000
+ 0000100 | 000000000000000000000000000000000000000000000000100000000000000
+ 0000101 | 000000000000000000000000000000000000000000000001000000000000000
+ 0000110 | 000000000000000000000000000000000000000000000010000000000000000
+ 0000111 | 000000000000000000000000000000000000000000000100000000000000000
+ 0001000 | 000000000000000000000000000000000000000000001000000000000000000
+ 0001001 | 000000000000000000000000000000000000000000010000000000000000000
+ 0001010 | 000000000000000000000000000000000000000000100000000000000000000
+ 0001011 | 000000000000000000000000000000000000000001000000000000000000000
+ 0001100 | 000000000000000000000000000000000000000010000000000000000000000
+ 0001101 | 000000000000000000000000000000000000000100000000000000000000000
+ 0001110 | 000000000000000000000000000000000000001000000000000000000000000
+ 0001111 | 000000000000000000000000000000000000010000000000000000000000000
+ 0010000 | 000000000000000000000000000000000000100000000000000000000000000
+ 0010001 | 000000000000000000000000000000000001000000000000000000000000000
+ 0010010 | 000000000000000000000000000000000010000000000000000000000000000
+ 0010011 | 000000000000000000000000000000000100000000000000000000000000000
+ 0010100 | 000000000000000000000000000000001000000000000000000000000000000
+ 0010101 | 000000000000000000000000000000010000000000000000000000000000000
+ 0010110 | 000000000000000000000000000000100000000000000000000000000000000
+ 1100011 | 000000000000000000000000000001000000000000000000000000000000000
+ 0011001 | 000000000000000000000000000010000000000000000000000000000000000
+ 0011010 | 000000000000000000000000000100000000000000000000000000000000000
+ 0011100 | 000000000000000000000000001000000000000000000000000000000000000
+ 0011101 | 000000000000000000000000010000000000000000000000000000000000000
+ 0011111 | 000000000000000000000000100000000000000000000000000000000000000
+ 0100011 | 000000000000000000000001000000000000000000000000000000000000000
+ 0100100 | 000000000000000000000010000000000000000000000000000000000000000
+ 0100101 | 000000000000000000000100000000000000000000000000000000000000000
+ 0100110 | 000000000000000000001000000000000000000000000000000000000000000
+ 0100111 | 000000000000000000010000000000000000000000000000000000000000000
+ 0101000 | 000000000000000000100000000000000000000000000000000000000000000
+ 0101001 | 000000000000000001000000000000000000000000000000000000000000000
+ 0101010 | 000000000000000010000000000000000000000000000000000000000000000
+ 0101011 | 000000000000000100000000000000000000000000000000000000000000000
+ 0101100 | 000000000000001000000000000000000000000000000000000000000000000
+ 0101101 | 000000000000010000000000000000000000000000000000000000000000000
+ 0101110 | 000000000000100000000000000000000000000000000000000000000000000
+ 0101111 | 000000000001000000000000000000000000000000000000000000000000000
+ 0110000 | 000000000010000000000000000000000000000000000000000000000000000
+ 0110001 | 000000000100000000000000000000000000000000000000000000000000000
+ 0110010 | 000000001000000000000000000000000000000000000000000000000000000
+ 0110011 | 000000010000000000000000000000000000000000000000000000000000000
+ 0110100 | 000000100000000000000000000000000000000000000000000000000000000
+ 0110101 | 000001000000000000000000000000000000000000000000000000000000000
+ 0110110 | 000010000000000000000000000000000000000000000000000000000000000
+ 0111000 | 000100000000000000000000000000000000000000000000000000000000000
+ 0111001 | 001000000000000000000000000000000000000000000000000000000000000
+ 0111011 | 010000000000000000000000000000000000000000000000000000000000000
+ 0111101 | 100000000000000000000000000000000000000000000000000000000000000
+----------------------------------------------------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <U2/u1/FSM_2> on signal <edo_enable[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+WARNING:Xst:1710 - FF/Latch <DECE_4> (without init value) has a constant value of 1 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DECE_5> (without init value) has a constant value of 1 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DECE_6> (without init value) has a constant value of 0 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CENT_2> (without init value) has a constant value of 0 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CENT_3> (without init value) has a constant value of 0 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CENT_4> (without init value) has a constant value of 1 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CENT_5> (without init value) has a constant value of 1 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CENT_6> (without init value) has a constant value of 0 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UNID_4> (without init value) has a constant value of 1 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UNID_5> (without init value) has a constant value of 1 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UNID_6> (without init value) has a constant value of 0 in block <BINaBCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch vec_ram_6 hinder the constant cleaning in the block PROCESADOR_LCD_REVD.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <vec_ram_0> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_ram_1> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_ram_2> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_ram_7> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_l_ram_3> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_l_ram_4> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_l_ram_5> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_l_ram_6> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <vec_l_ram_7> has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <vec_c_char_7> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following 2 FFs/Latches, which will be removed : <vec_c_char_10> <vec_c_char_17> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_11> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following FF/Latch, which will be removed : <vec_c_char_36> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_0> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following FF/Latch, which will be removed : <vec_c_char_1> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_20> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following 6 FFs/Latches, which will be removed : <vec_c_char_21> <vec_c_char_22> <vec_c_char_25> <vec_c_char_26> <vec_c_char_27> <vec_c_char_30> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_34> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following 3 FFs/Latches, which will be removed : <vec_c_char_37> <vec_c_char_38> <vec_c_char_39> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_19> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following FF/Latch, which will be removed : <vec_c_char_23> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_24> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following FF/Latch, which will be removed : <vec_c_char_29> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_28> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following 2 FFs/Latches, which will be removed : <vec_c_char_31> <vec_c_char_33> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_9> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following FF/Latch, which will be removed : <vec_c_char_14> 
+INFO:Xst:2261 - The FF/Latch <vec_c_char_15> in Unit <PROCESADOR_LCD_REVD> is equivalent to the following 2 FFs/Latches, which will be removed : <vec_c_char_16> <vec_c_char_35> 
+WARNING:Xst:2041 - Unit ADS1115: 1 internal tristate is replaced by logic (pull-up yes): SDA_out.
+
+Optimizing unit <ADS1115> ...
+
+Optimizing unit <BINaBCD> ...
+
+Optimizing unit <PROCESADOR_LCD_REVD> ...
+WARNING:Xst:1710 - FF/Latch <BD_LCD_4> (without init value) has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_5> (without init value) has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_6> (without init value) has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_7> (without init value) has a constant value of 0 in block <PROCESADOR_LCD_REVD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <U2/u1/BD_LCD_3> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <U2/u1/BD_LCD_2> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <U2/u1/BD_LCD_1> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:2677 - Node <U2/u1/BD_LCD_0> of sequential type is unconnected in block <ADS1115>.
+WARNING:Xst:1293 - FF/Latch <U2/u1/vec_c_char_34> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_32> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_28> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_19> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_15> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_13> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_11> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_9> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_7> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_5> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_3> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_2> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_c_char_0> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_l_ram_2> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_l_ram_1> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_l_ram_0> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_ram_6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_ram_5> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_ram_4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/vec_ram_3> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd2> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd3> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd5> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd7> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd9> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd11> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd13> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd15> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd17> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd19> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd21> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd23> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd55> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd56> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd57> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/dir_salto_mem_3> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/dir_salto_mem_2> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd7 and U2/u1/edo_FSM_FFd9 U2/u1/edo_FSM_FFd9 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd7 and U2/u1/edo_FSM_FFd11 U2/u1/edo_FSM_FFd11 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd13 U2/u1/edo_FSM_FFd13 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd15 U2/u1/edo_FSM_FFd15 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd17 U2/u1/edo_FSM_FFd17 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd19 U2/u1/edo_FSM_FFd19 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd21 U2/u1/edo_FSM_FFd21 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd23 U2/u1/edo_FSM_FFd23 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd24-In U2/u1/edo_FSM_FFd24-In signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd11 and U2/u1/edo_FSM_FFd4-In U2/u1/edo_FSM_FFd4-In signal will be lost.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd24> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd6> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd8> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd10> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd12> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd14> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd16> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd18> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd20> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/u1/edo_FSM_FFd22> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <cont_rebotes_0> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <cont_gen_frec_0> 
+INFO:Xst:2261 - The FF/Latch <U2/u1/edo_enable_FSM_FFd1> in Unit <ADS1115> is equivalent to the following FF/Latch, which will be removed : <U2/u1/enable_fin> 
+INFO:Xst:2261 - The FF/Latch <U2/u1/edo_FSM_FFd4> in Unit <ADS1115> is equivalent to the following 10 FFs/Latches, which will be removed : <U2/u1/edo_FSM_FFd24> <U2/u1/edo_FSM_FFd6> <U2/u1/edo_FSM_FFd8> <U2/u1/edo_FSM_FFd10> <U2/u1/edo_FSM_FFd12> <U2/u1/edo_FSM_FFd14> <U2/u1/edo_FSM_FFd16> <U2/u1/edo_FSM_FFd18> <U2/u1/edo_FSM_FFd20> <U2/u1/edo_FSM_FFd22> 
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd4 and U2/u1/edo_FSM_FFd24 U2/u1/edo_FSM_FFd24 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd24 and U2/u1/edo_FSM_FFd6 U2/u1/edo_FSM_FFd6 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd24 and U2/u1/edo_FSM_FFd8 U2/u1/edo_FSM_FFd8 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd24 and U2/u1/edo_FSM_FFd10 U2/u1/edo_FSM_FFd10 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd12 U2/u1/edo_FSM_FFd12 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd14 U2/u1/edo_FSM_FFd14 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd16 U2/u1/edo_FSM_FFd16 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd18 U2/u1/edo_FSM_FFd18 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd20 U2/u1/edo_FSM_FFd20 signal will be lost.
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd22 U2/u1/edo_FSM_FFd22 signal will be lost.
+
+Mapping all equations...
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <U2/u1/edo_FSM_FFd4> has a constant value of 0 in block <ADS1115>. This FF/Latch will be trimmed during the optimization process.
+Building and optimizing final netlist ...
+WARNING:Xst:638 - in unit ADS1115 Conflict on KEEP property on signal U2/u1/edo_FSM_FFd10 and U2/u1/edo_FSM_FFd11 U2/u1/edo_FSM_FFd11 signal will be lost.
+Found area constraint ratio of 100 (+ 5) on block ADS1115, actual ratio is 9.
+FlipFlop U2/u1/dir_mem_s_0 has been replicated 3 time(s)
+FlipFlop U2/u1/dir_mem_s_1 has been replicated 1 time(s)
+FlipFlop U2/u1/dir_mem_s_2 has been replicated 3 time(s)
+FlipFlop U2/u1/dir_mem_s_3 has been replicated 3 time(s)
+FlipFlop op_counter_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 240
+ Flip-Flops                                            : 240
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ADS1115.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 613
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 76
+#      LUT2                        : 42
+#      LUT3                        : 35
+#      LUT4                        : 52
+#      LUT5                        : 63
+#      LUT6                        : 154
+#      MUXCY                       : 91
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 88
+# FlipFlops/Latches                : 240
+#      FD                          : 74
+#      FDE                         : 97
+#      FDR                         : 28
+#      FDRE                        : 40
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 1
+#      IOBUF                       : 1
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             240  out of  11440     2%  
+ Number of Slice LUTs:                  429  out of   5720     7%  
+    Number used as Logic:               429  out of   5720     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    443
+   Number with an unused Flip Flop:     203  out of    443    45%  
+   Number with an unused LUT:            14  out of    443     3%  
+   Number of fully used LUT-FF pairs:   226  out of    443    51%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    160     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 240   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.973ns (Maximum Frequency: 167.434MHz)
+   Minimum input arrival time before clock: 4.528ns
+   Maximum output required time after clock: 9.828ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.973ns (frequency: 167.434MHz)
+  Total number of paths / destination ports: 10139 / 444
+-------------------------------------------------------------------------
+Delay:               5.973ns (Levels of Logic = 12)
+  Source:            U1_1/DECE_3 (FF)
+  Destination:       U2/u1/data_s_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U1_1/DECE_3 to U2/u1/data_s_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.181  U1_1/DECE_3 (U1_1/DECE_3)
+     LUT6:I0->O            4   0.254   0.804  U2/Mmux_vector_mem111 (U2/Mmux_vector_mem11)
+     LUT6:I5->O           10   0.254   1.008  U2/Mmux_vector_mem112 (U2/vector_mem<3>)
+     LUT6:I5->O            4   0.254   0.804  U2/u1/PWR_17_o_VECTOR_MEM[8]_AND_73_o (U2/u1/PWR_17_o_VECTOR_MEM[8]_AND_73_o)
+     LUT6:I5->O            1   0.254   0.000  U2/u1/Mmux__n2661_rs_lut<0> (U2/u1/Mmux__n2661_rs_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  U2/u1/Mmux__n2661_rs_cy<0> (U2/u1/Mmux__n2661_rs_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U2/u1/Mmux__n2661_rs_cy<1> (U2/u1/Mmux__n2661_rs_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U2/u1/Mmux__n2661_rs_cy<2> (U2/u1/Mmux__n2661_rs_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U2/u1/Mmux__n2661_rs_cy<3> (U2/u1/Mmux__n2661_rs_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U2/u1/Mmux__n2661_rs_cy<4> (U2/u1/Mmux__n2661_rs_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U2/u1/Mmux__n2661_rs_cy<5> (U2/u1/Mmux__n2661_rs_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  U2/u1/Mmux__n2661_rs_cy<6> (U2/u1/Mmux__n2661_rs_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  U2/u1/Mmux__n2661_rs_xor<7> (U2/u1/_n2661<7>)
+     FDE:D                     0.074          U2/u1/data_s_7
+    ----------------------------------------
+    Total                      5.973ns (2.176ns logic, 3.797ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              4.528ns (Levels of Logic = 3)
+  Source:            SDA (PAD)
+  Destination:       DATA1_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SDA to DATA1_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           7   1.328   1.138  SDA_IOBUF (N52)
+     LUT4:I1->O           12   0.235   1.499  op_counter[5]_SDA_select_129_OUT<15>21 (op_counter[5]_SDA_select_129_OUT<15>2)
+     LUT6:I1->O            1   0.254   0.000  op_counter[5]_SDA_select_129_OUT<15>1 (op_counter[5]_SDA_select_129_OUT<15>)
+     FDE:D                     0.074          DATA1_15
+    ----------------------------------------
+    Total                      4.528ns (1.891ns logic, 2.637ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 85 / 12
+-------------------------------------------------------------------------
+Offset:              9.828ns (Levels of Logic = 6)
+  Source:            U2/u1/ciclo_enable_3 (FF)
+  Destination:       ENA (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U2/u1/ciclo_enable_3 to ENA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             12   0.525   1.068  U2/u1/ciclo_enable_3 (U2/u1/ciclo_enable_3)
+     INV:I->O             10   0.255   1.438  U2/u1/n1587<3>1_INV_0 (U2/u1/n1587<3>)
+     LUT5:I0->O            0   0.254   0.000  U2/u1/Mcompar_BUS_0005_GND_13_o_LessThan_666_o_lutdi3 (U2/u1/Mcompar_BUS_0005_GND_13_o_LessThan_666_o_lutdi3)
+     MUXCY:DI->O           1   0.393   0.682  U2/u1/Mcompar_BUS_0005_GND_13_o_LessThan_666_o_cy<3> (U2/u1/Mcompar_BUS_0005_GND_13_o_LessThan_666_o_cy<3>)
+     LUT5:I4->O            1   0.254   1.112  U2/u1/Mcompar_BUS_0005_GND_13_o_LessThan_666_o_cy<4> (U2/u1/Mcompar_BUS_0005_GND_13_o_LessThan_666_o_cy<4>)
+     LUT5:I0->O            1   0.254   0.681  U2/u1/ENA1 (ENA_OBUF)
+     OBUF:I->O                 2.912          ENA_OBUF (ENA)
+    ----------------------------------------
+    Total                      9.828ns (4.847ns logic, 4.981ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.973|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.87 secs
+ 
+--> 
+
+Total memory usage is 4502436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  228 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+

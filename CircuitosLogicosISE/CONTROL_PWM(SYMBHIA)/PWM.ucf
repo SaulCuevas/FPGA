@@ -1,0 +1,40 @@
+//.UCF OPERACIONES MULTIPLICAR Y DIVIDIR POR MEDIO DE DIV_SHIFT
+	 
+NET "CLK" 	 				LOC = E7; 	//oscilador 50MHz
+
+//NET "ENCODER_SIM(0)"		LOC = M8;		//SW1		en caso de no contar con el encoder
+//NET "ENCODER_SIM(1)"		LOC = N6;		//SW2
+//NET "ENCODER_SIM(2)"		LOC = N4;		//SW3
+//NET "ENCODER_SIM(3)"		LOC = P9;		//SW4
+//NET "ENCODER_SIM(4)"		LOC = R7;		//SW5
+//NET "ENCODER_SIM(5)"		LOC = P5;		//SW6
+//NET "ENCODER_SIM(6)"		LOC = N2;		//SW7
+//NET "ENCODER_SIM(7)"		LOC = L1;		//SW8
+
+NET "ENCODER(0)"			LOC = D5;	//OUTPUT A del encoder							PIN 6 MAS IZQUIERDO
+NET "ENCODER(1)"			LOC = C5;	//OUTPUT B del encoder		
+
+NET "BOTON_MR"				LOC = C9;	//Mantener presionado el boton para encender el motorreductor
+NET "BOTON_MDC"			LOC = D8;	//Mantener presionado el boton para encender el motor DC
+NET "BOTON_LED"			LOC = C8;	//Mantener presionado el boton para encender el LED
+
+NET "MOTORREDUCTOR"		LOC = G15;	//Salida a motorreductor						LEDS DE SYMBHIA
+NET "MOTOR_DC"				LOC = C15;	//Salida a motor DC
+NET "LED"					LOC = D15;	//Salida a LED
+
+NET "DISPLAY(15)" 		LOC = G1;	// A					Conectados a PUERTO 1
+NET "DISPLAY(14)" 		LOC = F1; 	// B
+NET "DISPLAY(13)" 		LOC = E1; 	// C
+NET "DISPLAY(12)" 		LOC = F3; 	// D
+NET "DISPLAY(11)" 		LOC = B3; 	// E
+NET "DISPLAY(10)" 		LOC = A3; 	// F
+NET "DISPLAY(9)" 			LOC = A4; 	// G
+NET "DISPLAY(8)" 			LOC = B5; 	// P
+NET "DISPLAY(7)" 			LOC = A5; 	// ANODO 1
+NET "DISPLAY(6)" 			LOC = A6;	// A2
+NET "DISPLAY(5)" 			LOC = C6;	// A3
+NET "DISPLAY(4)" 			LOC = A7;	// A4	
+NET "DISPLAY(3)" 			LOC = B7;	// A5					<-No es necesario conectar
+NET "DISPLAY(2)" 			LOC = A8;	// A6					<-
+NET "DISPLAY(1)" 			LOC = A9;	// A7					<-
+NET "DISPLAY(0)" 			LOC = B9;	// A8					<-

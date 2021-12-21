@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/CircuitosLogicosISE/Practica7/Punto2/ROM_8x12.ncd
+OUTFILE=/home/ise/CircuitosLogicosISE/Practica7/Punto2/ROM_8x12.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=/home/ise/CircuitosLogicosISE/Practica7/Punto2
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

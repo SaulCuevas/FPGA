@@ -1,0 +1,600 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: catrinaTOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "catrinaTOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "catrinaTOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : catrinaTOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\SERVO.v" into library work
+Parsing module <SERVO>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\OJOS.v" into library work
+Parsing module <OJOS>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\MANDIBULA.v" into library work
+Parsing module <MANDIBULA>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\CUELLO.v" into library work
+Parsing module <CUELLO>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\catrinaTOP.v" into library work
+Parsing module <catrinaTOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <catrinaTOP>.
+
+Elaborating module <CUELLO>.
+
+Elaborating module <SERVO>.
+
+Elaborating module <MANDIBULA>.
+
+Elaborating module <OJOS>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <catrinaTOP>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\catrinaTOP.v".
+        ESPERA = 2'b00
+        MOVIMIENTO = 2'b01
+        SONIDOS = 2'b10
+        ESPERADULCE = 2'b11
+    Found 1-bit register for signal <sensDER_s<0>>.
+    Found 1-bit register for signal <sensFRENTE_s<0>>.
+    Found 1-bit register for signal <mov>.
+    Found 28-bit register for signal <cont_15s>.
+    Found 2-bit register for signal <ESTADO>.
+    Found 1-bit register for signal <BOCA>.
+    Found 3-bit register for signal <posCUELLO>.
+    Found 1-bit register for signal <audio>.
+    Found 22-bit register for signal <delay>.
+    Found 1-bit register for signal <sensIZQ_s<0>>.
+    Found finite state machine <FSM_0> for signal <ESTADO>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 22-bit adder for signal <delay[21]_GND_1_o_add_11_OUT> created at line 76.
+    Found 28-bit adder for signal <cont_15s[27]_GND_1_o_add_17_OUT> created at line 89.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <catrinaTOP> synthesized.
+
+Synthesizing Unit <CUELLO>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\CUELLO.v".
+    Found 20-bit register for signal <CONT_PWM>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <CUELLO> synthesized.
+
+Synthesizing Unit <SERVO>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\SERVO.v".
+    Found 20-bit register for signal <CONT_FREC>.
+    Found 1-bit register for signal <PWM>.
+    Found 20-bit adder for signal <CONT_FREC[19]_GND_3_o_add_3_OUT> created at line 29.
+    Found 20-bit comparator equal for signal <CONT_FREC[19]_CONT_PWM[19]_equal_2_o> created at line 23
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <SERVO> synthesized.
+
+Synthesizing Unit <MANDIBULA>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\MANDIBULA.v".
+    Found 20-bit register for signal <CONT_PWM>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <MANDIBULA> synthesized.
+
+Synthesizing Unit <OJOS>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\Tarea1\Catrina\OJOS.v".
+        up = 2'b00
+        sleep = 2'b01
+        down = 2'b10
+        sleep2 = 2'b11
+    Found 2-bit register for signal <ESTADO_H>.
+    Found 20-bit register for signal <CONT_PWM_H>.
+    Found 9-bit register for signal <cont_10us>.
+    Found 17-bit register for signal <CONT_AUX_V>.
+    Found 2-bit register for signal <ESTADO_V>.
+    Found 20-bit register for signal <CONT_PWM_V>.
+    Found 11-bit register for signal <cont_30us>.
+    Found 17-bit register for signal <CONT_AUX_H>.
+    Found 20-bit subtractor for signal <CONT_PWM_H[19]_GND_5_o_sub_12_OUT> created at line 66.
+    Found 20-bit subtractor for signal <CONT_PWM_V[19]_GND_5_o_sub_42_OUT> created at line 108.
+    Found 20-bit adder for signal <CONT_PWM_H[19]_GND_5_o_add_3_OUT> created at line 51.
+    Found 17-bit adder for signal <CONT_AUX_H[16]_GND_5_o_add_15_OUT> created at line 75.
+    Found 9-bit adder for signal <cont_10us[8]_GND_5_o_add_21_OUT> created at line 79.
+    Found 20-bit adder for signal <CONT_PWM_V[19]_GND_5_o_add_33_OUT> created at line 93.
+    Found 17-bit adder for signal <CONT_AUX_V[16]_GND_5_o_add_45_OUT> created at line 117.
+    Found 11-bit adder for signal <cont_30us[10]_GND_5_o_add_51_OUT> created at line 121.
+    Found 2-bit 4-to-1 multiplexer for signal <ESTADO_H[1]_ESTADO_H[1]_wide_mux_19_OUT> created at line 46.
+    Found 2-bit 4-to-1 multiplexer for signal <ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT> created at line 88.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <ESTADO_H> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <ESTADO_V> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  98 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <OJOS> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 11-bit adder                                          : 1
+ 17-bit adder                                          : 2
+ 20-bit adder                                          : 4
+ 20-bit addsub                                         : 2
+ 22-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 27
+ 1-bit register                                        : 10
+ 11-bit register                                       : 1
+ 17-bit register                                       : 2
+ 2-bit register                                        : 2
+ 20-bit register                                       : 8
+ 22-bit register                                       : 1
+ 28-bit register                                       : 1
+ 3-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 4
+ 20-bit comparator equal                               : 4
+# Multiplexers                                         : 14
+ 17-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 8
+ 2-bit 4-to-1 multiplexer                              : 2
+ 28-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_11> in Unit <U1> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_15> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_0> in Unit <U1> is equivalent to the following 7 FFs/Latches, which will be removed : <CONT_PWM_1> <CONT_PWM_2> <CONT_PWM_9> <CONT_PWM_12> <CONT_PWM_17> <CONT_PWM_18> <CONT_PWM_19> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_4> in Unit <U1> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_10> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_6> in Unit <U1> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_16> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_5> in Unit <U1> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_7> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_4> in Unit <U2> is equivalent to the following 3 FFs/Latches, which will be removed : <CONT_PWM_6> <CONT_PWM_9> <CONT_PWM_15> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_8> in Unit <U2> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_14> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_0> in Unit <U2> is equivalent to the following 9 FFs/Latches, which will be removed : <CONT_PWM_1> <CONT_PWM_2> <CONT_PWM_10> <CONT_PWM_11> <CONT_PWM_12> <CONT_PWM_16> <CONT_PWM_17> <CONT_PWM_18> <CONT_PWM_19> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_3> in Unit <U2> is equivalent to the following 3 FFs/Latches, which will be removed : <CONT_PWM_5> <CONT_PWM_7> <CONT_PWM_13> 
+WARNING:Xst:1710 - FF/Latch <CONT_PWM_0> (without init value) has a constant value of 0 in block <U1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CONT_PWM_0> (without init value) has a constant value of 0 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CONT_PWM_8> (without init value) has a constant value of 1 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <CONT_PWM<19:17>> (without init value) have a constant value of 0 in block <CUELLO>.
+WARNING:Xst:2404 -  FFs/Latches <CONT_PWM<19:16>> (without init value) have a constant value of 0 in block <MANDIBULA>.
+
+Synthesizing (advanced) Unit <OJOS>.
+The following registers are absorbed into counter <CONT_PWM_H>: 1 register on signal <CONT_PWM_H>.
+The following registers are absorbed into counter <CONT_PWM_V>: 1 register on signal <CONT_PWM_V>.
+The following registers are absorbed into counter <cont_10us>: 1 register on signal <cont_10us>.
+The following registers are absorbed into counter <CONT_AUX_V>: 1 register on signal <CONT_AUX_V>.
+The following registers are absorbed into counter <cont_30us>: 1 register on signal <cont_30us>.
+The following registers are absorbed into counter <CONT_AUX_H>: 1 register on signal <CONT_AUX_H>.
+Unit <OJOS> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SERVO>.
+The following registers are absorbed into counter <CONT_FREC>: 1 register on signal <CONT_FREC>.
+Unit <SERVO> synthesized (advanced).
+
+Synthesizing (advanced) Unit <catrinaTOP>.
+The following registers are absorbed into counter <delay>: 1 register on signal <delay>.
+The following registers are absorbed into counter <cont_15s>: 1 register on signal <cont_15s>.
+Unit <catrinaTOP> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 12
+ 11-bit up counter                                     : 1
+ 17-bit up counter                                     : 2
+ 20-bit up counter                                     : 4
+ 20-bit updown counter                                 : 2
+ 22-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 50
+ Flip-Flops                                            : 50
+# Comparators                                          : 4
+ 20-bit comparator equal                               : 4
+# Multiplexers                                         : 11
+ 2-bit 2-to-1 multiplexer                              : 8
+ 2-bit 4-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <CONT_PWM_0> (without init value) has a constant value of 0 in block <CUELLO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_1> (without init value) has a constant value of 0 in block <CUELLO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_2> (without init value) has a constant value of 0 in block <CUELLO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_9> (without init value) has a constant value of 0 in block <CUELLO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_12> (without init value) has a constant value of 0 in block <CUELLO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CONT_PWM_0> (without init value) has a constant value of 0 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_1> (without init value) has a constant value of 0 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_2> (without init value) has a constant value of 0 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_8> (without init value) has a constant value of 1 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_10> (without init value) has a constant value of 0 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_11> (without init value) has a constant value of 0 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_12> (without init value) has a constant value of 0 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CONT_PWM_14> (without init value) has a constant value of 1 in block <MANDIBULA>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_11> in Unit <CUELLO> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_15> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_4> in Unit <CUELLO> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_10> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_6> in Unit <CUELLO> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_16> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_5> in Unit <CUELLO> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_7> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_4> in Unit <MANDIBULA> is equivalent to the following 3 FFs/Latches, which will be removed : <CONT_PWM_6> <CONT_PWM_9> <CONT_PWM_15> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_3> in Unit <MANDIBULA> is equivalent to the following 3 FFs/Latches, which will be removed : <CONT_PWM_5> <CONT_PWM_7> <CONT_PWM_13> 
+INFO:Xst:2261 - The FF/Latch <CONT_PWM_3> in Unit <CUELLO> is equivalent to the following FF/Latch, which will be removed : <CONT_PWM_13> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <ESTADO[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+Optimizing unit <catrinaTOP> ...
+
+Optimizing unit <CUELLO> ...
+WARNING:Xst:1710 - FF/Latch <CONT_PWM_3> (without init value) has a constant value of 1 in block <CUELLO>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <OJOS> ...
+INFO:Xst:2261 - The FF/Latch <BOCA> in Unit <catrinaTOP> is equivalent to the following FF/Latch, which will be removed : <ESTADO_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_0> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_0> <U3/servoH/CONT_FREC_0> <U3/servoV/CONT_FREC_0> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_1> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_1> <U3/servoH/CONT_FREC_1> <U3/servoV/CONT_FREC_1> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_2> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_2> <U3/servoH/CONT_FREC_2> <U3/servoV/CONT_FREC_2> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_3> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_3> <U3/servoH/CONT_FREC_3> <U3/servoV/CONT_FREC_3> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_4> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_4> <U3/servoH/CONT_FREC_4> <U3/servoV/CONT_FREC_4> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_5> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_5> <U3/servoH/CONT_FREC_5> <U3/servoV/CONT_FREC_5> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_6> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_6> <U3/servoH/CONT_FREC_6> <U3/servoV/CONT_FREC_6> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_7> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_7> <U3/servoH/CONT_FREC_7> <U3/servoV/CONT_FREC_7> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_8> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_8> <U3/servoH/CONT_FREC_8> <U3/servoV/CONT_FREC_8> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_9> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_9> <U3/servoH/CONT_FREC_9> <U3/servoV/CONT_FREC_9> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_10> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_10> <U3/servoH/CONT_FREC_10> <U3/servoV/CONT_FREC_10> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_11> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_11> <U3/servoH/CONT_FREC_11> <U3/servoV/CONT_FREC_11> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_12> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_12> <U3/servoH/CONT_FREC_12> <U3/servoV/CONT_FREC_12> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_13> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_13> <U3/servoH/CONT_FREC_13> <U3/servoV/CONT_FREC_13> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_14> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_14> <U3/servoH/CONT_FREC_14> <U3/servoV/CONT_FREC_14> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_15> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_15> <U3/servoH/CONT_FREC_15> <U3/servoV/CONT_FREC_15> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_16> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_16> <U3/servoH/CONT_FREC_16> <U3/servoV/CONT_FREC_16> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_17> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_17> <U3/servoH/CONT_FREC_17> <U3/servoV/CONT_FREC_17> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_18> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_18> <U3/servoH/CONT_FREC_18> <U3/servoV/CONT_FREC_18> 
+INFO:Xst:2261 - The FF/Latch <U2/servo2/CONT_FREC_19> in Unit <catrinaTOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U1/servo1/CONT_FREC_19> <U3/servoH/CONT_FREC_19> <U3/servoV/CONT_FREC_19> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block catrinaTOP, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 190
+ Flip-Flops                                            : 190
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : catrinaTOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 740
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 121
+#      LUT2                        : 44
+#      LUT3                        : 8
+#      LUT4                        : 48
+#      LUT5                        : 20
+#      LUT6                        : 137
+#      MUXCY                       : 188
+#      VCC                         : 1
+#      XORCY                       : 164
+# FlipFlops/Latches                : 190
+#      FD                          : 62
+#      FDE                         : 124
+#      FDS                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 4
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             190  out of  11440     1%  
+ Number of Slice LUTs:                  386  out of   5720     6%  
+    Number used as Logic:               386  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    395
+   Number with an unused Flip Flop:     205  out of    395    51%  
+   Number with an unused LUT:             9  out of    395     2%  
+   Number of fully used LUT-FF pairs:   181  out of    395    45%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    160     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 190   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.358ns (Maximum Frequency: 186.637MHz)
+   Minimum input arrival time before clock: 4.261ns
+   Maximum output required time after clock: 4.240ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.358ns (frequency: 186.637MHz)
+  Total number of paths / destination ports: 7992 / 315
+-------------------------------------------------------------------------
+Delay:               5.358ns (Levels of Logic = 4)
+  Source:            U3/CONT_PWM_V_8 (FF)
+  Destination:       U3/CONT_PWM_V_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U3/CONT_PWM_V_8 to U3/CONT_PWM_V_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.525   1.296  U3/CONT_PWM_V_8 (U3/CONT_PWM_V_8)
+     LUT6:I0->O            1   0.254   0.682  U3/Mmux_ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT115_SW0 (N13)
+     LUT6:I5->O            2   0.254   0.726  U3/Mmux_ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT115 (U3/Mmux_ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT115)
+     LUT5:I4->O           11   0.254   1.039  U3/Mmux_ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT116 (U3/Mmux_ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT11)
+     LUT5:I4->O            1   0.254   0.000  U3/Mmux_ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT12 (U3/ESTADO_V[1]_ESTADO_V[1]_wide_mux_49_OUT<0>)
+     FDE:D                     0.074          U3/ESTADO_V_0
+    ----------------------------------------
+    Total                      5.358ns (1.615ns logic, 3.743ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 41 / 39
+-------------------------------------------------------------------------
+Offset:              4.261ns (Levels of Logic = 2)
+  Source:            sensBOCA (PAD)
+  Destination:       BOCA (FF)
+  Destination Clock: clk rising
+
+  Data Path: sensBOCA to BOCA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            29   1.328   1.578  sensBOCA_IBUF (sensBOCA_IBUF)
+     LUT4:I2->O            4   0.250   0.803  _n0102_inv1 (_n0102_inv)
+     FDE:CE                    0.302          BOCA
+    ----------------------------------------
+    Total                      4.261ns (1.880ns logic, 2.381ns route)
+                                       (44.1% logic, 55.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.240ns (Levels of Logic = 1)
+  Source:            audio (FF)
+  Destination:       audio (PAD)
+  Source Clock:      clk rising
+
+  Data Path: audio to audio
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   0.803  audio (audio_OBUF)
+     OBUF:I->O                 2.912          audio_OBUF (audio)
+    ----------------------------------------
+    Total                      4.240ns (3.437ns logic, 0.803ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.358|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.27 secs
+ 
+--> 
+
+Total memory usage is 4502436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :   37 (   0 filtered)
+

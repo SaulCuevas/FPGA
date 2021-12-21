@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX_isim_beh.exe" -prj "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX_beh.prj" "work.P2_8x1MUX" 

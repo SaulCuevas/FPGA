@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.xst" -ofn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.xst" -ofn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.xst" -ofn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.xst" -ofn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 Torniquete.ngc Torniquete.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Torniquete_map.ncd Torniquete.ngd Torniquete.pcf 
+par -w -intstyle ise -ol high -mt off Torniquete_map.ncd Torniquete.ncd Torniquete.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Torniquete.twx Torniquete.ncd -o Torniquete.twr Torniquete.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f Torniquete.ut Torniquete.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 Torniquete.ngc Torniquete.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Torniquete_map.ncd Torniquete.ngd Torniquete.pcf 
+par -w -intstyle ise -ol high -mt off Torniquete_map.ncd Torniquete.ncd Torniquete.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Torniquete.twx Torniquete.ncd -o Torniquete.twr Torniquete.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f Torniquete.ut Torniquete.ncd 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.xst" -ofn "/home/ise/DispLogicosISE/P2/Torniquete/Torniquete.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 Torniquete.ngc Torniquete.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Torniquete_map.ncd Torniquete.ngd Torniquete.pcf 
+par -w -intstyle ise -ol high -mt off Torniquete_map.ncd Torniquete.ncd Torniquete.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Torniquete.twx Torniquete.ncd -o Torniquete.twr Torniquete.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f Torniquete.ut Torniquete.ncd 

@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 11 18:30:17 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ack_error" LOCATE = SITE "P2" LEVEL 1;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "ena" LOCATE = SITE "J3" LEVEL 1;
+COMP "data_wr<0>" LOCATE = SITE "M8" LEVEL 1;
+COMP "data_wr<1>" LOCATE = SITE "N6" LEVEL 1;
+COMP "data_wr<2>" LOCATE = SITE "N4" LEVEL 1;
+COMP "data_wr<3>" LOCATE = SITE "P9" LEVEL 1;
+COMP "data_wr<4>" LOCATE = SITE "R7" LEVEL 1;
+COMP "data_rd<0>" LOCATE = SITE "M11" LEVEL 1;
+COMP "data_wr<5>" LOCATE = SITE "P5" LEVEL 1;
+COMP "data_rd<1>" LOCATE = SITE "M6" LEVEL 1;
+COMP "data_wr<6>" LOCATE = SITE "N2" LEVEL 1;
+COMP "data_rd<2>" LOCATE = SITE "M4" LEVEL 1;
+COMP "data_wr<7>" LOCATE = SITE "L1" LEVEL 1;
+COMP "data_rd<3>" LOCATE = SITE "P13" LEVEL 1;
+COMP "data_rd<4>" LOCATE = SITE "R9" LEVEL 1;
+COMP "data_rd<5>" LOCATE = SITE "P7" LEVEL 1;
+COMP "data_rd<6>" LOCATE = SITE "R4" LEVEL 1;
+COMP "data_rd<7>" LOCATE = SITE "N1" LEVEL 1;
+COMP "rw" LOCATE = SITE "K1" LEVEL 1;
+COMP "sda" LOCATE = SITE "E15" LEVEL 1;
+COMP "scl" LOCATE = SITE "F15" LEVEL 1;
+COMP "busy" LOCATE = SITE "L2" LEVEL 1;
+SCHEMATIC END;
+

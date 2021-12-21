@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 16 17:34:52 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sens_opt" LOCATE = SITE "D6" LEVEL 1;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "SDA" LOCATE = SITE "E4" LEVEL 1;
+COMP "SCL" LOCATE = SITE "C4" LEVEL 1;
+COMP "ext" LOCATE = SITE "D5" LEVEL 1;
+SCHEMATIC END;
+

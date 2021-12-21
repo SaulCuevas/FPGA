@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Dec 03 00:05:09 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "vga_G" LOCATE = SITE "D15" LEVEL 1;
+COMP "vga_B" LOCATE = SITE "C15" LEVEL 1;
+COMP "vga_h_sync" LOCATE = SITE "F15" LEVEL 1;
+COMP "quadA" LOCATE = SITE "A12" LEVEL 1;
+COMP "quadB" LOCATE = SITE "B15" LEVEL 1;
+COMP "vga_v_sync" LOCATE = SITE "E15" LEVEL 1;
+COMP "vga_R" LOCATE = SITE "B14" LEVEL 1;
+SCHEMATIC END;
+

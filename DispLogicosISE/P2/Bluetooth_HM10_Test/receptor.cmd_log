@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.xst" -ofn "/home/ise/DispLogicosISE/P2/Bluetooth_HM10_Test/receptor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA_2_RevA.ucf -p xc6slx9-csg225-2 receptor.ngc receptor.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o receptor_map.ncd receptor.ngd receptor.pcf 
+par -w -intstyle ise -ol high -mt off receptor_map.ncd receptor.ncd receptor.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml receptor.twx receptor.ncd -o receptor.twr receptor.pcf -ucf AMIIBA_2_RevA.ucf 
+bitgen -intstyle ise -f receptor.ut receptor.ncd 

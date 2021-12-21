@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/Documents/PRACTICAS/Practica7/Punto2/ROM_8x12_isim_beh.exe" -prj "/home/ise/Documents/PRACTICAS/Practica7/Punto2/ROM_8x12_beh.prj" "work.ROM_8x12" "work.glbl" 

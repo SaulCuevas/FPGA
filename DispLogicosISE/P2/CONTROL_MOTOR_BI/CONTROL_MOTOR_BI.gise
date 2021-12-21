@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CONTROL_MOTOR_BI.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MOTOR_BI.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="MOTOR_BI.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="MOTOR_BI.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MOTOR_BI.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="MOTOR_BI.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MOTOR_BI.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MOTOR_BI.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MOTOR_BI.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="MOTOR_BI.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MOTOR_BI.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="MOTOR_BI.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="MOTOR_BI.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="MOTOR_BI.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MOTOR_BI.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="MOTOR_BI.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MOTOR_BI.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MOTOR_BI.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="MOTOR_BI.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="MOTOR_BI.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="MOTOR_BI.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MOTOR_BI.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="MOTOR_BI.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MOTOR_BI.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MOTOR_BI_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="MOTOR_BI_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MOTOR_BI_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MOTOR_BI_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="MOTOR_BI_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="MOTOR_BI_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOTOR_BI_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOTOR_BI_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="MOTOR_BI_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="MOTOR_BI_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOTOR_BI_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MOTOR_BI_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="MOTOR_BI_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="MOTOR_BI_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MOTOR_BI_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1902976543251805414" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-5765259224904244154" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="7243193329318823464" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745293036838" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276443" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2387346505678916688" xil_pn:start_ts="1632276443">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276584" xil_pn:in_ck="-3534851469826591041" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-8818616572032717793" xil_pn:start_ts="1632276517">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MOTOR_BI.lso"/>
+      <outfile xil_pn:name="MOTOR_BI.ngc"/>
+      <outfile xil_pn:name="MOTOR_BI.ngr"/>
+      <outfile xil_pn:name="MOTOR_BI.prj"/>
+      <outfile xil_pn:name="MOTOR_BI.stx"/>
+      <outfile xil_pn:name="MOTOR_BI.syr"/>
+      <outfile xil_pn:name="MOTOR_BI.xst"/>
+      <outfile xil_pn:name="MOTOR_BI_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276465" xil_pn:in_ck="3236612776247068973" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892527800490333" xil_pn:start_ts="1632276465">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276610" xil_pn:in_ck="2335366837246985486" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6787144374130655887" xil_pn:start_ts="1632276584">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <outfile xil_pn:name="MOTOR_BI.bld"/>
+      <outfile xil_pn:name="MOTOR_BI.ngd"/>
+      <outfile xil_pn:name="MOTOR_BI_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276668" xil_pn:in_ck="2335366837246985487" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3038358747526061968" xil_pn:start_ts="1632276610">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOTOR_BI.pcf"/>
+      <outfile xil_pn:name="MOTOR_BI_map.map"/>
+      <outfile xil_pn:name="MOTOR_BI_map.mrp"/>
+      <outfile xil_pn:name="MOTOR_BI_map.ncd"/>
+      <outfile xil_pn:name="MOTOR_BI_map.ngm"/>
+      <outfile xil_pn:name="MOTOR_BI_map.xrpt"/>
+      <outfile xil_pn:name="MOTOR_BI_summary.xml"/>
+      <outfile xil_pn:name="MOTOR_BI_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276737" xil_pn:in_ck="3313258264408638376" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1632276668">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOTOR_BI.ncd"/>
+      <outfile xil_pn:name="MOTOR_BI.pad"/>
+      <outfile xil_pn:name="MOTOR_BI.par"/>
+      <outfile xil_pn:name="MOTOR_BI.ptwx"/>
+      <outfile xil_pn:name="MOTOR_BI.unroutes"/>
+      <outfile xil_pn:name="MOTOR_BI.xpi"/>
+      <outfile xil_pn:name="MOTOR_BI_pad.csv"/>
+      <outfile xil_pn:name="MOTOR_BI_pad.txt"/>
+      <outfile xil_pn:name="MOTOR_BI_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276774" xil_pn:in_ck="4016750232436527070" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1632276737">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOTOR_BI.bgn"/>
+      <outfile xil_pn:name="MOTOR_BI.bit"/>
+      <outfile xil_pn:name="MOTOR_BI.drc"/>
+      <outfile xil_pn:name="MOTOR_BI.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1632276737" xil_pn:in_ck="2335366837246985355" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1632276713">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="MOTOR_BI.twr"/>
+      <outfile xil_pn:name="MOTOR_BI.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

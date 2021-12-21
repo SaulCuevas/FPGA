@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 08 14:16:24 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "boton" LOCATE = SITE "J4" LEVEL 1;
+COMP "PWM" LOCATE = SITE "E15" LEVEL 1;
+SCHEMATIC END;
+

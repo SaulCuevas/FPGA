@@ -1,0 +1,53 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Nov 13 06:41:01 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ledsbtR<3>" LOCATE = SITE "R13" LEVEL 1;
+COMP "ledsbtR<4>" LOCATE = SITE "R8" LEVEL 1;
+COMP "Entrada<0>" LOCATE = SITE "M8" LEVEL 1;
+COMP "ledsbtR<5>" LOCATE = SITE "R6" LEVEL 1;
+COMP "Entrada<1>" LOCATE = SITE "N6" LEVEL 1;
+COMP "ledsbtR<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "Entrada<2>" LOCATE = SITE "N4" LEVEL 1;
+COMP "ledsbtR<7>" LOCATE = SITE "M1" LEVEL 1;
+COMP "Entrada<3>" LOCATE = SITE "P9" LEVEL 1;
+COMP "Entrada<4>" LOCATE = SITE "R7" LEVEL 1;
+COMP "clk" LOCATE = SITE "E7" LEVEL 1;
+COMP "Entrada<5>" LOCATE = SITE "P5" LEVEL 1;
+COMP "Entrada<6>" LOCATE = SITE "N2" LEVEL 1;
+COMP "Entrada<7>" LOCATE = SITE "L1" LEVEL 1;
+COMP "Salida" LOCATE = SITE "E4" LEVEL 1;
+COMP "disp<0>" LOCATE = SITE "K12" LEVEL 1;
+COMP "ledsbtB<0>" LOCATE = SITE "N9" LEVEL 1;
+COMP "disp<1>" LOCATE = SITE "J13" LEVEL 1;
+COMP "ledsbtB<1>" LOCATE = SITE "M5" LEVEL 1;
+COMP "disp<2>" LOCATE = SITE "K11" LEVEL 1;
+COMP "disp<10>" LOCATE = SITE "K15" LEVEL 1;
+COMP "ledsbtB<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "disp<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "disp<11>" LOCATE = SITE "P14" LEVEL 1;
+COMP "ledsbtB<3>" LOCATE = SITE "R10" LEVEL 1;
+COMP "disp<4>" LOCATE = SITE "G13" LEVEL 1;
+COMP "disp<12>" LOCATE = SITE "P15" LEVEL 1;
+COMP "ledsbtB<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "disp<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "disp<13>" LOCATE = SITE "M15" LEVEL 1;
+COMP "ledsbtB<5>" LOCATE = SITE "R5" LEVEL 1;
+COMP "disp<6>" LOCATE = SITE "F13" LEVEL 1;
+COMP "disp<14>" LOCATE = SITE "L15" LEVEL 1;
+COMP "Sel<0>" LOCATE = SITE "K1" LEVEL 1;
+COMP "ledsbtB<6>" LOCATE = SITE "P1" LEVEL 1;
+COMP "disp<7>" LOCATE = SITE "G12" LEVEL 1;
+COMP "disp<15>" LOCATE = SITE "K13" LEVEL 1;
+COMP "Sel<1>" LOCATE = SITE "J3" LEVEL 1;
+COMP "ledsbtB<7>" LOCATE = SITE "L2" LEVEL 1;
+COMP "disp<8>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Sel<2>" LOCATE = SITE "H4" LEVEL 1;
+COMP "disp<9>" LOCATE = SITE "L14" LEVEL 1;
+COMP "ledsbtR<0>" LOCATE = SITE "N14" LEVEL 1;
+COMP "ledsbtR<1>" LOCATE = SITE "N7" LEVEL 1;
+COMP "ledsbtR<2>" LOCATE = SITE "N5" LEVEL 1;
+COMP "Enable" LOCATE = SITE "J4" LEVEL 1;
+SCHEMATIC END;
+

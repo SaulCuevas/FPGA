@@ -1,0 +1,34 @@
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 TAMBOR_JUGUETE.ngc TAMBOR_JUGUETE.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TAMBOR_JUGUETE_map.ncd TAMBOR_JUGUETE.ngd TAMBOR_JUGUETE.pcf 
+par -w -intstyle ise -ol high -mt off TAMBOR_JUGUETE_map.ncd TAMBOR_JUGUETE.ncd TAMBOR_JUGUETE.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml TAMBOR_JUGUETE.twx TAMBOR_JUGUETE.ncd -o TAMBOR_JUGUETE.twr TAMBOR_JUGUETE.pcf 
+bitgen -intstyle ise -f TAMBOR_JUGUETE.ut TAMBOR_JUGUETE.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TAMBOR_JUGUETE.ucf -p xc6slx9-csg225-2 TAMBOR_JUGUETE.ngc TAMBOR_JUGUETE.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TAMBOR_JUGUETE.ucf -p xc6slx9-csg225-2 TAMBOR_JUGUETE.ngc TAMBOR_JUGUETE.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TAMBOR_JUGUETE_map.ncd TAMBOR_JUGUETE.ngd TAMBOR_JUGUETE.pcf 
+par -w -intstyle ise -ol high -mt off TAMBOR_JUGUETE_map.ncd TAMBOR_JUGUETE.ncd TAMBOR_JUGUETE.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml TAMBOR_JUGUETE.twx TAMBOR_JUGUETE.ncd -o TAMBOR_JUGUETE.twr TAMBOR_JUGUETE.pcf -ucf TAMBOR_JUGUETE.ucf 
+bitgen -intstyle ise -f TAMBOR_JUGUETE.ut TAMBOR_JUGUETE.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.xst" -ofn "/home/ise/Documents/TAMBOR/TAMBOR_JUGUETE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TAMBOR_JUGUETE.ucf -p xc6slx9-csg225-2 TAMBOR_JUGUETE.ngc TAMBOR_JUGUETE.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TAMBOR_JUGUETE_map.ncd TAMBOR_JUGUETE.ngd TAMBOR_JUGUETE.pcf 
+par -w -intstyle ise -ol high -mt off TAMBOR_JUGUETE_map.ncd TAMBOR_JUGUETE.ncd TAMBOR_JUGUETE.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml TAMBOR_JUGUETE.twx TAMBOR_JUGUETE.ncd -o TAMBOR_JUGUETE.twr TAMBOR_JUGUETE.pcf -ucf TAMBOR_JUGUETE.ucf 
+bitgen -intstyle ise -f TAMBOR_JUGUETE.ut TAMBOR_JUGUETE.ncd 

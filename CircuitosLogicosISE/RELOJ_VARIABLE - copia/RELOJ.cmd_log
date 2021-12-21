@@ -1,0 +1,95 @@
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.xst" -ofn "/home/ise/Documents/RELOJ_VARIABLE/RELOJ.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RELOJ.ucf -p xc6slx9-csg225-2 RELOJ.ngc RELOJ.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RELOJ_map.ncd RELOJ.ngd RELOJ.pcf 
+par -w -intstyle ise -ol high -mt off RELOJ_map.ncd RELOJ.ncd RELOJ.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml RELOJ.twx RELOJ.ncd -o RELOJ.twr RELOJ.pcf -ucf RELOJ.ucf 
+bitgen -intstyle ise -f RELOJ.ut RELOJ.ncd 

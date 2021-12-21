@@ -1,0 +1,256 @@
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 ADS1115.ngc ADS1115.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ADS1115_map.ncd ADS1115.ngd ADS1115.pcf 
+par -w -intstyle ise -ol high -mt off ADS1115_map.ncd ADS1115.ncd ADS1115.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ADS1115.twx ADS1115.ncd -o ADS1115.twr ADS1115.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f ADS1115.ut ADS1115.ncd 

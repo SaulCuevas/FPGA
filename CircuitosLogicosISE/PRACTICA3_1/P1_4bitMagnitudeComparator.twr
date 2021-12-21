@@ -1,0 +1,172 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 2 -n
+3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd
+-o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf -ucf
+P1_4bitMagnitudeComparator.ucf
+
+Design file:              P1_4bitMagnitudeComparator.ncd
+Physical constraint file: P1_4bitMagnitudeComparator.pcf
+Device,package,speed:     xc6slx9,csg225,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+reset       |    1.902(R)|      SLOW  |   -0.408(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+disp<0>     |        10.994(R)|      SLOW  |         4.712(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<1>     |        11.510(R)|      SLOW  |         5.047(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<2>     |        10.564(R)|      SLOW  |         4.528(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<3>     |        11.521(R)|      SLOW  |         5.018(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<5>     |        12.364(R)|      SLOW  |         5.210(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<6>     |        11.123(R)|      SLOW  |         4.712(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<7>     |        12.594(R)|      SLOW  |         5.589(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<8>     |        13.133(R)|      SLOW  |         5.373(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<9>     |        11.638(R)|      SLOW  |         4.596(R)|      FAST  |clk_BUFGP         |   0.000|
+disp<11>    |        11.960(R)|      SLOW  |         4.793(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.103|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+a<0>           |disp<5>        |   13.683|
+a<0>           |disp<6>        |   12.310|
+a<0>           |disp<7>        |   13.531|
+a<0>           |disp<8>        |   14.452|
+a<0>           |disp<9>        |   12.620|
+a<0>           |disp<11>       |   13.420|
+a<0>           |ledsbt<4>      |    7.620|
+a<1>           |disp<5>        |   14.006|
+a<1>           |disp<6>        |   12.185|
+a<1>           |disp<7>        |   13.854|
+a<1>           |disp<8>        |   14.775|
+a<1>           |disp<9>        |   12.495|
+a<1>           |disp<11>       |   13.743|
+a<1>           |ledsbt<5>      |    7.057|
+a<2>           |disp<5>        |   13.716|
+a<2>           |disp<6>        |   12.366|
+a<2>           |disp<7>        |   13.564|
+a<2>           |disp<8>        |   14.485|
+a<2>           |disp<9>        |   12.676|
+a<2>           |disp<11>       |   12.344|
+a<2>           |ledsbt<6>      |    8.327|
+a<3>           |disp<5>        |   14.113|
+a<3>           |disp<6>        |   12.643|
+a<3>           |disp<7>        |   13.961|
+a<3>           |disp<8>        |   14.882|
+a<3>           |disp<9>        |   12.953|
+a<3>           |disp<11>       |   12.833|
+a<3>           |ledsbt<7>      |    7.233|
+b1             |disp<0>        |   11.943|
+b1             |disp<1>        |   11.977|
+b1             |disp<2>        |   11.031|
+b1             |disp<3>        |   12.470|
+b1             |disp<5>        |   11.950|
+b1             |disp<6>        |   10.012|
+b1             |disp<7>        |   12.180|
+b1             |disp<8>        |   12.719|
+b1             |disp<9>        |   10.774|
+b1             |disp<11>       |   11.304|
+b2             |disp<0>        |   10.841|
+b2             |disp<1>        |   11.435|
+b2             |disp<2>        |   10.489|
+b2             |disp<3>        |   11.368|
+b2             |disp<5>        |   12.735|
+b2             |disp<6>        |   10.833|
+b2             |disp<7>        |   12.583|
+b2             |disp<8>        |   13.504|
+b2             |disp<9>        |   11.476|
+b2             |disp<11>       |   11.435|
+b3             |disp<0>        |   11.313|
+b3             |disp<1>        |   11.288|
+b3             |disp<2>        |   10.342|
+b3             |disp<3>        |   11.840|
+b3             |disp<5>        |   12.696|
+b3             |disp<6>        |   10.553|
+b3             |disp<7>        |   12.544|
+b3             |disp<8>        |   13.465|
+b3             |disp<9>        |   11.161|
+b3             |disp<11>       |   11.207|
+b<0>           |disp<5>        |   13.901|
+b<0>           |disp<6>        |   12.147|
+b<0>           |disp<7>        |   13.749|
+b<0>           |disp<8>        |   14.670|
+b<0>           |disp<9>        |   12.457|
+b<0>           |disp<11>       |   13.638|
+b<0>           |ledsbt<0>      |    9.914|
+b<1>           |disp<5>        |   14.343|
+b<1>           |disp<6>        |   12.332|
+b<1>           |disp<7>        |   14.191|
+b<1>           |disp<8>        |   15.112|
+b<1>           |disp<9>        |   12.642|
+b<1>           |disp<11>       |   14.080|
+b<1>           |ledsbt<1>      |    8.449|
+b<2>           |disp<5>        |   13.527|
+b<2>           |disp<6>        |   12.233|
+b<2>           |disp<7>        |   13.375|
+b<2>           |disp<8>        |   14.296|
+b<2>           |disp<9>        |   12.543|
+b<2>           |disp<11>       |   13.633|
+b<2>           |ledsbt<2>      |    7.253|
+b<3>           |disp<5>        |   13.580|
+b<3>           |disp<6>        |   11.749|
+b<3>           |disp<7>        |   13.428|
+b<3>           |disp<8>        |   14.349|
+b<3>           |disp<9>        |   12.059|
+b<3>           |disp<11>       |   13.133|
+b<3>           |ledsbt<3>      |    7.772|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Nov 13 02:38:15 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 382 MB
+
+
+

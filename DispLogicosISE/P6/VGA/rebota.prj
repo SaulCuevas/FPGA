@@ -1,0 +1,3 @@
+verilog work "hvsync_generator.v"
+verilog work "HM_10.v"
+verilog work "rebota.v"

@@ -1,0 +1,550 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.68 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.69 secs
+ 
+--> Reading design: TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TOP.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TOP"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\SERVO2.v" into library work
+Parsing module <SERVO2>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\SERVO1.v" into library work
+Parsing module <SERVO1>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\APLAUSOS.v" into library work
+Parsing module <APLAUSOS>.
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\TOP.v" into library work
+Parsing module <TOP>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TOP>.
+
+Elaborating module <APLAUSOS>.
+
+Elaborating module <SERVO1>.
+
+Elaborating module <SERVO2>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TOP>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\TOP.v".
+    Found 2-bit register for signal <lado>.
+    Found 22-bit register for signal <cont_80ms>.
+    Found 2-bit adder for signal <lado[1]_GND_1_o_add_2_OUT> created at line 21.
+    Found 22-bit adder for signal <cont_80ms[21]_GND_1_o_add_3_OUT> created at line 23.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+Unit <TOP> synthesized.
+
+Synthesizing Unit <APLAUSOS>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\APLAUSOS.v".
+    Found 1-bit register for signal <banderaOK>.
+    Found 1-bit register for signal <banderaDosAplausos>.
+    Found 27-bit register for signal <delay_2s>.
+    Found 1-bit register for signal <banderaInicio>.
+    Found 1-bit register for signal <cont_aplausos>.
+    Found 2-bit register for signal <sampled_aplauso>.
+    Found 27-bit adder for signal <delay_2s[26]_GND_2_o_add_7_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <APLAUSOS> synthesized.
+
+Synthesizing Unit <SERVO1>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\SERVO1.v".
+    Found 21-bit register for signal <CONT_FREC>.
+    Found 20-bit register for signal <CONT_PWM>.
+    Found 1-bit register for signal <PWM>.
+    Found 21-bit adder for signal <CONT_FREC[20]_GND_3_o_add_3_OUT> created at line 19.
+    Found 4x20-bit Read Only RAM for signal <lado[1]_GND_3_o_wide_mux_7_OUT>
+    Found 21-bit comparator equal for signal <CONT_FREC[20]_GND_3_o_equal_2_o> created at line 13
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <SERVO1> synthesized.
+
+Synthesizing Unit <SERVO2>.
+    Related source file is "C:\Users\saulc\Documents\DispLogicosISE\P5\LaserAplausos\SERVO2.v".
+    Found 21-bit register for signal <CONT_FREC>.
+    Found 20-bit register for signal <CONT_PWM>.
+    Found 1-bit register for signal <PWM>.
+    Found 21-bit adder for signal <CONT_FREC[20]_GND_4_o_add_3_OUT> created at line 19.
+    Found 4x20-bit Read Only RAM for signal <lado[1]_GND_4_o_wide_mux_7_OUT>
+    Found 21-bit comparator equal for signal <CONT_FREC[20]_GND_4_o_equal_2_o> created at line 13
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <SERVO2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x20-bit single-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 5
+ 2-bit adder                                           : 1
+ 21-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 27-bit adder                                          : 1
+# Registers                                            : 14
+ 1-bit register                                        : 6
+ 2-bit register                                        : 2
+ 20-bit register                                       : 2
+ 21-bit register                                       : 2
+ 22-bit register                                       : 1
+ 27-bit register                                       : 1
+# Comparators                                          : 2
+ 21-bit comparator equal                               : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <APLAUSOS>.
+The following registers are absorbed into counter <delay_2s>: 1 register on signal <delay_2s>.
+Unit <APLAUSOS> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SERVO1>.
+The following registers are absorbed into counter <CONT_FREC>: 1 register on signal <CONT_FREC>.
+INFO:Xst:3231 - The small RAM <Mram_lado[1]_GND_3_o_wide_mux_7_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 20-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <lado>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SERVO1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SERVO2>.
+The following registers are absorbed into counter <CONT_FREC>: 1 register on signal <CONT_FREC>.
+INFO:Xst:3231 - The small RAM <Mram_lado[1]_GND_4_o_wide_mux_7_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 20-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <lado>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <SERVO2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <TOP>.
+The following registers are absorbed into counter <cont_80ms>: 1 register on signal <cont_80ms>.
+The following registers are absorbed into counter <lado>: 1 register on signal <lado>.
+Unit <TOP> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x20-bit single-port distributed Read Only RAM        : 2
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 21-bit up counter                                     : 2
+ 22-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+# Comparators                                          : 2
+ 21-bit comparator equal                               : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch U3/CONT_PWM_5 hinder the constant cleaning in the block TOP.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch U3/CONT_PWM_8 hinder the constant cleaning in the block TOP.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch U3/CONT_PWM_13 hinder the constant cleaning in the block TOP.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch U3/CONT_PWM_14 hinder the constant cleaning in the block TOP.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <U3/CONT_PWM_0> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_1> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_2> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_6> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_9> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_11> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_15> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_16> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_17> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_18> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_PWM_19> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_0> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_1> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_2> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_4> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_9> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_16> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_17> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_18> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U2/CONT_PWM_19> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <U3/CONT_PWM_12> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U3/CONT_PWM_10> <U3/CONT_PWM_4> 
+INFO:Xst:2261 - The FF/Latch <U3/CONT_PWM_7> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_PWM_3> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_PWM_14> in Unit <TOP> is equivalent to the following 5 FFs/Latches, which will be removed : <U2/CONT_PWM_13> <U2/CONT_PWM_8> <U2/CONT_PWM_7> <U2/CONT_PWM_5> <U2/CONT_PWM_3> 
+INFO:Xst:2261 - The FF/Latch <U3/CONT_PWM_14> in Unit <TOP> is equivalent to the following 3 FFs/Latches, which will be removed : <U3/CONT_PWM_13> <U3/CONT_PWM_8> <U3/CONT_PWM_5> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_PWM_15> in Unit <TOP> is equivalent to the following 4 FFs/Latches, which will be removed : <U2/CONT_PWM_12> <U2/CONT_PWM_11> <U2/CONT_PWM_10> <U2/CONT_PWM_6> 
+
+Optimizing unit <TOP> ...
+
+Optimizing unit <APLAUSOS> ...
+WARNING:Xst:1293 - FF/Latch <U2/CONT_FREC_20> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <U3/CONT_FREC_20> has a constant value of 0 in block <TOP>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_6> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_6> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_10> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_10> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_7> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_7> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_11> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_11> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_8> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_8> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_12> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_12> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_9> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_9> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_13> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_13> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_14> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_14> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_15> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_15> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_16> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_16> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_17> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_17> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_18> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_18> 
+INFO:Xst:2261 - The FF/Latch <U2/CONT_FREC_19> in Unit <TOP> is equivalent to the following FF/Latch, which will be removed : <U3/CONT_FREC_19> 
+INFO:Xst:2261 - The FF/Latch <cont_80ms_0> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U2/CONT_FREC_0> <U3/CONT_FREC_0> 
+INFO:Xst:2261 - The FF/Latch <cont_80ms_1> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U2/CONT_FREC_1> <U3/CONT_FREC_1> 
+INFO:Xst:2261 - The FF/Latch <cont_80ms_2> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U2/CONT_FREC_2> <U3/CONT_FREC_2> 
+INFO:Xst:2261 - The FF/Latch <cont_80ms_3> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U2/CONT_FREC_3> <U3/CONT_FREC_3> 
+INFO:Xst:2261 - The FF/Latch <cont_80ms_4> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U2/CONT_FREC_4> <U3/CONT_FREC_4> 
+INFO:Xst:2261 - The FF/Latch <cont_80ms_5> in Unit <TOP> is equivalent to the following 2 FFs/Latches, which will be removed : <U2/CONT_FREC_5> <U3/CONT_FREC_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+WARNING:Xst:1426 - The value init of the FF/Latch U3/CONT_PWM_14 hinder the constant cleaning in the block TOP.
+   You should achieve better results by setting this init to 1.
+Found area constraint ratio of 100 (+ 5) on block TOP, actual ratio is 2.
+FlipFlop U1/banderaInicio has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 79
+ Flip-Flops                                            : 79
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TOP.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 330
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 68
+#      LUT2                        : 2
+#      LUT3                        : 6
+#      LUT4                        : 32
+#      LUT5                        : 32
+#      LUT6                        : 37
+#      MUXCY                       : 82
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 63
+# FlipFlops/Latches                : 79
+#      FD                          : 71
+#      FDE                         : 2
+#      FDR                         : 4
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 1
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              79  out of  11440     0%  
+ Number of Slice LUTs:                  182  out of   5720     3%  
+    Number used as Logic:               182  out of   5720     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    187
+   Number with an unused Flip Flop:     108  out of    187    57%  
+   Number with an unused LUT:             5  out of    187     2%  
+   Number of fully used LUT-FF pairs:    74  out of    187    39%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    160     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 79    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.894ns (Maximum Frequency: 204.332MHz)
+   Minimum input arrival time before clock: 2.083ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.894ns (frequency: 204.332MHz)
+  Total number of paths / destination ports: 2737 / 85
+-------------------------------------------------------------------------
+Delay:               4.894ns (Levels of Logic = 2)
+  Source:            U2/CONT_FREC_7 (FF)
+  Destination:       U2/PWM (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U2/CONT_FREC_7 to U2/PWM
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   1.259  U2/CONT_FREC_7 (U2/CONT_FREC_7)
+     LUT6:I0->O           17   0.254   1.437  U2/CONT_FREC[20]_GND_3_o_equal_3_o<20>3 (U2/CONT_FREC[20]_GND_3_o_equal_3_o<20>2)
+     LUT5:I2->O            2   0.235   0.725  U2/CONT_FREC[20]_GND_3_o_equal_3_o<20>4 (U2/CONT_FREC[20]_GND_3_o_equal_3_o)
+     FDS:S                     0.459          U2/PWM
+    ----------------------------------------
+    Total                      4.894ns (1.473ns logic, 3.421ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.083ns (Levels of Logic = 1)
+  Source:            aplauso (PAD)
+  Destination:       U1/sampled_aplauso_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: aplauso to U1/sampled_aplauso_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.681  aplauso_IBUF (aplauso_IBUF)
+     FD:D                      0.074          U1/sampled_aplauso_1
+    ----------------------------------------
+    Total                      2.083ns (1.402ns logic, 0.681ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            U2/PWM (FF)
+  Destination:       servo1 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: U2/PWM to servo1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              3   0.525   0.765  U2/PWM (U2/PWM)
+     OBUF:I->O                 2.912          servo1_OBUF (servo1)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.894|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.48 secs
+ 
+--> 
+
+Total memory usage is 4486244 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

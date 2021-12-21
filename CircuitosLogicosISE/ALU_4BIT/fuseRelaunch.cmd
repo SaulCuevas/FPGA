@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Documents/ALU_4BIT/SRM_isim_beh.exe" -prj "/home/ise/Documents/ALU_4BIT/SRM_beh.prj" "work.SRM" 

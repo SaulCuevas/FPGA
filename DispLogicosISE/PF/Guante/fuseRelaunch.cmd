@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115_isim_beh.exe" -prj "C:/Users/saulc/Documents/DispLogicosISE/PF/Guante/ADS1115_beh.prj" "work.ADS1115" "work.glbl" 

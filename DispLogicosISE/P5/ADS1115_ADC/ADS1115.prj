@@ -1,0 +1,4 @@
+verilog work "div_int.v"
+verilog work "DISPLAY.v"
+verilog work "CONVERSION.v"
+verilog work "ADS1115.v"

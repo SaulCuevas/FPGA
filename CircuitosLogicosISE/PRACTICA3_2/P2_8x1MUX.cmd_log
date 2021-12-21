@@ -1,0 +1,41 @@
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P2_8x1MUX.ngc P2_8x1MUX.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P2_8x1MUX_map.ncd P2_8x1MUX.ngd P2_8x1MUX.pcf 
+par -w -intstyle ise -ol high -mt off P2_8x1MUX_map.ncd P2_8x1MUX.ncd P2_8x1MUX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P2_8x1MUX.twx P2_8x1MUX.ncd -o P2_8x1MUX.twr P2_8x1MUX.pcf 
+bitgen -intstyle ise -f P2_8x1MUX.ut P2_8x1MUX.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P2_8x1MUX.ngc P2_8x1MUX.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P2_8x1MUX_map.ncd P2_8x1MUX.ngd P2_8x1MUX.pcf 
+par -w -intstyle ise -ol high -mt off P2_8x1MUX_map.ncd P2_8x1MUX.ncd P2_8x1MUX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P2_8x1MUX.twx P2_8x1MUX.ncd -o P2_8x1MUX.twr P2_8x1MUX.pcf 
+bitgen -intstyle ise -f P2_8x1MUX.ut P2_8x1MUX.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P2_8x1MUX.ucf -p xc6slx9-csg225-2 P2_8x1MUX.ngc P2_8x1MUX.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P2_8x1MUX.ucf -p xc6slx9-csg225-2 P2_8x1MUX.ngc P2_8x1MUX.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P2_8x1MUX_map.ncd P2_8x1MUX.ngd P2_8x1MUX.pcf 
+par -w -intstyle ise -ol high -mt off P2_8x1MUX_map.ncd P2_8x1MUX.ncd P2_8x1MUX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P2_8x1MUX.twx P2_8x1MUX.ncd -o P2_8x1MUX.twr P2_8x1MUX.pcf -ucf P2_8x1MUX.ucf 
+bitgen -intstyle ise -f P2_8x1MUX.ut P2_8x1MUX.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P2_8x1MUX.ucf -p xc6slx9-csg225-2 P2_8x1MUX.ngc P2_8x1MUX.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P2_8x1MUX_map.ncd P2_8x1MUX.ngd P2_8x1MUX.pcf 
+par -w -intstyle ise -ol high -mt off P2_8x1MUX_map.ncd P2_8x1MUX.ncd P2_8x1MUX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P2_8x1MUX.twx P2_8x1MUX.ncd -o P2_8x1MUX.twr P2_8x1MUX.pcf -ucf P2_8x1MUX.ucf 
+bitgen -intstyle ise -f P2_8x1MUX.ut P2_8x1MUX.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.xst" -ofn "/home/ise/Documents/PRACTICA3_2/P2_8x1MUX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P2_8x1MUX.ucf -p xc6slx9-csg225-2 P2_8x1MUX.ngc P2_8x1MUX.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P2_8x1MUX_map.ncd P2_8x1MUX.ngd P2_8x1MUX.pcf 
+par -w -intstyle ise -ol high -mt off P2_8x1MUX_map.ncd P2_8x1MUX.ncd P2_8x1MUX.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P2_8x1MUX.twx P2_8x1MUX.ncd -o P2_8x1MUX.twr P2_8x1MUX.pcf -ucf P2_8x1MUX.ucf 
+bitgen -intstyle ise -f P2_8x1MUX.ut P2_8x1MUX.ncd 

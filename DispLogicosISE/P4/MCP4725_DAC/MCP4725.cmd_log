@@ -1,0 +1,165 @@
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P4/MCP4725_DAC/MCP4725.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 MCP4725.ngc MCP4725.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MCP4725_map.ncd MCP4725.ngd MCP4725.pcf 
+par -w -intstyle ise -ol high -mt off MCP4725_map.ncd MCP4725.ncd MCP4725.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MCP4725.twx MCP4725.ncd -o MCP4725.twr MCP4725.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f MCP4725.ut MCP4725.ncd 

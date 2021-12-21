@@ -1,0 +1,33 @@
+//.UCF PARA SEMAFOROS DE UNA INTERSECCION
+
+NET "CLK" 	 			LOC = E7; 	//oscilador 50MHz
+
+NET "FOTORES"			LOC = E15;	//Pin de entrada de la fotorresistencia
+NET "BUZZER"			LOC = F15;	//PIN DE SALIDA PARA EL BUZZER PASIVO
+
+NET "LED_COLS(0)"		LOC = E4;	//Columnas de la matriz de LEDs
+NET "LED_COLS(1)"		LOC = D5;
+NET "LED_COLS(2)"		LOC = C7;
+NET "LED_COLS(3)"		LOC = D10;
+NET "LED_COLS(4)"		LOC = C12;
+NET "LED_COLS(5)"		LOC = E1;
+NET "LED_COLS(6)"		LOC = C1;
+NET "LED_COLS(7)"		LOC = A3;
+
+NET "LED_FILS(0)"		LOC = C4;	//Filas de la matriz de LEDs
+NET "LED_FILS(1)"		LOC = D6;
+NET "LED_FILS(2)"		LOC = C8;
+NET "LED_FILS(3)"		LOC = C10;
+NET "LED_FILS(4)"		LOC = D13;
+NET "LED_FILS(5)"		LOC = E2;
+NET "LED_FILS(6)"		LOC = A2;
+NET "LED_FILS(7)"		LOC = B3;
+NET "V_CC"				LOC = A9;
+
+NET "SEMAFORO_EO(0)"	LOC = C5;	//Luz roja 		EO
+NET "SEMAFORO_EO(1)"	LOC = A6;	//Luz amarilla EO
+NET "SEMAFORO_EO(2)"	LOC = B7;	//Luz verde 	EO
+
+NET "SEMAFORO_NS(0)"	LOC = A5;	//Luz roja		NS
+NET "SEMAFORO_NS(1)"	LOC = C6;	//Luz amarilla NS
+NET "SEMAFORO_NS(2)"	LOC = A8;	//Luz verde		NS

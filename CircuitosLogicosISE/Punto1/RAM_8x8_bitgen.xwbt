@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/CircuitosLogicosISE/Punto1/RAM_8x8.ncd
+OUTFILE=/home/ise/CircuitosLogicosISE/Punto1/RAM_8x8.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=/home/ise/CircuitosLogicosISE/Punto1
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

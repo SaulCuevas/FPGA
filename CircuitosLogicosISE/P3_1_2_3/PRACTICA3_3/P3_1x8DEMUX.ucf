@@ -1,0 +1,30 @@
+NET "sel(0)" 		LOC = B14; //SW0
+NET "sel(1)" 		LOC = C14; //SW1
+NET "sel(2)" 		LOC = D13; //SW2
+NET "enable" 		LOC = N14; //SW6
+NET "entrada" 		LOC = P14; //SW7
+
+NET "clk" 		LOC = E7; //oscilador 50MHz
+NET "clear" 	LOC = F1; // E/S P1 Es negado
+
+NET "salida(0)" 	LOC = E1; // E/S P1
+NET "salida(1)" 	LOC = F3; // E/S P1
+NET "salida(2)" 	LOC = B3; // E/S P1
+NET "salida(3)" 	LOC = A3; // E/S P1
+NET "salida(4)" 	LOC = A4; // E/S P1
+NET "salida(5)" 	LOC = B5; // E/S P1
+NET "salida(6)" 	LOC = A5; // E/S P1
+NET "salida(7)" 	LOC = A6; // E/S P1
+
+NET "disp(0)" 	LOC = D5; 	// E/S P6 A
+NET "disp(1)" 	LOC = C5; 	// E/S P6 B
+NET "disp(2)" 	LOC = C9; 	// E/S P6 C
+NET "disp(3)" 	LOC = D8; 	// E/S P6 D
+NET "disp(4)" 	LOC = C8; 	// E/S P6 E
+NET "disp(5)" 	LOC = D10; 	// E/S P6 F
+NET "disp(6)" 	LOC = C10; 	// E/S P6 G
+NET "disp(7)" 	LOC = D11; 	// E/S P6 P
+NET "disp(8)" 	LOC = D1;	// E/S P3 ANODO 1
+NET "disp(9)" 	LOC = G2;	// E/S P3 A2
+NET "disp(10)" LOC = C2;	// E/S P3 A3
+NET "disp(11)" LOC = D3;	// E/S P3 A4

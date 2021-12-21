@@ -1,0 +1,20 @@
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.xst" -ofn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.xst" -ofn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Encoder_Test.ucf -p xc6slx9-csg225-2 Encoder.ngc Encoder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Encoder_Test.ucf -p xc6slx9-csg225-2 Encoder.ngc Encoder.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Encoder_map.ncd Encoder.ngd Encoder.pcf 
+par -w -intstyle ise -ol high -mt off Encoder_map.ncd Encoder.ncd Encoder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Encoder.twx Encoder.ncd -o Encoder.twr Encoder.pcf -ucf Encoder_Test.ucf 
+bitgen -intstyle ise -f Encoder.ut Encoder.ncd 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.xst" -ofn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Encoder_Test.ucf -p xc6slx9-csg225-2 Encoder.ngc Encoder.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Encoder_map.ncd Encoder.ngd Encoder.pcf 
+par -w -intstyle ise -ol high -mt off Encoder_map.ncd Encoder.ncd Encoder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Encoder.twx Encoder.ncd -o Encoder.twr Encoder.pcf -ucf Encoder_Test.ucf 
+bitgen -intstyle ise -f Encoder.ut Encoder.ncd 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.xst" -ofn "/home/ise/DispLogicosISE/P3/EncoderTest/Encoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Encoder_Test.ucf -p xc6slx9-csg225-2 Encoder.ngc Encoder.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Encoder_map.ncd Encoder.ngd Encoder.pcf 
+par -w -intstyle ise -ol high -mt off Encoder_map.ncd Encoder.ncd Encoder.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Encoder.twx Encoder.ncd -o Encoder.twr Encoder.pcf -ucf Encoder_Test.ucf 
+bitgen -intstyle ise -f Encoder.ut Encoder.ncd 

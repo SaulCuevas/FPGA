@@ -1,0 +1,525 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+Reading design: MULTI_DIV_SHIFT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MULTI_DIV_SHIFT.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MULTI_DIV_SHIFT"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : MULTI_DIV_SHIFT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.v" into library work
+Parsing module <MULTI_DIV_SHIFT>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <MULTI_DIV_SHIFT>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MULTI_DIV_SHIFT>.
+    Related source file is "/home/ise/Documents/P9_MULTI_DIV_SHIFT/MULTI_DIV_SHIFT.v".
+    Register <LEDS_B> equivalent to <LEDS_R> has been removed
+    Register <LEDS_G> equivalent to <LEDS_R> has been removed
+    Found 8-bit register for signal <LEDS_R>.
+    Found 4-bit register for signal <sampled_BOTON>.
+    Found 4-bit register for signal <BOTON_PRES>.
+    Found 22-bit register for signal <sclk>.
+    Found 17-bit register for signal <CONT_FREC_300>.
+    Found 1-bit register for signal <FREC_300>.
+    Found 2-bit register for signal <CONTADOR_DISP>.
+    Found 8-bit register for signal <DIGIT_1_DISP>.
+    Found 8-bit register for signal <DIGIT_2_DISP>.
+    Found 8-bit register for signal <DIGIT_3_DISP>.
+    Found 8-bit register for signal <DIGIT_4_DISP>.
+    Found 16-bit register for signal <DISPLAY>.
+    Found 8-bit register for signal <REG_UNIV>.
+    Found 22-bit adder for signal <sclk[21]_GND_1_o_add_4_OUT> created at line 39.
+    Found 17-bit adder for signal <CONT_FREC_300[16]_GND_1_o_add_16_OUT> created at line 56.
+    Found 2-bit adder for signal <CONTADOR_DISP[1]_GND_1_o_add_21_OUT> created at line 62.
+    Found 16-bit 4-to-1 multiplexer for signal <CONTADOR_DISP[1]_DIGIT_1_DISP[7]_wide_mux_71_OUT> created at line 122.
+    Found 4-bit comparator not equal for signal <sampled_BOTON[3]_BOTON[3]_equal_3_o> created at line 36
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 114 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <MULTI_DIV_SHIFT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 17-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 22-bit adder                                          : 1
+# Registers                                            : 13
+ 1-bit register                                        : 1
+ 16-bit register                                       : 1
+ 17-bit register                                       : 1
+ 2-bit register                                        : 1
+ 22-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 6
+# Comparators                                          : 1
+ 4-bit comparator not equal                            : 1
+# Multiplexers                                         : 4
+ 16-bit 4-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <DIGIT_4_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_4_DISP_1> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <MULTI_DIV_SHIFT>.
+The following registers are absorbed into counter <sclk>: 1 register on signal <sclk>.
+The following registers are absorbed into counter <CONT_FREC_300>: 1 register on signal <CONT_FREC_300>.
+The following registers are absorbed into counter <CONTADOR_DISP>: 1 register on signal <CONTADOR_DISP>.
+Unit <MULTI_DIV_SHIFT> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 22-bit up counter                                     : 1
+# Registers                                            : 73
+ Flip-Flops                                            : 73
+# Comparators                                          : 1
+ 4-bit comparator not equal                            : 1
+# Multiplexers                                         : 4
+ 16-bit 4-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <DIGIT_4_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_4_DISP_1> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_0> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_0> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_1> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_1> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_2> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_2> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_3> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_3> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_4> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_4> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_5> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_5> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_6> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_6> 
+INFO:Xst:2261 - The FF/Latch <REG_UNIV_7> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <LEDS_R_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_4_DISP_2> in Unit <MULTI_DIV_SHIFT> is equivalent to the following 5 FFs/Latches, which will be removed : <DIGIT_4_DISP_3> <DIGIT_4_DISP_4> <DIGIT_4_DISP_5> <DIGIT_4_DISP_6> <DIGIT_4_DISP_7> 
+WARNING:Xst:1293 - FF/Latch <DISPLAY_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DISPLAY_1> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DISPLAY_2> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DISPLAY_3> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DIGIT_2_DISP_4> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <DIGIT_2_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_2_DISP_5> in Unit <MULTI_DIV_SHIFT> is equivalent to the following 2 FFs/Latches, which will be removed : <DIGIT_3_DISP_4> <DIGIT_3_DISP_7> 
+INFO:Xst:2261 - The FF/Latch <DIGIT_1_DISP_3> in Unit <MULTI_DIV_SHIFT> is equivalent to the following 2 FFs/Latches, which will be removed : <DIGIT_1_DISP_4> <DIGIT_1_DISP_7> 
+
+Optimizing unit <MULTI_DIV_SHIFT> ...
+INFO:Xst:2261 - The FF/Latch <DISPLAY_12> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <DISPLAY_15> 
+INFO:Xst:2261 - The FF/Latch <DISPLAY_12> in Unit <MULTI_DIV_SHIFT> is equivalent to the following FF/Latch, which will be removed : <DISPLAY_15> 
+WARNING:Xst:1293 - FF/Latch <DIGIT_3_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DIGIT_1_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DIGIT_2_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DIGIT_2_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <DIGIT_1_DISP_0> has a constant value of 1 in block <MULTI_DIV_SHIFT>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:1426 - The value init of the FF/Latch DISPLAY_8 hinder the constant cleaning in the block MULTI_DIV_SHIFT.
+   You should achieve better results by setting this init to 1.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MULTI_DIV_SHIFT, actual ratio is 2.
+FlipFlop REG_UNIV_4 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop REG_UNIV_4 connected to a primary input has been replicated
+FlipFlop REG_UNIV_5 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop REG_UNIV_5 connected to a primary input has been replicated
+FlipFlop REG_UNIV_6 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop REG_UNIV_6 connected to a primary input has been replicated
+FlipFlop REG_UNIV_7 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_6 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_5 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_4 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_3 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_2 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_1 has been replicated 3 time(s) to handle iob=true attribute.
+FlipFlop REG_UNIV_0 has been replicated 3 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 113
+ Flip-Flops                                            : 113
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MULTI_DIV_SHIFT.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 258
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 37
+#      LUT2                        : 10
+#      LUT3                        : 5
+#      LUT4                        : 21
+#      LUT5                        : 28
+#      LUT6                        : 74
+#      MUXCY                       : 37
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 39
+# FlipFlops/Latches                : 113
+#      FD                          : 68
+#      FDE                         : 4
+#      FDR                         : 41
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 52
+#      IBUF                        : 12
+#      OBUF                        : 40
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              88  out of  11440     0%  
+ Number of Slice LUTs:                  178  out of   5720     3%  
+    Number used as Logic:               178  out of   5720     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    197
+   Number with an unused Flip Flop:     109  out of    197    55%  
+   Number with an unused LUT:            19  out of    197     9%  
+   Number of fully used LUT-FF pairs:    69  out of    197    35%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          53
+ Number of bonded IOBs:                  53  out of    160    33%  
+    IOB Flip Flops/Latches:              25
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 100   |
+FREC_300                           | NONE(DISPLAY_4)        | 13    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.202ns (Maximum Frequency: 108.672MHz)
+   Minimum input arrival time before clock: 5.095ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 9.202ns (frequency: 108.672MHz)
+  Total number of paths / destination ports: 19991 / 100
+-------------------------------------------------------------------------
+Delay:               9.202ns (Levels of Logic = 6)
+  Source:            BOTON_PRES_3 (FF)
+  Destination:       DIGIT_1_DISP_1 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: BOTON_PRES_3 to DIGIT_1_DISP_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             14   0.525   1.403  BOTON_PRES_3 (BOTON_PRES_3)
+     LUT4:I0->O           20   0.254   1.286  BOTON_PRES[3]_GND_1_o_equal_26_o<3>1 (BOTON_PRES[3]_GND_1_o_equal_26_o)
+     LUT5:I4->O           19   0.254   1.489  REG_UNIV_SHIFTED<2> (REG_UNIV_SHIFTED<2>)
+     LUT3:I0->O            2   0.235   0.954  out21113 (out21113)
+     LUT6:I3->O            2   0.235   0.834  out21114_SW0 (N44)
+     LUT6:I4->O           15   0.250   1.155  out2 (n0058)
+     LUT6:I5->O            1   0.254   0.000  REG_UNIV_SHIFTED[9]_REG_UNIV[7]_mux_63_OUT<5>3 (REG_UNIV_SHIFTED[9]_REG_UNIV[7]_mux_63_OUT<5>)
+     FD:D                      0.074          DIGIT_2_DISP_5
+    ----------------------------------------
+    Total                      9.202ns (2.081ns logic, 7.121ns route)
+                                       (22.6% logic, 77.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'FREC_300'
+  Clock period: 3.136ns (frequency: 318.878MHz)
+  Total number of paths / destination ports: 27 / 14
+-------------------------------------------------------------------------
+Delay:               3.136ns (Levels of Logic = 1)
+  Source:            CONTADOR_DISP_1 (FF)
+  Destination:       CONTADOR_DISP_0 (FF)
+  Source Clock:      FREC_300 rising
+  Destination Clock: FREC_300 rising
+
+  Data Path: CONTADOR_DISP_1 to CONTADOR_DISP_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.525   1.177  CONTADOR_DISP_1 (CONTADOR_DISP_1)
+     LUT2:I0->O            2   0.250   0.725  CONTADOR_DISP[1]_PWR_1_o_equal_21_o<1>1 (CONTADOR_DISP[1]_PWR_1_o_equal_21_o)
+     FDR:R                     0.459          CONTADOR_DISP_0
+    ----------------------------------------
+    Total                      3.136ns (1.234ns logic, 1.902ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 59 / 47
+-------------------------------------------------------------------------
+Offset:              5.095ns (Levels of Logic = 3)
+  Source:            BOTON<1> (PAD)
+  Destination:       BOTON_PRES_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BOTON<1> to BOTON_PRES_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.328   1.042  BOTON_1_IBUF (BOTON_1_IBUF)
+     LUT4:I0->O            1   0.254   1.112  _n0138_inv_SW0 (N14)
+     LUT6:I1->O            4   0.254   0.803  _n0138_inv (_n0138_inv)
+     FDE:CE                    0.302          BOTON_PRES_0
+    ----------------------------------------
+    Total                      5.095ns (2.138ns logic, 2.957ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            REG_UNIV_7_1 (FF)
+  Destination:       LEDS_R<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: REG_UNIV_7_1 to LEDS_R<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  REG_UNIV_7_1 (REG_UNIV_7_1)
+     OBUF:I->O                 2.912          LEDS_R_7_OBUF (LEDS_R<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'FREC_300'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            DISPLAY_12 (FF)
+  Destination:       DISPLAY<15> (PAD)
+  Source Clock:      FREC_300 rising
+
+  Data Path: DISPLAY_12 to DISPLAY<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  DISPLAY_12 (DISPLAY_12)
+     OBUF:I->O                 2.912          DISPLAY_15_OBUF (DISPLAY<15>)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    9.202|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock FREC_300
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.855|         |         |         |
+FREC_300       |    3.136|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 31.11 secs
+ 
+--> 
+
+
+Total memory usage is 386728 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
+

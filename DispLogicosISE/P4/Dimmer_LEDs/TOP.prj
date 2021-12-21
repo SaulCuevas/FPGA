@@ -1,0 +1,4 @@
+verilog work "PWM.v"
+verilog work "LEDS.v"
+verilog work "Encoder.v"
+verilog work "TOP.v"

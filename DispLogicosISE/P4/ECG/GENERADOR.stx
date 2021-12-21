@@ -1,0 +1,553 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/saulc/Documents/DispLogicosISE/P4/ECG/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/saulc/Documents/DispLogicosISE/P4/ECG/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: GENERADOR.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" into library work
+Parsing module <GENERADOR>.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 19: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 20: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 21: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 22: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 23: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 24: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 25: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 26: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 27: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 28: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 29: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 30: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 31: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 32: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 33: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 34: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 35: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 36: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 37: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 38: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 39: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 40: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 41: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 42: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 43: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 44: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 45: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 46: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 47: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 48: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 49: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 50: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 51: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 52: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 53: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 54: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 55: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 56: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 57: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 58: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 59: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 60: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 61: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 62: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 63: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 64: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 65: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 66: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 67: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 68: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 69: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 70: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 71: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 72: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 73: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 74: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 75: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 76: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 77: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 78: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 79: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 80: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 81: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 82: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 83: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 84: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 85: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 86: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 87: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 88: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 89: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 90: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 91: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 92: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 93: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 94: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 95: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 96: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 97: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 98: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 99: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 100: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 101: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 102: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 103: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 104: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 105: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 106: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 107: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 108: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 109: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 110: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 111: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 112: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 113: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 114: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 115: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 116: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 117: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 118: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 119: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 120: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 121: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 122: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 123: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 124: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 125: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 126: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 127: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 128: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 129: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 130: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 131: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 132: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 133: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 134: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 135: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 136: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 137: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 138: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 139: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 140: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 141: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 142: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 143: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 144: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 145: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 146: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 147: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 148: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 149: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 150: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 151: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 152: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 153: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 154: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 155: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 156: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 157: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 158: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 159: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 160: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 161: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 162: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 163: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 164: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 165: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 166: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 167: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 168: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 169: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 170: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 171: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 172: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 173: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 174: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 175: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 176: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 177: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 178: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 179: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 180: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 181: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 182: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 183: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 184: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 185: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 186: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 187: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 188: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 189: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 190: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 191: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 192: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 193: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 194: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 195: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 196: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 197: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 198: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 199: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 200: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 201: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 202: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 203: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 204: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 205: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 206: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 207: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 208: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 209: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 210: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 211: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 212: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 213: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 214: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 215: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 216: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 217: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 218: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 219: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 220: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 221: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 222: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 223: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 224: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 225: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 226: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 227: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 228: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 229: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 230: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 231: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 232: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 233: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 234: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 235: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 236: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 237: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 238: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 239: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 240: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 241: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 242: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 243: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 244: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 245: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 246: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 247: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 248: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 249: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 250: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 251: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 252: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 253: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 254: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 255: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 256: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 257: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 258: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 259: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 260: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 261: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 262: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 263: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 264: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 265: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 266: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 267: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 268: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 269: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 270: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 271: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 272: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 273: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 274: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 275: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 276: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 277: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 278: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 279: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 280: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 281: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 282: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 283: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 284: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 285: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 286: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 287: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 288: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 289: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 290: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 291: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 292: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 293: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 294: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 295: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 296: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 297: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 298: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 299: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 300: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 301: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 302: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 303: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 304: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 305: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 306: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 307: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 308: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 309: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 310: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 311: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 312: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 313: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 314: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 315: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 316: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 317: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 318: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 319: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 320: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 321: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 322: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 323: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 324: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 325: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 326: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 327: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 328: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 329: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 330: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 331: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 332: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 333: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 334: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 335: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 336: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 337: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 338: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 339: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 340: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 341: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 342: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 343: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 344: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 345: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 346: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 347: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 348: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 349: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 350: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 351: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 352: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 353: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 354: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 355: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 356: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 357: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 358: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 359: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 360: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 361: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 362: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 363: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 364: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 365: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 366: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 367: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 368: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 369: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 370: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 371: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 372: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 373: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 374: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 375: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 376: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 377: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 378: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 379: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 380: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 381: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 385: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 386: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 387: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 388: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 389: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 390: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 391: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 392: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 393: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 394: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 395: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 396: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 397: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 398: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 399: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 400: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 401: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 402: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 403: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 404: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 405: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 406: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 407: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 408: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 409: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 410: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 411: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 412: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 413: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 414: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 415: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 416: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 417: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 418: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 419: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 420: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 421: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 422: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 423: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 424: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 425: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 426: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 427: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 428: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 429: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 430: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 431: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 432: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 433: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 434: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 435: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 436: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 437: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 438: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 439: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 440: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 441: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 442: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 443: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 444: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 445: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 446: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 447: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 448: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 449: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 450: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 451: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 452: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 453: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 454: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 455: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 456: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 457: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 458: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 459: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 460: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 461: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 462: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 463: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 464: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 465: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 466: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 467: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 468: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 469: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 470: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 471: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 472: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 473: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 474: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 475: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 476: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 477: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 478: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 479: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 480: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 481: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 482: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 483: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 484: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 485: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 486: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 487: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 488: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 489: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 490: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 491: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 492: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 493: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 494: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 495: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 496: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 497: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 498: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 499: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 500: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 501: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 502: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 503: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 504: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 505: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 506: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 507: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 508: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 509: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 510: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 511: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 512: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 513: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 514: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 515: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 516: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 517: Constant value is truncated to fit in <8> bits.
+WARNING:HDLCompiler:568 - "C:\Users\saulc\Documents\DispLogicosISE\P4\ECG\GENERADOR.v" Line 518: Constant value is truncated to fit in <8> bits.
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.38 secs
+ 
+--> 
+
+Total memory usage is 4446684 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  497 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

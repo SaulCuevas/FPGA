@@ -1,0 +1,27 @@
+NET "b(0)" LOC = B14; //SW0
+NET "b(1)" LOC = C14; //SW1
+NET "b(2)" LOC = D13; //SW2
+NET "b(3)" LOC = E14; //SW3
+NET "a(0)" LOC = F13; //SW4
+NET "a(1)" LOC = M13; //SW5
+NET "a(2)" LOC = N14; //SW6
+NET "a(3)" LOC = P14; //SW7
+
+NET "clk" LOC = E7; //oscilador 50MHz
+NET "reset" LOC = F1; // E/S P1
+NET "b1" LOC = E1; // E/S P1
+NET "b2" LOC = F3; // E/S P1
+NET "b3" LOC = B3; // E/S P1
+
+NET "disp(0)" 	LOC = D5; 	// E/S P6
+NET "disp(1)" 	LOC = C5; 	// E/S P6
+NET "disp(2)" 	LOC = C9; 	// E/S P6
+NET "disp(3)" 	LOC = D8; 	// E/S P6
+NET "disp(4)" 	LOC = C8; 	// E/S P6
+NET "disp(5)" 	LOC = D10; 	// E/S P6
+NET "disp(6)" 	LOC = C10; 	// E/S P6
+NET "disp(7)" 	LOC = D11; 	// E/S P6
+NET "disp(8)" 	LOC = D1;	// E/S P3
+NET "disp(9)" 	LOC = G2;	// E/S P3
+NET "disp(10)" LOC = C2;	// E/S P3
+NET "disp(11)" LOC = D3;	// E/S P3

@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Dec 04 17:18:08 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "UP1" LOCATE = SITE "B11" LEVEL 1;
+COMP "UP2" LOCATE = SITE "A12" LEVEL 1;
+COMP "clk_50MHz" LOCATE = SITE "E7" LEVEL 1;
+COMP "vga_h_sync" LOCATE = SITE "F15" LEVEL 1;
+COMP "vga_v_sync" LOCATE = SITE "E15" LEVEL 1;
+COMP "DOWN1" LOCATE = SITE "B13" LEVEL 1;
+COMP "DOWN2" LOCATE = SITE "B15" LEVEL 1;
+COMP "Lchannel" LOCATE = SITE "A11" LEVEL 1;
+COMP "Rchannel" LOCATE = SITE "A9" LEVEL 1;
+COMP "vga_B" LOCATE = SITE "C15" LEVEL 1;
+COMP "vga_G" LOCATE = SITE "D15" LEVEL 1;
+COMP "vga_R" LOCATE = SITE "B14" LEVEL 1;
+SCHEMATIC END;
+

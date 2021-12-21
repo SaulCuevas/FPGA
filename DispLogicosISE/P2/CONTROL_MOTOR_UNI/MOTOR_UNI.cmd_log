@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA_2_RevA.ucf -p xc6slx9-csg225-2 MOTOR_UNI.ngc MOTOR_UNI.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MOTOR_UNI_map.ncd MOTOR_UNI.ngd MOTOR_UNI.pcf 
+par -w -intstyle ise -ol high -mt off MOTOR_UNI_map.ncd MOTOR_UNI.ncd MOTOR_UNI.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MOTOR_UNI.twx MOTOR_UNI.ncd -o MOTOR_UNI.twr MOTOR_UNI.pcf -ucf AMIIBA_2_RevA.ucf 
+bitgen -intstyle ise -f MOTOR_UNI.ut MOTOR_UNI.ncd 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA_2_RevA.ucf -p xc6slx9-csg225-2 MOTOR_UNI.ngc MOTOR_UNI.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MOTOR_UNI_map.ncd MOTOR_UNI.ngd MOTOR_UNI.pcf 
+par -w -intstyle ise -ol high -mt off MOTOR_UNI_map.ncd MOTOR_UNI.ncd MOTOR_UNI.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MOTOR_UNI.twx MOTOR_UNI.ncd -o MOTOR_UNI.twr MOTOR_UNI.pcf -ucf AMIIBA_2_RevA.ucf 
+bitgen -intstyle ise -f MOTOR_UNI.ut MOTOR_UNI.ncd 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA_2_RevA.ucf -p xc6slx9-csg225-2 MOTOR_UNI.ngc MOTOR_UNI.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MOTOR_UNI_map.ncd MOTOR_UNI.ngd MOTOR_UNI.pcf 
+par -w -intstyle ise -ol high -mt off MOTOR_UNI_map.ncd MOTOR_UNI.ncd MOTOR_UNI.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MOTOR_UNI.twx MOTOR_UNI.ncd -o MOTOR_UNI.twr MOTOR_UNI.pcf -ucf AMIIBA_2_RevA.ucf 
+bitgen -intstyle ise -f MOTOR_UNI.ut MOTOR_UNI.ncd 
+xst -intstyle ise -ifn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.xst" -ofn "/home/ise/DispLogicosISE/P2/CONTROL_MOTOR_UNI/MOTOR_UNI.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA_2_RevA.ucf -p xc6slx9-csg225-2 MOTOR_UNI.ngc MOTOR_UNI.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o MOTOR_UNI_map.ncd MOTOR_UNI.ngd MOTOR_UNI.pcf 
+par -w -intstyle ise -ol high -mt off MOTOR_UNI_map.ncd MOTOR_UNI.ncd MOTOR_UNI.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml MOTOR_UNI.twx MOTOR_UNI.ncd -o MOTOR_UNI.twr MOTOR_UNI.pcf -ucf AMIIBA_2_RevA.ucf 
+bitgen -intstyle ise -f MOTOR_UNI.ut MOTOR_UNI.ncd 

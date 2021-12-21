@@ -1,0 +1,262 @@
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 
+xst -intstyle ise -ifn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.xst" -ofn "C:/Users/saulc/Documents/DispLogicosISE/P6/VGA/rebota.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc AMIIBA2_RevA.ucf -p xc6slx9-csg225-2 rebota.ngc rebota.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rebota_map.ncd rebota.ngd rebota.pcf 
+par -w -intstyle ise -ol high -mt off rebota_map.ncd rebota.ncd rebota.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rebota.twx rebota.ncd -o rebota.twr rebota.pcf -ucf AMIIBA2_RevA.ucf 
+bitgen -intstyle ise -f rebota.ut rebota.ncd 

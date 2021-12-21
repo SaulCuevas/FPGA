@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/Documents/PRACTICA3/Pre1_Comparador_isim_beh.exe" -prj "/home/ise/Documents/PRACTICA3/Pre1_Comparador_beh.prj" "work.Pre1_Comparador" 

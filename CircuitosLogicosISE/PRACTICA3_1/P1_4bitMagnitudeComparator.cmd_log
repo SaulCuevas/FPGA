@@ -1,0 +1,50 @@
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P1_4bitMagnitudeComparator.ucf -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf -ucf P1_4bitMagnitudeComparator.ucf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P1_4bitMagnitudeComparator.ucf -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf -ucf P1_4bitMagnitudeComparator.ucf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P1_4bitMagnitudeComparator.ucf -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf -ucf P1_4bitMagnitudeComparator.ucf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+xst -intstyle ise -ifn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.xst" -ofn "/home/ise/Documents/PRACTICA3_1/P1_4bitMagnitudeComparator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P1_4bitMagnitudeComparator.ucf -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf -ucf P1_4bitMagnitudeComparator.ucf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc P1_4bitMagnitudeComparator.ucf -p xc6slx9-csg225-2 P1_4bitMagnitudeComparator.ngc P1_4bitMagnitudeComparator.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ngd P1_4bitMagnitudeComparator.pcf 
+par -w -intstyle ise -ol high -mt off P1_4bitMagnitudeComparator_map.ncd P1_4bitMagnitudeComparator.ncd P1_4bitMagnitudeComparator.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml P1_4bitMagnitudeComparator.twx P1_4bitMagnitudeComparator.ncd -o P1_4bitMagnitudeComparator.twr P1_4bitMagnitudeComparator.pcf -ucf P1_4bitMagnitudeComparator.ucf 
+bitgen -intstyle ise -f P1_4bitMagnitudeComparator.ut P1_4bitMagnitudeComparator.ncd 

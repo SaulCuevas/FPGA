@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/Documents/Nivel_de_Liquido/Bomba_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="bomba" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/bomba/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/sensores" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sensores[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sensores[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/vummer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vummer[7:0]</obj_property>
+      <obj_property name="ObjectShortName">vummer[7:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/motobomba" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">motobomba[1:0]</obj_property>
+      <obj_property name="ObjectShortName">motobomba[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/contenedor" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">contenedor</obj_property>
+      <obj_property name="ObjectShortName">contenedor</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/pwm" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">pwm</obj_property>
+      <obj_property name="ObjectShortName">pwm</obj_property>
+      <obj_property name="label">pwm</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/up" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">up</obj_property>
+      <obj_property name="ObjectShortName">up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/bomba/conta" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">conta</obj_property>
+      <obj_property name="ObjectShortName">conta</obj_property>
+   </wvobject>
+</wave_config>

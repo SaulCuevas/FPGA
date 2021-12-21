@@ -1,0 +1,5 @@
+verilog work "SELECCION.v"
+verilog work "LECT_Y_PROCE.v"
+verilog work "ESCRITURA.v"
+verilog work "DISPLAYS.v"
+verilog work "IMAGENES_TOP.v"
